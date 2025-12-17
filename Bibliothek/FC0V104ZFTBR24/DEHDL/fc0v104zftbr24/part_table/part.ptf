@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'FC0V104ZFTBR24'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "KEMET", "FC0V104ZFTBR24" (!) = "", "CAPAE1080X550N", "Capacitor Al Electrolytic", "80-FC0V104ZFTBR24", "https://www.mouser.co.uk/ProductDetail/KEMET/FC0V104ZFTBR24?qs=pfd5qewlna6EgB0gPZyt9Q%3D%3D", "FC, Supercapacitors, SMD Can, 0.1 F, -20/+80%, 3.5 VDC, 70C, -25C, 70C, V-Chip, 0.09, 1 g, 10.5mm, 5.5mm, 10.8mm, 5mm", "https://content.kemet.com/datasheets/KEM_S6011_FC.pdf", "5.5 mm"
+END_PART
+
+END.

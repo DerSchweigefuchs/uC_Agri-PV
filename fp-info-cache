@@ -1,4 +1,4 @@
-26762028855637798
+26763794837553506
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -97277,6 +97277,13 @@ Rotary encoder with switch and illuminated 4,6,8,13,18mm shaft, dual-led, https:
 rotary encoder illuminated switch vertical
 0
 9
+8
+SamacSys_Parts
+NE555DR
+D (R-PDSO-G8)
+Integrated Circuit
+0
+8
 8
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
