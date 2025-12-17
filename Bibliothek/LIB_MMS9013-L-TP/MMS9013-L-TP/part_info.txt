@@ -1,0 +1,9 @@
+Manufacturer=MCC
+PartNumber=MMS9013-L-TP
+PartCategory=Integrated Circuit
+PackageCategory=SOT23 (3-Pin)
+PinCount=3
+Version=6.2
+Released=2023-05-13 09:57:02
+Downloaded=2025-04-07 09:54:20
+3D=Y

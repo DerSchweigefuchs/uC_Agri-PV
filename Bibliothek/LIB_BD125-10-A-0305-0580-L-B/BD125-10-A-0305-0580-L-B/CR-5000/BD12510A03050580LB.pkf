@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "BD12510A03050580LB"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "BD12510A03050580LB")
+        (spec "default")
+    )
+)

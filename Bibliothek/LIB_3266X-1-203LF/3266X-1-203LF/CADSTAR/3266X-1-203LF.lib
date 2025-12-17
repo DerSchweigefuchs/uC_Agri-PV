@@ -1,0 +1,15 @@
+.3266X-1-203LF :1 ;Bourns 3266X Series 12-Turn Through Hole Cermet Trimmer Resistor with Pin Terminations, 20k +/-10% 1/4W +/-100ppm/C
+"3266X1203LF"
+*STM VR
+*NGS
+*PLB 1="CCW" 2="WIPER" 3="CW"
+*MXP 3
+*DFN 3266X-1-203LF
+~!Mouser Part Number (652-3266X-1-203LF)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Bourns/3266X-1-203LF?qs=%252B8v4bwhISUKQBVO7Xq7s8w%3D%3D)
+~!Manufacturer_Name (Bourns)
+~!Manufacturer_Part_Number (3266X-1-203LF)
+~!Link Datasheet (https://www.bourns.com/docs/Product-Datasheets/3266.pdf)
+~!Height (7.75mm)
+"3266X-1-203LF"
+1.1!U 2.1!U 3.1!U 

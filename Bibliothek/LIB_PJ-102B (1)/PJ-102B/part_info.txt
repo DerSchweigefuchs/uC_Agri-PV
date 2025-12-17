@@ -1,0 +1,9 @@
+Manufacturer=Same Sky
+PartNumber=PJ-102B
+PartCategory=Connector
+PackageCategory=Other
+PinCount=3
+Version=3.1
+Released=2019-01-02 15:26:02
+Downloaded=2025-04-05 13:34:35
+3D=Y

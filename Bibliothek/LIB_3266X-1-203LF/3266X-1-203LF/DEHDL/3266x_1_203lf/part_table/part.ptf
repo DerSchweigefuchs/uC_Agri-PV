@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '3266X_1_203LF'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Bourns", "3266X-1-203LF" (!) = "", "3266X1203LF", "Other", "652-3266X-1-203LF", "https://www.mouser.co.uk/ProductDetail/Bourns/3266X-1-203LF?qs=%252B8v4bwhISUKQBVO7Xq7s8w%3D%3D", "Bourns 3266X Series 12-Turn Through Hole Cermet Trimmer Resistor with Pin Terminations, 20k +/-10% 1/4W +/-100ppm/C", "https://www.bourns.com/docs/Product-Datasheets/3266.pdf", "7.75 mm"
+END_PART
+
+END.

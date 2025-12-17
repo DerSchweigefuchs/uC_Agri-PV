@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 3266X-1-203LF
+D Bourns 3266X Series 12-Turn Through Hole Cermet Trimmer Resistor with Pin Terminations, 20k +/-10% 1/4W +/-100ppm/C
+K
+F https://www.bourns.com/docs/Product-Datasheets/3266.pdf
+$ENDCMP
+#
+#End Doc Library

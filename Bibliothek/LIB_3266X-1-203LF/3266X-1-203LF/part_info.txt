@@ -1,0 +1,9 @@
+Manufacturer=Bourns
+PartNumber=3266X-1-203LF
+PartCategory=Variable Resistor
+PackageCategory=Other
+PinCount=3
+Version=1.4
+Released=2022-01-25 05:16:09
+Downloaded=2025-04-07 10:27:11
+3D=N

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'DMG1012T_13'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Diodes Incorporated", "DMG1012T-13" (!) = "", "SOT50P160X90-3N", "SOT23 (3-Pin)", "621-DMG1012T-13", "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMG1012T-13?qs=w%2Fv1CP2dgqpw%252ByWBJOGGBA%3D%3D", "MOSFET 20V N-Ch Enhance Mode MOSFET", "https://www.diodes.com//assets/Datasheets/DMG1012T.pdf", "0.9 mm"
+END_PART
+
+END.

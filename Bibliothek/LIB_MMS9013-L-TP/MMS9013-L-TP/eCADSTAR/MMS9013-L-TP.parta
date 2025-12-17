@@ -1,0 +1,70 @@
+(Japanese_coding: sjis)
+(function "ECS_1444943"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-05-13-09:57:02)
+    (utime 2024-05-17-16:34:44)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+        (port "3" (symbPinId 3) (portType INOUT))
+    )
+    (property "symbolName" "MMS9013-L-TP")
+)
+
+
+(pinAssign "ECS_1444943"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-05-13-09:57:02)
+    (utime 2024-05-17-16:34:44)
+    (interface
+        (port "1" (symbPinId 1) (portName "B") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "E") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "C") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_1444943")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "MMS9013-L-TP")
+)
+
+
+(part "MMS9013-L-TP"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-05-13-09:57:02)
+    (utime 2024-05-17-16:34:44)
+    (packageRef "MMS9013-L-TP")
+    (pinAssignRef "ECS_1444943")
+    (interface
+        (port "1" (symbPinId 1) (portName "B") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "E") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "C") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "IC")
+    (property "description" "Small Signal Bipolar Transistors")
+    (property "Mouser_Part_Number" "833-MMS9013L-TP")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Micro-Commercial-Components-MCC/MMS9013-L-TP?qs=P1JMDcb91o6OmgJiBYj6kQ%3D%3D")
+    (property "Manufacturer_Name" "MCC")
+    (property "Manufacturer_Part_Number" "MMS9013-L-TP")
+    (property "Datasheet_Link" "https://mccsemi.com/pdf/Products/MMS9013(SOT-23).pdf")
+    (property "compAreaTopHeight" 1.25)
+)
+
+

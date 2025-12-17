@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "PJ-102B"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-01-02-15:26:02)
+    (mountForm default
+        (footprintRef "PJ102B")
+        (spec "System")
+    )
+)

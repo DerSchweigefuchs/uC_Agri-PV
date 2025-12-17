@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'PJ_102B'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Same Sky", "PJ-102B" (!) = "", "PJ102B", "Other", "490-PJ-102B", "https://www.mouser.co.uk/ProductDetail/Same-Sky/PJ-102B?qs=WyjlAZoYn50OhgyxNd%252BH3w%3D%3D", "2.5 x 6.5 mm, 2.5 A, Horizontal, Through Hole, Tapered Pins, Dc Power Jack Connector", "https://www.sameskydevices.com/product/resource/supplyframepdf/pj-102b.pdf", "11.2 mm"
+END_PART
+
+END.

@@ -1,0 +1,16 @@
+.DMG1012T-13 :1 ;MOSFET 20V N-Ch Enhance Mode MOSFET
+SOT50P160X90-3N
+*STM Q
+*NGS
+*PLB 1="G" 2="S" 3="D"
+*MXP 3
+*DFN DMG1012T-13
+~!Mouser Part Number (621-DMG1012T-13)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMG1012T-13?qs=w%2Fv1CP2dgqpw%252ByWBJOGGBA%3D%3D)
+~!Manufacturer_Name (Diodes Incorporated)
+~!Manufacturer_Part_Number (DMG1012T-13)
+~!Link Datasheet (https://www.diodes.com//assets/Datasheets/DMG1012T.pdf)
+~!Height (0.9mm)
+~!3D_Model (DMG1012T-13)
+DMG1012T-13
+1.1!U 2.1!U 3.1!U 

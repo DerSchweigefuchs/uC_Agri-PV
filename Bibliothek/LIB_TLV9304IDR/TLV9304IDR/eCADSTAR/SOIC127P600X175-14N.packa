@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "TLV9304IDR"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-11-21-06:56:41)
+    (mountForm default
+        (footprintRef "SOIC127P600X175-14N")
+        (spec "System")
+    )
+)

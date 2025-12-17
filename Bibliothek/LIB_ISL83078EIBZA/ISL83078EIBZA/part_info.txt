@@ -1,0 +1,9 @@
+Manufacturer=Renesas Electronics
+PartNumber=ISL83078EIBZA
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=8
+Version=4.1
+Released=2020-01-10 13:16:31
+Downloaded=2025-04-07 10:14:49
+3D=Y

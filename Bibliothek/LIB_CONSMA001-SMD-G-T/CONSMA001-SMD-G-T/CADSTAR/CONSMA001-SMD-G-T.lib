@@ -1,0 +1,16 @@
+.CONSMA001-SMD-G-T :1 ;Body Features: Body Material Brass | Body Plating Material Gold | Cable Connector Orientation Straight | Body Material Finish Plated | Configuration Features: Number of Coaxial Contacts 1 | Number of Positions 1 | PCB Mount Orientation Vertical | Contact Features: RF Connector Center Contact Plating Material Gold | RF Connector Center Contact Material Beryllium Copper | Electrical Characteristics: Impedance 50 OHM | Mechanical Attachment: RF Contact Captivation Method Mechanical | Detent Without | RF Connec
+CONSMA001SMDGT
+*STM J
+*NGS
+*PLB 1="1" 2="2"
+*MXP 3
+*DFN CONSMA001-SMD-G-T
+~!Mouser Part Number (712-CONSMA001-SMD-GT)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Linx-Technologies/CONSMA001-SMD-G-T?qs=BJlw7L4Cy7%252BEXFff93cLJw%3D%3D)
+~!Manufacturer_Name (TE Connectivity)
+~!Manufacturer_Part_Number (CONSMA001-SMD-G-T)
+~!Link Datasheet (https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=CONSMA001-SMD-G-T&DocType=Data%20Sheet&DocLang=English&PartCntxt=CONSMA001-SMD-G-T&DocFormat=pdf)
+~!Height (10.5156mm)
+~!3D_Model (CONSMA001-SMD-G-T)
+CONSMA001-SMD-G-T
+1.1!U 2.1!U 

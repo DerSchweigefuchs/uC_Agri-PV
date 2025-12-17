@@ -1,0 +1,16 @@
+.PJ-102B :1 ;2.5 x 6.5 mm, 2.5 A, Horizontal, Through Hole, Tapered Pins, Dc Power Jack Connector
+PJ102B
+*STM J
+*NGS
+*PLB 1="1" 2="2" 3="3"
+*MXP 3
+*DFN PJ-102B
+~!Mouser Part Number (490-PJ-102B)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Same-Sky/PJ-102B?qs=WyjlAZoYn50OhgyxNd%252BH3w%3D%3D)
+~!Manufacturer_Name (Same Sky)
+~!Manufacturer_Part_Number (PJ-102B)
+~!Link Datasheet (https://www.sameskydevices.com/product/resource/supplyframepdf/pj-102b.pdf)
+~!Height (11.2mm)
+~!3D_Model (PJ-102B)
+PJ-102B
+1.1!U 2.1!U 3.1!U 

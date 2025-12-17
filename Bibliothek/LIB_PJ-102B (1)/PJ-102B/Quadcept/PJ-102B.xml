@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/627947/1638757/2.50/3/2/Connector/-->
+<quadcept_library>
+  <setting unit="mil" />
+  <textstyle name="Default" height="47.244094488189" strokewidth="7.8740157480315" charwidth="47.244094488189" />
+  <textstyle name="Dimension" height="19.6850393700787" strokewidth="0" charwidth="19.6850393700787" />
+  <textstyle name="H127W0635TH00762" height="50" strokewidth="3" charwidth="25" />
+  <textstyle name="H15W15TH02" height="59.0551181102362" strokewidth="7.8740157480315" charwidth="59.0551181102362" />
+  <padstyle name="c283_h188.68" surface="False" plated="True" isvia="False" nopaste="True" nomask="True" complex="False" holesize="74.283464566928">
+    <padshape layer="TOP" shape="round" width="111.41732283464" height="111.41732283464" />
+    <padshape layer="TOP_SOLDER_MASK" shape="round" width="119.29133858268" height="119.29133858268" />
+    <padshape layer="INNER" shape="round" width="111.41732283464" height="111.41732283464" />
+    <padshape layer="BOTTOM" shape="round" width="111.41732283464" height="111.41732283464" />
+    <padshape layer="BOTTOM_SOLDER_MASK" shape="round" width="119.29133858268" height="119.29133858268" />
+  </padstyle>
+  <footprint name="PJ102B" originx="0" originy="0" pickpointx="0" pickpointy="0">
+    <pcbpin number="1" name="1" style="c283_h188.68" originx="0" originy="0" rotation="90" />
+    <pcbpin number="2" name="2" style="c283_h188.68" originx="0" originy="236.22047244094" rotation="90" />
+    <pcbpin number="3" name="3" style="c283_h188.68" originx="-185.03937007874" originy="118.11023622047" rotation="90" />
+    <line layer="TOP_ASSEMBLY" originx="-269.68503937008" originy="539.37007874015" endx="84.645669291338" endy="539.37007874015" width="7.8740157480314" />
+    <line layer="TOP_ASSEMBLY" originx="84.645669291338" originy="539.37007874015" endx="84.645669291338" endy="-27.55905511811" width="7.8740157480314" />
+    <line layer="TOP_ASSEMBLY" originx="84.645669291338" originy="-27.55905511811" endx="-269.68503937008" endy="-27.55905511811" width="7.8740157480314" />
+    <line layer="TOP_ASSEMBLY" originx="-269.68503937008" originy="-27.55905511811" endx="-269.68503937008" endy="539.37007874015" width="7.8740157480314" />
+    <line layer="TOP_PLACE_BOUND" originx="-309.05511811023" originy="578.74015748031" endx="133.85826771653" endy="578.74015748031" width="3.9370078740157" />
+    <line layer="TOP_PLACE_BOUND" originx="133.85826771653" originy="578.74015748031" endx="133.85826771653" endy="-95.078740157479" width="3.9370078740157" />
+    <line layer="TOP_PLACE_BOUND" originx="133.85826771653" originy="-95.078740157479" endx="-309.05511811023" endy="-95.078740157479" width="3.9370078740157" />
+    <line layer="TOP_PLACE_BOUND" originx="-309.05511811023" originy="-95.078740157479" endx="-309.05511811023" endy="578.74015748031" width="3.9370078740157" />
+    <line layer="TOP_SILKSCREEN" originx="-131.88976377953" originy="-27.55905511811" endx="-269.68503937008" endy="-27.55905511811" width="3.9370078740157" />
+    <line layer="TOP_SILKSCREEN" originx="-269.68503937008" originy="-27.55905511811" endx="-269.68503937008" endy="539.37007874015" width="3.9370078740157" />
+    <line layer="TOP_SILKSCREEN" originx="-269.68503937008" originy="539.37007874015" endx="84.645669291338" endy="539.37007874015" width="3.9370078740157" />
+    <line layer="TOP_SILKSCREEN" originx="84.645669291338" originy="539.37007874015" endx="84.645669291338" endy="-27.55905511811" width="3.9370078740157" />
+    <line layer="TOP_SILKSCREEN" originx="110.23622047244" originy="3.9370078740157" endx="110.23622047244" endy="3.9370078740157" width="7.8740157480314" />
+    <arc layer="TOP_SILKSCREEN" originx="110.23622047244" originy="0" startangle="90.0" sweepangle="180.0" radius="3.9370078740157" width="7.8740157480314" />
+    <line layer="TOP_SILKSCREEN" originx="110.23622047244" originy="-3.9370078740157" endx="110.23622047244" endy="-3.9370078740157" width="7.8740157480314" />
+    <arc layer="TOP_SILKSCREEN" originx="110.23622047244" originy="0" startangle="-90.0" sweepangle="180.0" radius="3.9370078740157" width="7.8740157480314" />
+  </footprint>
+  <symbol name="PJ-102B" originx="0" originy="0">
+    <line originx="200" originy="100" endx="600" endy="100" width="0" />
+    <line originx="600" originy="-200" endx="600" endy="100" width="0" />
+    <line originx="600" originy="-200" endx="200" endy="-200" width="0" />
+    <line originx="200" originy="100" endx="200" endy="-200" width="0" />
+    <sympin number="1" originx="600" originy="-100" rotation="0" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="570" originy="-100" style="Default" rotation="0" justify="right" flipped="False" hidden="False" data="1" />
+      <text name="pindes" originx="660" originy="-80" style="Default" rotation="0" justify="lowerleft" flipped="False" hidden="False" data="1" />
+    </sympin>
+    <sympin number="2" originx="600" originy="0" rotation="0" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="570" originy="0" style="Default" rotation="0" justify="right" flipped="False" hidden="False" data="2" />
+      <text name="pindes" originx="660" originy="20" style="Default" rotation="0" justify="lowerleft" flipped="False" hidden="False" data="2" />
+    </sympin>
+    <sympin number="3" originx="200" originy="0" rotation="180" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="230" originy="0" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="3" />
+      <text name="pindes" originx="140" originy="20" style="Default" rotation="0" justify="lowerright" flipped="False" hidden="False" data="3" />
+    </sympin>
+  </symbol>
+  <component name="PJ-102B" designatorprefix="J" height="440.94488188976" footprint="PJ102B">
+    <comppin designator="1" sympin="1" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="1" />
+    <comppin designator="2" sympin="2" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="2" />
+    <comppin designator="3" sympin="3" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="3" />
+    <attached_symbol gate="1" name="PJ-102B" />
+    <pinmap designator="1" footprintpin="1" />
+    <pinmap designator="2" footprintpin="2" />
+    <pinmap designator="3" footprintpin="3" />
+    <text name="Datasheet" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="https://www.sameskydevices.com/product/resource/supplyframepdf/pj-102b.pdf" />
+    <text name="Description" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="2.5 x 6.5 mm, 2.5 A, Horizontal, Through Hole, Tapered Pins, Dc Power Jack Connector" />
+    <text name="Mouser Part Number" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="490-PJ-102B" />
+    <text name="Mouser Price/Stock" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="https://www.mouser.co.uk/ProductDetail/Same-Sky/PJ-102B?qs=WyjlAZoYn50OhgyxNd%252BH3w%3D%3D" />
+    <text name="Manufacturer_Name" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="Same Sky" />
+    <text name="Manufacturer_Part_Number" originx="650" originy="200" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="PJ-102B" />
+  </component>
+</quadcept_library>

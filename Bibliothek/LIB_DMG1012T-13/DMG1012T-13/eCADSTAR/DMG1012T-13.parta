@@ -1,0 +1,70 @@
+(Japanese_coding: sjis)
+(function "ECS_1390560"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-07-24-09:30:44)
+    (utime 2024-06-25-08:07:30)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 3) (portType INOUT))
+        (port "3" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "DMG1012T-13")
+)
+
+
+(pinAssign "ECS_1390560"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-07-24-09:30:44)
+    (utime 2024-06-25-08:07:30)
+    (interface
+        (port "1" (symbPinId 1) (portName "G") (portType INOUT))
+        (port "2" (symbPinId 3) (portName "S") (portType INOUT))
+        (port "3" (symbPinId 2) (portName "D") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_1390560")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "DMG1012T-13")
+)
+
+
+(part "DMG1012T-13"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-07-24-09:30:44)
+    (utime 2024-06-25-08:07:30)
+    (packageRef "DMG1012T-13")
+    (pinAssignRef "ECS_1390560")
+    (interface
+        (port "1" (symbPinId 1) (portName "G") (portType INOUT))
+        (port "2" (symbPinId 3) (portName "S") (portType INOUT))
+        (port "3" (symbPinId 2) (portName "D") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "Q")
+    (property "description" "MOSFET 20V N-Ch Enhance Mode MOSFET")
+    (property "Mouser_Part_Number" "621-DMG1012T-13")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMG1012T-13?qs=w%2Fv1CP2dgqpw%252ByWBJOGGBA%3D%3D")
+    (property "Manufacturer_Name" "Diodes Incorporated")
+    (property "Manufacturer_Part_Number" "DMG1012T-13")
+    (property "Datasheet_Link" "https://www.diodes.com//assets/Datasheets/DMG1012T.pdf")
+    (property "compAreaTopHeight" 0.9)
+)
+
+

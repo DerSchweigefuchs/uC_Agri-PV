@@ -1,0 +1,16 @@
+.NX2016SA-26MHZ-EXS00A-CS06025 :1 ;Quartz Crystal
+NX2016SA32MEXS00ACS06465
+*STM Y
+*NGS
+*PLB 1="CRYSTAL_1" 2="GND_1" 3="CRYSTAL_2" 4="GND_2"
+*MXP 4
+*DFN NX2016SA-26MHZ-EXS00A-CS06025
+~!Mouser Part Number (344-NX2016SA26S06025)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/NDK/NX2016SA-26MHZ-EXS00A-CS06025?qs=w%2Fv1CP2dgqrdkfe8%2Fku9TQ%3D%3D)
+~!Manufacturer_Name (NDK)
+~!Manufacturer_Part_Number (NX2016SA-26MHZ-EXS00A-CS06025)
+~!Link Datasheet (https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/8da4d094c01ffba0c34ffc4b8a2d69e9.pdf)
+~!Height (-)
+~!3D_Model (NX2016SA-26MHZ-EXS00A-CS06025)
+NX2016SA-26MHZ-EXS00A-CS06025
+1.1!U 2.1!U 3.1!U 4.1!U 

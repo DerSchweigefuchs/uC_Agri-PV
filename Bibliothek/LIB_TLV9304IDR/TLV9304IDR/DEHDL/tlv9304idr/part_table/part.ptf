@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'TLV9304IDR'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Texas Instruments", "TLV9304IDR" (!) = "", "SOIC127P600X175-14N", "Small Outline Packages", "595-TLV9304IDR", "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV9304IDR?qs=P1JMDcb91o4JQ6%2FxIzVZ4Q%3D%3D", "Operational Amplifiers - Op Amps Quad 1MHz, 40-V, RRO, MUX-friendly operational amplifier for cost-sensitive systems 14-SOIC -40 to 125", "http://www.ti.com/lit/gpn/tlv9304", "1.75 mm"
+END_PART
+
+END.

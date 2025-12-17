@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'BD125_10_A_0305_0580_L_B'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "GCT (GLOBAL CONNECTOR TECHNOLOGY)", "BD125-10-A-0305-0580-L-B" (!) = "", "BD12510A03050580LB", "Other", "640-BD12510A305580LB", "https://www.mouser.co.uk/ProductDetail/GCT/BD125-10-A-0305-0580-L-B?qs=amGC7iS6iy%252BPUE%252B5wV8wFA%3D%3D", "Board to Board & Mezzanine Connectors 10 Contact 1.27mm keyed Pin hdr SMT Vert GF", "https://gct.co/connector/bd125", "6.37 mm"
+END_PART
+
+END.

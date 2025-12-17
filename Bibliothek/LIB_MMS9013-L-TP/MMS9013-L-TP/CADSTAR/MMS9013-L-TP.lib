@@ -1,0 +1,16 @@
+.MMS9013-L-TP :1 ;Small Signal Bipolar Transistors
+SOT95P237X125-3N
+*STM IC
+*NGS
+*PLB 1="B" 2="E" 3="C"
+*MXP 3
+*DFN MMS9013-L-TP
+~!Mouser Part Number (833-MMS9013L-TP)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Micro-Commercial-Components-MCC/MMS9013-L-TP?qs=P1JMDcb91o6OmgJiBYj6kQ%3D%3D)
+~!Manufacturer_Name (MCC)
+~!Manufacturer_Part_Number (MMS9013-L-TP)
+~!Link Datasheet (https://mccsemi.com/pdf/Products/MMS9013(SOT-23).pdf)
+~!Height (1.25mm)
+~!3D_Model (MMS9013-L-TP)
+MMS9013-L-TP
+1.1!U 2.1!U 3.1!U 

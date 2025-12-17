@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'TPS63021DSJR'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Texas Instruments", "TPS63021DSJR" (!) = "", "SON50P300X400X100-15N-D", "Small Outline No-lead", "595-TPS63021DSJR", "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS63021DSJR?qs=C44r%252BX3hXgL5uT9uesn8fg%3D%3D", "High Efficiency Single Inductor Buck-Boost Converter with 4A Switch", "http://www.ti.com/lit/gpn/tps63021", "1 mm"
+END_PART
+
+END.

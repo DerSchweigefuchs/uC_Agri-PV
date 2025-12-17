@@ -1,0 +1,16 @@
+.ISL83078EIBZA :1 ;The Intersil ISL8307XE are BiCMOS 3. 3V powered, single transceivers that meet both the RS-485 and RS-422 standards for balanced communication. These devices have very low bus currents (+125mA/-100mA), so they present a true 1/8 unit load to the RS-485 bus. This allows up to 256 transceivers on the network without violating the RS-485 specifications 32 unit load maximum, and without using repeaters. For example, in a remote utility meter reading system, individual meter readings are routed to a concentra
+SOIC127P600X175-8N
+*STM IC
+*NGS
+*PLB 1="RO" 2="'RE'" 3="DE" 4="DI" 5="GND" 6="A/Y" 7="B/Z" 8="VCC"
+*MXP 8
+*DFN ISL83078EIBZA
+~!Mouser Part Number (968-ISL83078EIBZA)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Renesas-Intersil/ISL83078EIBZA?qs=dAsayXGOMrvZH4ftGSAhkg%3D%3D)
+~!Manufacturer_Name (Renesas Electronics)
+~!Manufacturer_Part_Number (ISL83078EIBZA)
+~!Link Datasheet (https://www.renesas.com/en-us/www/doc/datasheet/isl83070e-71e-72e-73e-75e-78e.pdf)
+~!Height (1.75mm)
+~!3D_Model (ISL83078EIBZA)
+ISL83078EIBZA
+1.1!U 2.1!U 3.1!U 4.1!U 8.1!U 7.1!U 6.1!U 5.1!U 

@@ -1,0 +1,9 @@
+Manufacturer=Texas Instruments
+PartNumber=TLV9304IDR
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=14
+Version=1.1
+Released=2021-03-25 10:16:30
+Downloaded=2025-04-07 10:23:11
+3D=Y

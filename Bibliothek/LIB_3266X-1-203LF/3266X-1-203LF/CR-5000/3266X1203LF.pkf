@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "3266X1203LF"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "3266X1203LF")
+        (spec "default")
+    )
+)

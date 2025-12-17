@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CONSMA001-SMD-G-T
+D Body Features: Body Material Brass | Body Plating Material Gold | Cable Connector Orientation Straight | Body Material Finish Plated | Configuration Features: Number of Coaxial Contacts 1 | Number of Positions 1 | PCB Mount Orientation Vertical | Contact Features: RF Connector Center Contact Plating Material Gold | RF Connector Center Contact Material Beryllium Copper | Electrical Characteristics: Impedance 50 OHM | Mechanical Attachment: RF Contact Captivation Method Mechanical | Detent Without | RF Connec
+K
+F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=CONSMA001-SMD-G-T&DocType=Data%20Sheet&DocLang=English&PartCntxt=CONSMA001-SMD-G-T&DocFormat=pdf
+$ENDCMP
+#
+#End Doc Library

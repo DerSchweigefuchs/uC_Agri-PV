@@ -1,0 +1,16 @@
+.TLV9304IDR :1 ;Operational Amplifiers - Op Amps Quad 1MHz, 40-V, RRO, MUX-friendly operational amplifier for cost-sensitive systems 14-SOIC -40 to 125
+SOIC127P600X175-14N
+*STM IC
+*NGS
+*PLB 1="OUT1" 2="IN1-" 3="IN1+" 4="V+" 5="IN2+" 6="IN2-" 7="OUT2" 8="OUT3" 9="IN3-" 10="IN3+" 11="V-" 12="IN4+" 13="IN4-" 14="OUT4"
+*MXP 14
+*DFN TLV9304IDR
+~!Mouser Part Number (595-TLV9304IDR)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV9304IDR?qs=P1JMDcb91o4JQ6%2FxIzVZ4Q%3D%3D)
+~!Manufacturer_Name (Texas Instruments)
+~!Manufacturer_Part_Number (TLV9304IDR)
+~!Link Datasheet (http://www.ti.com/lit/gpn/tlv9304)
+~!Height (1.75mm)
+~!3D_Model (TLV9304IDR)
+TLV9304IDR
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 14.1!U 13.1!U 12.1!U 11.1!U 10.1!U 9.1!U 8.1!U 

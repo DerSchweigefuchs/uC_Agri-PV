@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DMG1012T-13
+D MOSFET 20V N-Ch Enhance Mode MOSFET
+K
+F https://www.diodes.com//assets/Datasheets/DMG1012T.pdf
+$ENDCMP
+#
+#End Doc Library

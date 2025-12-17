@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "3266X-1-203LF"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2022-01-25-05:16:09)
+    (mountForm default
+        (footprintRef "3266X1203LF")
+        (spec "System")
+    )
+)

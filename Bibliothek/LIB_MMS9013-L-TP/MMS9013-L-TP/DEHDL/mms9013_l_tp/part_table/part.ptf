@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MMS9013_L_TP'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "MCC", "MMS9013-L-TP" (!) = "", "SOT95P237X125-3N", "SOT23 (3-Pin)", "833-MMS9013L-TP", "https://www.mouser.co.uk/ProductDetail/Micro-Commercial-Components-MCC/MMS9013-L-TP?qs=P1JMDcb91o6OmgJiBYj6kQ%3D%3D", "Small Signal Bipolar Transistors", "https://mccsemi.com/pdf/Products/MMS9013(SOT-23).pdf", "1.25 mm"
+END_PART
+
+END.

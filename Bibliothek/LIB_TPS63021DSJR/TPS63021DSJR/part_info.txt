@@ -1,0 +1,9 @@
+Manufacturer=Texas Instruments
+PartNumber=TPS63021DSJR
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline No-lead
+PinCount=15
+Version=1.1
+Released=2018-02-21 23:54:25
+Downloaded=2025-04-05 13:31:23
+3D=Y

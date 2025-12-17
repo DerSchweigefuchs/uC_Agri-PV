@@ -1,0 +1,9 @@
+Manufacturer=GCT (GLOBAL CONNECTOR TECHNOLOGY)
+PartNumber=BD125-10-A-0305-0580-L-B
+PartCategory=Connector
+PackageCategory=Other
+PinCount=10
+Version=1.14
+Released=2023-10-09 04:25:09
+Downloaded=2025-04-08 16:19:09
+3D=Y
