@@ -6,8 +6,8 @@
 	(paper "A4" portrait)
 	(title_block
 		(title "GPIO and other stuff")
-		(date "2025-03-19")
-		(rev "2.0")
+		(date "2025-12-18")
+		(rev "1.3")
 	)
 	(lib_symbols
 		(symbol "Connector:USB_B_Micro"
