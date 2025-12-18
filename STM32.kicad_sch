@@ -7409,209 +7409,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SamacSys_Parts:FC-13532.7680KA-AG5"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Y"
-				(at 8.89 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "FC-13532.7680KA-AG5"
-				(at 8.89 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "FC135327680KAAG5"
-				(at 8.89 -96.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://support.epson.biz/td/api/doc_check.php?dl=brief_FC-135&lang=en"
-				(at 8.89 -196.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "32.768kHz +/-20ppm Crystal 7pF 70 kOhms 2-SMD, No Lead"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "0.9"
-				(at 8.89 -396.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" ""
-				(at 8.89 -496.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" ""
-				(at 8.89 -596.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Seiko Epson Corporation"
-				(at 8.89 -696.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "FC-13532.7680KA-AG5"
-				(at 8.89 -796.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "FC-13532.7680KA-AG5_1_1"
-				(polyline
-					(pts
-						(xy 3.048 2.54) (xy 3.048 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.048 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 4.064 3.556)
-					(end 6.096 -3.556)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.112 2.54) (xy 7.112 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.112 0) (xy 7.62 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 2.54)
-					(name "CRYSTAL_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Switch:SW_SPDT"
 			(pin_names
 				(offset 0)
@@ -8678,10 +8475,6 @@
 		(uuid "0684d9c1-4cdb-4a14-8e63-d87ea567873b")
 	)
 	(no_connect
-		(at 215.9 91.44)
-		(uuid "07bb5f7e-3cf4-4539-9e7e-7727ac64b681")
-	)
-	(no_connect
 		(at 39.37 171.45)
 		(uuid "08ae5c43-46c2-4aca-84fd-9c1fb9c3e5ed")
 	)
@@ -8696,10 +8489,6 @@
 	(no_connect
 		(at 215.9 226.06)
 		(uuid "220be7d2-7c20-4666-8f3f-6d3f569509e9")
-	)
-	(no_connect
-		(at 215.9 88.9)
-		(uuid "236ef58e-6633-4bec-9de6-10252ba034f1")
 	)
 	(no_connect
 		(at 215.9 137.16)
@@ -8740,10 +8529,6 @@
 	(no_connect
 		(at 215.9 231.14)
 		(uuid "5cf01d56-ff17-4a38-91e2-53f0c9b1428d")
-	)
-	(no_connect
-		(at 215.9 162.56)
-		(uuid "5f41505e-e7ed-4909-a51b-14095f492e6f")
 	)
 	(no_connect
 		(at 215.9 233.68)
@@ -9301,6 +9086,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 91.44) (xy 247.015 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4087c5f1-e4d9-41c8-93d4-699fd22fa477")
+	)
+	(wire
+		(pts
 			(xy 185.42 66.04) (xy 186.69 66.04)
 		)
 		(stroke
@@ -9448,6 +9243,16 @@
 			(type default)
 		)
 		(uuid "543f9aa8-33ea-4d09-a61a-70759414ab27")
+	)
+	(wire
+		(pts
+			(xy 215.9 88.9) (xy 247.015 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54f32618-dae4-4979-a572-13c66032912c")
 	)
 	(wire
 		(pts
@@ -9748,6 +9553,16 @@
 			(type default)
 		)
 		(uuid "789e2f06-b1c3-4f52-af43-ec07fed95b45")
+	)
+	(wire
+		(pts
+			(xy 247.015 93.98) (xy 243.205 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7994f0e4-4fa1-4a5a-97af-847cb35b6128")
 	)
 	(wire
 		(pts
@@ -10331,6 +10146,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.205 86.36) (xy 247.015 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb5aa6d8-ce57-4d4f-b708-e0bd3c95b7a5")
+	)
+	(wire
+		(pts
 			(xy 167.64 66.04) (xy 170.18 66.04)
 		)
 		(stroke
@@ -10458,6 +10283,16 @@
 			(type default)
 		)
 		(uuid "d623b9cf-28b7-443d-ae8d-829b308e873c")
+	)
+	(wire
+		(pts
+			(xy 243.205 93.98) (xy 243.205 95.885)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6260118-9c22-4511-9ce8-f637277fee9c")
 	)
 	(wire
 		(pts
@@ -10688,6 +10523,16 @@
 			(type default)
 		)
 		(uuid "edde2ee6-06fe-48df-b315-aca7ba159d0d")
+	)
+	(wire
+		(pts
+			(xy 243.205 84.455) (xy 243.205 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef70ebcc-ef4a-4c26-8cab-d5f0e9c9c5d9")
 	)
 	(wire
 		(pts
@@ -11504,6 +11349,17 @@
 		)
 		(uuid "ada1e75f-7618-4b7a-b7f0-231ae06d8ff4")
 	)
+	(hierarchical_label "3V3_EN"
+		(shape output)
+		(at 215.9 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ae9b7663-3aff-4136-a2e1-b1b5c17bb19d")
+	)
 	(hierarchical_label "I2C3_SCL"
 		(shape input)
 		(at 215.9 167.64 0)
@@ -11615,7 +11471,7 @@
 		(uuid "d935c928-8d5e-4cda-ad96-9816383c6927")
 	)
 	(hierarchical_label "VBat"
-		(shape output)
+		(shape input)
 		(at 160.02 59.69 90)
 		(effects
 			(font
@@ -12147,6 +12003,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 243.205 95.885 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f3cfb42-7aae-49ea-95fc-229402b9e04f")
+		(property "Reference" "#PWR025"
+			(at 243.205 102.235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 244.983 98.425 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.205 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.205 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 243.205 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "265d1dff-34f6-4e73-af5c-d3ced0e83592")
+		)
+		(instances
+			(project "µC_Agri-PV"
+				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/68eeaf65-50b7-4f21-91a4-9a8eefc615e6"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 69.85 295.91 270)
 		(unit 1)
@@ -12649,6 +12571,72 @@
 			(project "µC_Agri-PV"
 				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/68eeaf65-50b7-4f21-91a4-9a8eefc615e6"
 					(reference "Boot_STM1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 243.205 84.455 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30a8478d-871c-4b42-a14a-fc71c72230c7")
+		(property "Reference" "#PWR024"
+			(at 243.205 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 241.681 82.677 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.205 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.205 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 243.205 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3709881b-c287-4e19-83ee-7aeddbb49825")
+		)
+		(instances
+			(project "µC_Agri-PV"
+				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/68eeaf65-50b7-4f21-91a4-9a8eefc615e6"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -15309,6 +15297,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x04_Pin")
+		(at 252.095 88.9 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab38ee74-c1d6-422d-834a-c0babd42a14e")
+		(property "Reference" "J1"
+			(at 254 91.4401 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x04_Pin"
+			(at 254 88.9001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 252.095 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.095 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 252.095 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "a3c6d05b-0f5d-4e4d-8779-6d2d22bd60c4")
+		)
+		(pin "4"
+			(uuid "11488d11-7a81-4692-91f9-3411a86f8d73")
+		)
+		(pin "1"
+			(uuid "487f7aef-db9d-4df2-9a97-ef1a230c0327")
+		)
+		(pin "2"
+			(uuid "dbc184e0-12d8-429a-9415-d3951fb7796a")
+		)
+		(instances
+			(project "µC_Agri-PV"
+				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/68eeaf65-50b7-4f21-91a4-9a8eefc615e6"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 125.73 134.62 0)
 		(unit 1)
@@ -16969,126 +17034,6 @@
 			(project ""
 				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/68eeaf65-50b7-4f21-91a4-9a8eefc615e6"
 					(reference "#PWR0202")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SamacSys_Parts:FC-13532.7680KA-AG5")
-		(at 254.635 201.295 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fa1407c3-53dd-4432-bba7-2740c25a31a4")
-		(property "Reference" "Y1"
-			(at 259.715 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "FC-13532.7680KA-AG5"
-			(at 259.715 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FC135327680KAAG5"
-			(at 263.525 297.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://support.epson.biz/td/api/doc_check.php?dl=brief_FC-135&lang=en"
-			(at 263.525 397.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "32.768kHz +/-20ppm Crystal 7pF 70 kOhms 2-SMD, No Lead"
-			(at 254.635 201.295 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.9"
-			(at 263.525 597.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 263.525 697.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 263.525 797.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Seiko Epson Corporation"
-			(at 263.525 897.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "FC-13532.7680KA-AG5"
-			(at 263.525 997.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "c4bb2841-52f3-4ba1-9c7e-36b14fe200bc")
-		)
-		(pin "2"
-			(uuid "c584a04b-ede9-494f-9eca-82e47fb01b6b")
-		)
-		(instances
-			(project ""
-				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/68eeaf65-50b7-4f21-91a4-9a8eefc615e6"
-					(reference "Y1")
 					(unit 1)
 				)
 			)

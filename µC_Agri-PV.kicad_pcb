@@ -148,7 +148,6 @@
 			(psnegative no)
 			(psa4output no)
 			(plot_black_and_white yes)
-			(plotinvisibletext no)
 			(sketchpadsonfab no)
 			(plotpadnumbers no)
 			(hidednponfab no)
@@ -226,7 +225,7 @@
 	(net 61 "Net-(D703-A)")
 	(net 62 "Net-(Q803-D)")
 	(net 63 "unconnected-(IC201-I{slash}01-Pad1)")
-	(net 64 "/STM32U575ZIT6Q/DEBUG_JTRST")
+	(net 64 "VBAT")
 	(net 65 "unconnected-(IC201-I{slash}02-Pad3)")
 	(net 66 "Net-(Q805-D)")
 	(net 67 "Net-(Chip_EN1-Pad2)")
@@ -354,7 +353,7 @@
 	(net 189 "/LoRa-E5/UART_RX")
 	(net 190 "/LoRa-E5/NRST2")
 	(net 191 "Net-(R601-Pad1)")
-	(net 192 "/IO and mounting holes/NRST")
+	(net 192 "/Power Supply/3V3_VDD")
 	(net 193 "/IO and mounting holes/USB_D-")
 	(net 194 "/IO and mounting holes/USB_D+")
 	(net 195 "/IO and mounting holes/PC14-OSC32_IN")
@@ -367,53 +366,56 @@
 	(net 202 "Net-(U3-IO15)")
 	(net 203 "/ESP32-C6-WROOM-1-N8/ESP32_MISO")
 	(net 204 "unconnected-(U202-PD8-Pad77)")
-	(net 205 "unconnected-(U202-PB15-Pad76)")
-	(net 206 "unconnected-(U202-PB2-Pad45)")
-	(net 207 "unconnected-(U202-PE11-Pad61)")
-	(net 208 "unconnected-(U202-PD9-Pad78)")
-	(net 209 "unconnected-(U202-PG13-Pad127)")
-	(net 210 "unconnected-(U202-PG10-Pad125)")
-	(net 211 "unconnected-(U202-PE10-Pad60)")
-	(net 212 "unconnected-(U202-PF13-Pad50)")
-	(net 213 "unconnected-(U202-PD6-Pad122)")
-	(net 214 "unconnected-(U202-PA2-Pad35)")
-	(net 215 "unconnected-(U202-PD10-Pad79)")
-	(net 216 "/ESP32-C6-WROOM-1-N8/ESP32_NSS")
-	(net 217 "/STM32U575ZIT6Q/PAR_EN")
-	(net 218 "unconnected-(U202-PD7-Pad123)")
-	(net 219 "unconnected-(U202-PG15-Pad131)")
-	(net 220 "unconnected-(U202-PF6-Pad18)")
-	(net 221 "unconnected-(U202-PG9-Pad124)")
-	(net 222 "/ESP32-C6-WROOM-1-N8/ESP32_SCK")
-	(net 223 "unconnected-(U202-PG1-Pad54)")
-	(net 224 "unconnected-(U202-PG14-Pad128)")
-	(net 225 "unconnected-(U202-PG12-Pad126)")
-	(net 226 "unconnected-(U202-PE0-Pad140)")
-	(net 227 "unconnected-(U202-PD11-Pad80)")
-	(net 228 "unconnected-(U202-PF12-Pad47)")
-	(net 229 "unconnected-(U202-PE9-Pad57)")
-	(net 230 "unconnected-(U202-PE1-Pad141)")
-	(net 231 "/ESP32-C6-WROOM-1-N8/ESP32_MOSI")
-	(net 232 "unconnected-(U202-PF9-Pad21)")
-	(net 233 "unconnected-(U202-PG0-Pad53)")
-	(net 234 "unconnected-(U202-PD15-Pad86)")
-	(net 235 "unconnected-(U202-PF10-Pad22)")
-	(net 236 "unconnected-(U202-PA3-Pad36)")
-	(net 237 "unconnected-(U202-PF11-Pad46)")
-	(net 238 "unconnected-(U3-NC-Pad22)")
-	(net 239 "unconnected-(U3-IO22-Pad20)")
-	(net 240 "unconnected-(U3-IO2-Pad27)")
-	(net 241 "unconnected-(U3-IO3-Pad26)")
-	(net 242 "Net-(U701-R_trim)")
-	(net 243 "unconnected-(U702-OUT_D-Pad14)")
-	(net 244 "unconnected-(U702-OUT_C-Pad8)")
-	(net 245 "unconnected-(U702-IN_D-Pad13)")
-	(net 246 "unconnected-(U702-IN_C-Pad9)")
-	(net 247 "unconnected-(U702-+IN_C-Pad10)")
-	(net 248 "unconnected-(U702-+IN_D-Pad12)")
-	(net 249 "/IO and mounting holes/USB_1_D+")
-	(net 250 "/IO and mounting holes/USB_1_D-")
-	(net 251 "GND1")
+	(net 205 "unconnected-(U202-PB2-Pad45)")
+	(net 206 "unconnected-(U202-PE11-Pad61)")
+	(net 207 "unconnected-(U202-PD9-Pad78)")
+	(net 208 "unconnected-(U202-PG13-Pad127)")
+	(net 209 "unconnected-(U202-PG10-Pad125)")
+	(net 210 "unconnected-(U202-PE10-Pad60)")
+	(net 211 "unconnected-(U202-PF13-Pad50)")
+	(net 212 "unconnected-(U202-PD6-Pad122)")
+	(net 213 "/IO and mounting holes/DEBUG_NRST")
+	(net 214 "unconnected-(U202-PD10-Pad79)")
+	(net 215 "/ESP32-C6-WROOM-1-N8/ESP32_NSS")
+	(net 216 "/STM32U575ZIT6Q/PAR_EN")
+	(net 217 "unconnected-(U202-PD7-Pad123)")
+	(net 218 "unconnected-(U202-PG15-Pad131)")
+	(net 219 "unconnected-(U202-PF6-Pad18)")
+	(net 220 "unconnected-(U202-PG9-Pad124)")
+	(net 221 "/ESP32-C6-WROOM-1-N8/ESP32_SCK")
+	(net 222 "unconnected-(U202-PG1-Pad54)")
+	(net 223 "unconnected-(U202-PG14-Pad128)")
+	(net 224 "unconnected-(U202-PG12-Pad126)")
+	(net 225 "unconnected-(U202-PE0-Pad140)")
+	(net 226 "unconnected-(U202-PD11-Pad80)")
+	(net 227 "unconnected-(U202-PF12-Pad47)")
+	(net 228 "unconnected-(U202-PE9-Pad57)")
+	(net 229 "unconnected-(U202-PE1-Pad141)")
+	(net 230 "/ESP32-C6-WROOM-1-N8/ESP32_MOSI")
+	(net 231 "unconnected-(U202-PF9-Pad21)")
+	(net 232 "unconnected-(U202-PG0-Pad53)")
+	(net 233 "unconnected-(U202-PD15-Pad86)")
+	(net 234 "unconnected-(U202-PF10-Pad22)")
+	(net 235 "Net-(J1-Pin_3)")
+	(net 236 "unconnected-(U202-PF11-Pad46)")
+	(net 237 "unconnected-(U3-NC-Pad22)")
+	(net 238 "unconnected-(U3-IO22-Pad20)")
+	(net 239 "unconnected-(U3-IO2-Pad27)")
+	(net 240 "unconnected-(U3-IO3-Pad26)")
+	(net 241 "Net-(J1-Pin_2)")
+	(net 242 "unconnected-(U702-OUT_D-Pad14)")
+	(net 243 "unconnected-(U702-OUT_C-Pad8)")
+	(net 244 "unconnected-(U702-IN_D-Pad13)")
+	(net 245 "unconnected-(U702-IN_C-Pad9)")
+	(net 246 "unconnected-(U702-+IN_C-Pad10)")
+	(net 247 "unconnected-(U702-+IN_D-Pad12)")
+	(net 248 "/IO and mounting holes/USB_1_D+")
+	(net 249 "/IO and mounting holes/USB_1_D-")
+	(net 250 "GND1")
+	(net 251 "/Power Supply/3V3_EN")
+	(net 252 "unconnected-(U202-PB4-Pad133)")
+	(net 253 "unconnected-(Y1-CRYSTAL_2-Pad2)")
+	(net 254 "Net-(U701-PROG)")
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "005c6114-ff89-4098-99d2-0281461fceca")
@@ -442,7 +444,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -656,7 +658,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1394,7 +1396,7 @@
 			(at 8.75 9.98 270)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 216 "/ESP32-C6-WROOM-1-N8/ESP32_NSS")
+			(net 215 "/ESP32-C6-WROOM-1-N8/ESP32_NSS")
 			(pinfunction "IO18")
 			(pintype "bidirectional")
 			(solder_mask_margin 0.102)
@@ -1414,7 +1416,7 @@
 			(at 8.75 7.44 270)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 231 "/ESP32-C6-WROOM-1-N8/ESP32_MOSI")
+			(net 230 "/ESP32-C6-WROOM-1-N8/ESP32_MOSI")
 			(pinfunction "IO20")
 			(pintype "bidirectional")
 			(solder_mask_margin 0.102)
@@ -1424,7 +1426,7 @@
 			(at 8.75 6.17 270)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 222 "/ESP32-C6-WROOM-1-N8/ESP32_SCK")
+			(net 221 "/ESP32-C6-WROOM-1-N8/ESP32_SCK")
 			(pinfunction "IO21")
 			(pintype "bidirectional")
 			(solder_mask_margin 0.102)
@@ -1434,7 +1436,7 @@
 			(at 8.75 4.9 270)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 239 "unconnected-(U3-IO22-Pad20)")
+			(net 238 "unconnected-(U3-IO22-Pad20)")
 			(pinfunction "IO22")
 			(pintype "bidirectional+no_connect")
 			(solder_mask_margin 0.102)
@@ -1454,7 +1456,7 @@
 			(at 8.75 2.36 270)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 238 "unconnected-(U3-NC-Pad22)")
+			(net 237 "unconnected-(U3-NC-Pad22)")
 			(pinfunction "NC")
 			(pintype "no_connect")
 			(solder_mask_margin 0.102)
@@ -1494,7 +1496,7 @@
 			(at 8.75 -2.72 270)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 241 "unconnected-(U3-IO3-Pad26)")
+			(net 240 "unconnected-(U3-IO3-Pad26)")
 			(pinfunction "IO3")
 			(pintype "bidirectional+no_connect")
 			(solder_mask_margin 0.102)
@@ -1504,7 +1506,7 @@
 			(at 8.75 -3.99 270)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 240 "unconnected-(U3-IO2-Pad27)")
+			(net 239 "unconnected-(U3-IO2-Pad27)")
 			(pinfunction "IO2")
 			(pintype "bidirectional+no_connect")
 			(solder_mask_margin 0.102)
@@ -1684,7 +1686,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1844,7 +1846,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pintype "passive")
 			(uuid "e70abf8a-455a-4c5f-826a-73aec5faced5")
 		)
@@ -1898,7 +1900,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2408,7 +2410,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2622,7 +2624,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2836,7 +2838,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2996,7 +2998,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pintype "passive")
 			(uuid "926428ae-a11a-496a-97e9-a261e52e992a")
 		)
@@ -3050,7 +3052,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3264,7 +3266,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3500,7 +3502,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3675,6 +3677,218 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(layer "F.Cu")
+		(uuid "0c594610-f7ab-4204-8948-325f27be96c2")
+		(at 47.4625 13.5)
+		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
+		(tags "capacitor handsolder")
+		(property "Reference" "C734"
+			(at 0 -1.68 0)
+			(layer "F.SilkS")
+			(uuid "84fdef43-97c7-4a8c-8f40-48dd9221a09b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 0 1.68 0)
+			(layer "F.Fab")
+			(uuid "e98d1b28-c2f2-4d64-9c13-dd1c7e035045")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "39876502-d7e6-4682-973d-cfdd40a4cfc4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2df2d81-118e-4b5e-9e5b-afd1064d3eaa")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-CC805KRX7R9BB104"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1c335287-c78d-45a4-b85d-6fd88a3173bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/6740d21d-71b5-4364-b2ea-66b4d911be84/ef6664a7-21d5-46db-a1b8-5b0de8cbf5af")
+		(sheetname "/Power Supply/")
+		(sheetfile "Power.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.261252 -0.735)
+			(end 0.261252 -0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1a24d05e-8e13-4565-90d5-a50b347a629c")
+		)
+		(fp_line
+			(start -0.261252 0.735)
+			(end 0.261252 0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d7f3e0b6-6b59-48be-8969-9763827eb915")
+		)
+		(fp_line
+			(start -1.88 -0.98)
+			(end 1.88 -0.98)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "70fa6a15-a440-44aa-8432-e59c0a5fc28b")
+		)
+		(fp_line
+			(start -1.88 0.98)
+			(end -1.88 -0.98)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e19ae62b-d6a8-449d-a0b7-393673a7bb92")
+		)
+		(fp_line
+			(start 1.88 -0.98)
+			(end 1.88 0.98)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e961b90a-cd04-445f-b1c6-1f2faf137c7b")
+		)
+		(fp_line
+			(start 1.88 0.98)
+			(end -1.88 0.98)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "102de39b-8bcb-465f-88df-72987214ab79")
+		)
+		(fp_line
+			(start -1 -0.625)
+			(end 1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "586c4a74-efd5-4fc9-9527-7a117e867242")
+		)
+		(fp_line
+			(start -1 0.625)
+			(end -1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bd34ad17-2aa2-427d-a63c-dc0ccdf76d35")
+		)
+		(fp_line
+			(start 1 -0.625)
+			(end 1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "55c5c040-b8c2-41f5-840f-85c98ef9e707")
+		)
+		(fp_line
+			(start 1 0.625)
+			(end -1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "156145d1-ae47-4500-962f-9e1558fab426")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "2249f149-c63a-4b3e-999f-d2e6a9cef4d2")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1.0375 0)
+			(size 1.175 1.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.212766)
+			(net 37 "/Power Supply/VBat")
+			(pintype "passive")
+			(uuid "ff2d64b6-c674-4f67-b5ae-1d1c3c9a118d")
+		)
+		(pad "2" smd roundrect
+			(at 1.0375 0)
+			(size 1.175 1.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.212766)
+			(net 5 "GND")
+			(pintype "passive")
+			(uuid "6d5c0cb6-60bd-46b8-8fd0-49b1623844f7")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4006,7 +4220,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4294,7 +4508,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4479,309 +4693,6 @@
 				(xyz 0 0 0)
 			)
 		)
-	)
-	(footprint "TP4056:TP4056-18650"
-		(layer "F.Cu")
-		(uuid "15474d74-8fa1-418b-b6c2-67c2f55fbf1b")
-		(at 50.175 133.4425 180)
-		(property "Reference" "U701"
-			(at 0 -2.3375 180)
-			(layer "F.SilkS")
-			(uuid "bb986484-cfd5-42ba-8a49-66aa6d2e0076")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 13 -1.6 0)
-			(layer "F.Fab")
-			(uuid "78124063-256e-4081-9e4c-db394ac9ca8d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.de/datasheet/2/830/TP4056-2487427.pdf"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3fde04ec-e808-4669-b494-a54787be3a4a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5e299b45-0176-4517-ad8e-afed4eb066f6")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "DESCRIPTION" "LiPo Ladeplatine"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8c43d70c-7502-47f9-9096-b677e7b78c76")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/6740d21d-71b5-4364-b2ea-66b4d911be84/6eb78d6f-8be4-4090-86f0-791a0d56f63e")
-		(sheetname "/Power Supply/")
-		(sheetfile "Power.kicad_sch")
-		(attr through_hole)
-		(fp_rect
-			(start 5.08 -15.24)
-			(end -5.08 -7.62)
-			(stroke
-				(width 0.1)
-				(type default)
-			)
-			(fill no)
-			(layer "F.SilkS")
-			(uuid "52fb0636-4663-46ca-8755-3211c858d215")
-		)
-		(fp_rect
-			(start -8.5 -14)
-			(end 8.5 14)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(fill no)
-			(layer "F.SilkS")
-			(uuid "669d96e5-f5e7-4731-b676-4abc842f2635")
-		)
-		(fp_text user "Out+"
-			(at 7.5 9.6175 90)
-			(layer "F.SilkS")
-			(uuid "386bf298-f78e-441f-8514-7951650f3bf3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "USB"
-			(at 0 -10.3825 0)
-			(layer "F.SilkS")
-			(uuid "444cc6f9-c2a7-4f09-a330-23b58362abde")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "Battery Charger 1A"
-			(at 0.75 -3.75 0)
-			(layer "F.SilkS")
-			(uuid "47417375-0bb1-49ce-b4a4-27bdd2f89fe6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "B-"
-			(at -3.45 13.2675 0)
-			(layer "F.SilkS")
-			(uuid "4d01df35-f4d5-49ac-98a2-b7d230f369ae")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "Out-"
-			(at -0.6 13.3175 180)
-			(layer "F.SilkS")
-			(uuid "50eb3a04-3004-4621-a62d-c594a0976833")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "5v"
-			(at 7.5 -10.75 0)
-			(layer "F.SilkS")
-			(uuid "654b8f61-038b-484c-a27f-554e7271f315")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "+"
-			(at 6 -10.6325 0)
-			(layer "F.SilkS")
-			(uuid "6715759a-e3e8-4032-9195-b477d4be0312")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "GND"
-			(at -5.5 -11.5 0)
-			(layer "F.SilkS")
-			(uuid "904d6639-2402-404c-8bea-50e217985192")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "-"
-			(at -3.25 -11.3825 0)
-			(layer "F.SilkS")
-			(uuid "975d81e3-9317-4c9e-8177-24f63e46a52d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "B+"
-			(at 5.375 11.3425 0)
-			(layer "F.SilkS")
-			(uuid "c013fa7a-a3a3-4ece-97ac-2955cf8fea1b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "USB B Micro"
-			(at -5 -12 180)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(uuid "d2667c7e-f90a-4d53-b6f7-3cef08b34aeb")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.1)
-				)
-				(justify left bottom)
-			)
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 2.5 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "85f67e02-cfbc-4736-ac7e-b05e78bd36d1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at -7.62 -12.7 180)
-			(size 1.524 1.524)
-			(drill 0.762)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 5 "GND")
-			(pinfunction "Vss_IN")
-			(pintype "power_in")
-			(uuid "22991b00-28b9-42df-85b4-c4b3a5086e53")
-		)
-		(pad "2" thru_hole circle
-			(at -7.62 -10.16 180)
-			(size 1.524 1.524)
-			(drill 0.762)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 242 "Net-(U701-R_trim)")
-			(pinfunction "R_trim")
-			(pintype "output")
-			(uuid "e7488a83-a0c3-4df8-b491-b55fb765ab55")
-		)
-		(pad "3" thru_hole circle
-			(at -7.62 12.7 180)
-			(size 1.524 1.524)
-			(drill 0.762)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 5 "GND")
-			(pinfunction "Vss_OUT")
-			(pintype "power_out")
-			(uuid "a93f8276-bc2f-4589-851a-a6456a7540a5")
-		)
-		(pad "4" thru_hole circle
-			(at -5.08 12.7 180)
-			(size 1.524 1.524)
-			(drill 0.762)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 5 "GND")
-			(pinfunction "B-")
-			(pintype "power_out")
-			(uuid "e470f396-894a-48d6-834d-6249759f0775")
-		)
-		(pad "5" thru_hole circle
-			(at 5.08 12.7 180)
-			(size 1.524 1.524)
-			(drill 0.762)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 153 "+BATT")
-			(pinfunction "B+")
-			(pintype "power_out")
-			(uuid "645599bb-1b91-4e0c-89eb-e828e8dc0ebf")
-		)
-		(pad "6" thru_hole circle
-			(at 7.62 12.7 180)
-			(size 1.524 1.524)
-			(drill 0.762)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 59 "/Power Supply/Vdd_Bat")
-			(pinfunction "Vcc_OUT")
-			(pintype "power_out")
-			(uuid "acadfde0-2e75-47a2-8c8a-215e77ba86dc")
-		)
-		(pad "7" thru_hole circle
-			(at 7.62 -12.7 180)
-			(size 1.524 1.524)
-			(drill 0.762)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 61 "Net-(D703-A)")
-			(pinfunction "Vcc_IN")
-			(pintype "power_in")
-			(uuid "8da12073-a765-40c7-9691-6c530c2da615")
-		)
-		(embedded_fonts no)
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
@@ -5064,7 +4975,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5687,7 +5598,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5847,7 +5758,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pintype "passive")
 			(uuid "815b58cf-0838-46cc-81ca-705aacd44244")
 		)
@@ -6186,6 +6097,698 @@
 			)
 		)
 	)
+	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(layer "F.Cu")
+		(uuid "177ff5e5-a201-4d9c-88c9-bd99cf72c638")
+		(at 1.795 34.105)
+		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
+		(tags "Through hole pin header THT 1x04 2.54mm single row")
+		(property "Reference" "J1"
+			(at 0 -2.38 0)
+			(layer "F.SilkS")
+			(uuid "e6c335c7-e740-4ed9-9ac2-3cee6faf1756")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04_Pin"
+			(at 0 10 0)
+			(layer "F.Fab")
+			(uuid "ed4c2fb7-bd24-4987-a300-39e23a8d8f37")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c6f15601-6430-46b7-8bf1-40dfc812e0d2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c6fe001b-7be9-4f51-ad62-bf491ccecbf5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/68eeaf65-50b7-4f21-91a4-9a8eefc615e6/ab38ee74-c1d6-422d-834a-c0babd42a14e")
+		(sheetname "/STM32U575ZIT6Q/")
+		(sheetfile "STM32.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -1.38 -1.38)
+			(end 0 -1.38)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "158806cc-61be-4637-bc40-126400d8fad4")
+		)
+		(fp_line
+			(start -1.38 0)
+			(end -1.38 -1.38)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a92abfbc-a768-48e4-b509-721d507de1e4")
+		)
+		(fp_line
+			(start -1.38 1.27)
+			(end -1.38 9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "35af6b1d-3a57-4a5c-aba9-905f7c70e910")
+		)
+		(fp_line
+			(start -1.38 1.27)
+			(end 1.38 1.27)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "53ded26a-62bb-49e9-a6a1-0510b25e9ddc")
+		)
+		(fp_line
+			(start -1.38 9)
+			(end 1.38 9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "00561fe4-1787-4288-ab52-15b027352638")
+		)
+		(fp_line
+			(start 1.38 1.27)
+			(end 1.38 9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a947f5ff-a58e-4855-92ad-334bc0ed6885")
+		)
+		(fp_line
+			(start -1.77 -1.77)
+			(end -1.77 9.39)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3edd2465-521b-4b72-b4a2-3f72b3bd4b7c")
+		)
+		(fp_line
+			(start -1.77 9.39)
+			(end 1.77 9.39)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "67d3c69c-3b2f-41d5-a5e7-888dfa5ea9d7")
+		)
+		(fp_line
+			(start 1.77 -1.77)
+			(end -1.77 -1.77)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4680e055-fdfa-4192-bb00-f02297213a68")
+		)
+		(fp_line
+			(start 1.77 9.39)
+			(end 1.77 -1.77)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "807d87f6-ee1c-4953-8e9e-70b694915806")
+		)
+		(fp_line
+			(start -1.27 -0.635)
+			(end -0.635 -1.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a5238544-6cc2-4714-b389-60639b88d034")
+		)
+		(fp_line
+			(start -1.27 8.89)
+			(end -1.27 -0.635)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d69caf67-3446-4580-8fc9-671d26f987fa")
+		)
+		(fp_line
+			(start -0.635 -1.27)
+			(end 1.27 -1.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b8c1207c-aad4-47a0-8f70-4b920e029165")
+		)
+		(fp_line
+			(start 1.27 -1.27)
+			(end 1.27 8.89)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c64cc7ac-67b0-4736-b225-5b7f5eb280cb")
+		)
+		(fp_line
+			(start 1.27 8.89)
+			(end -1.27 8.89)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f77fc875-9626-4a54-9519-3526987b03ae")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 3.81 90)
+			(layer "F.Fab")
+			(uuid "de749a76-0cda-4fb4-8578-465bc22086ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole rect
+			(at 0 0)
+			(size 1.7 1.7)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 16 "+3.3V")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(uuid "812f626d-b667-46ad-bc77-a8d9621442f5")
+		)
+		(pad "2" thru_hole circle
+			(at 0 2.54)
+			(size 1.7 1.7)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 241 "Net-(J1-Pin_2)")
+			(pinfunction "Pin_2")
+			(pintype "passive")
+			(uuid "f19b425f-da2a-49cb-8d2c-6ede12b5b64f")
+		)
+		(pad "3" thru_hole circle
+			(at 0 5.08)
+			(size 1.7 1.7)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 235 "Net-(J1-Pin_3)")
+			(pinfunction "Pin_3")
+			(pintype "passive")
+			(uuid "bb4bc38e-e592-4074-bd85-203873de3052")
+		)
+		(pad "4" thru_hole circle
+			(at 0 7.62)
+			(size 1.7 1.7)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 5 "GND")
+			(pinfunction "Pin_4")
+			(pintype "passive")
+			(uuid "8e1350d2-dc19-4689-a69f-f8ad6597b5bc")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "TP4056:TP4056-18650-2"
+		(layer "F.Cu")
+		(uuid "17d219df-5452-47af-ba35-da46bcb3b4d7")
+		(at -4.2 16.7 90)
+		(property "Reference" "U701"
+			(at 13.6 19.6 90)
+			(layer "F.SilkS")
+			(uuid "4614ec7d-9dd9-45ba-923c-ab08dbf64d7e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 13 -1.6 90)
+			(layer "F.Fab")
+			(uuid "544762f3-a302-4557-8a99-824e53ff94e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/830/TP4056-2487427.pdf"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8077c3c0-b837-4fdf-bac4-51498dd59dc8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a1370a79-765a-4bf1-944f-5a1ea2b8cc27")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" "Battery Charger 1A"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7e16328-e454-47a1-95f2-8b1231a697fa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/6740d21d-71b5-4364-b2ea-66b4d911be84/6eb78d6f-8be4-4090-86f0-791a0d56f63e")
+		(sheetname "/Power Supply/")
+		(sheetfile "Power.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 28.4 0)
+			(end 28.4 2.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4b59987d-4a8c-4373-9391-e45189f30685")
+		)
+		(fp_line
+			(start 26.3 0)
+			(end 28.4 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d7b5bac2-d800-41c2-925a-1cb9b6d6cd19")
+		)
+		(fp_line
+			(start 0 0)
+			(end 26.3 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "daeb66ad-35da-4724-8af1-33e8a3bcaff3")
+		)
+		(fp_line
+			(start 28.4 2.5)
+			(end 26.1 2.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "64cb8e77-86af-439d-b12e-95ad6f7af385")
+		)
+		(fp_line
+			(start 26.1 2.5)
+			(end 26.1 15.4)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e513c746-bcd4-4b98-a629-3b750d9b1b93")
+		)
+		(fp_line
+			(start 2.9 7.2)
+			(end 2.9 11)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8574b3d8-ec3c-428a-aad0-cb9df2a1c244")
+		)
+		(fp_line
+			(start 0.4 7.2)
+			(end 2.9 7.2)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b6890879-04b8-4ee0-ba95-70626ed20dba")
+		)
+		(fp_line
+			(start 2.9 11)
+			(end 0.4 11)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "edcdd345-90d4-42ac-8e0b-6166f114f100")
+		)
+		(fp_line
+			(start 0.4 11)
+			(end 0.4 7.3)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "715b3555-2e34-494f-87fb-37400c9fc051")
+		)
+		(fp_line
+			(start 28.4 15.4)
+			(end 28.4 15.7)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5a8ecdd5-8a5f-418d-b41e-8335bee723fb")
+		)
+		(fp_line
+			(start 26.3 15.4)
+			(end 28.4 15.4)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "64e5fbfb-16ee-4407-90f8-0c4eda7e3011")
+		)
+		(fp_line
+			(start 26.1 15.4)
+			(end 26.4 15.4)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c29d6509-e1f3-4562-abc1-9c25bf032612")
+		)
+		(fp_line
+			(start 28.4 15.7)
+			(end 28.4 17.8)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3eb3aa3a-b123-4d26-a997-82271e82b9a6")
+		)
+		(fp_line
+			(start 28.4 17.8)
+			(end 0 17.8)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f3afb1ed-8dfc-48a5-a215-41f881b995c7")
+		)
+		(fp_line
+			(start 0 17.8)
+			(end 0 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b0be1df5-e482-4a04-a9a2-0eed414177e8")
+		)
+		(fp_text user "Out-"
+			(at 20.9 16.2 90)
+			(layer "F.SilkS")
+			(uuid "014b5222-57a6-4072-a1d5-cbaefb605b60")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "B+"
+			(at 21.7 5.1 90)
+			(layer "F.SilkS")
+			(uuid "1eda4cfb-c21d-4c63-a3f4-0bec86734f40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "-"
+			(at 4 16.8 90)
+			(layer "F.SilkS")
+			(uuid "527f4f0f-37ff-4f2a-a8a4-8c68e941dfec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "PROG"
+			(at 10 16 90)
+			(layer "F.SilkS")
+			(uuid "65a97621-4f48-434d-b910-0fe9353e564e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "5v"
+			(at 1.7 4.1 90)
+			(layer "F.SilkS")
+			(uuid "7ef00f90-9821-43eb-9a88-09a5c649da20")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "+"
+			(at 3.9 1.6 90)
+			(layer "F.SilkS")
+			(uuid "899e0932-bf5f-43e4-b2b0-88373491099e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "GND"
+			(at 1.8 13.7 90)
+			(layer "F.SilkS")
+			(uuid "9bba3554-943c-40bb-a2f7-739235316f4f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "Out+"
+			(at 20.9 1.6 90)
+			(layer "F.SilkS")
+			(uuid "a0f29f90-ae9e-4941-9dd6-c8122f1b521a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "B-"
+			(at 21.7 12.7 90)
+			(layer "F.SilkS")
+			(uuid "a324e43d-23a7-4bcc-ab3a-f199611e6ffd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "USB"
+			(at 1.6 9.1 0)
+			(layer "F.SilkS")
+			(uuid "b68ce980-6955-4163-b388-6e79181168cf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "Battery Charger 1A"
+			(at 12.7 8.9 90)
+			(layer "F.SilkS")
+			(uuid "e2f4e726-64ec-4920-a730-c7e5291a66dd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole rect
+			(at 1.7 1.7 90)
+			(size 2.8 2.8)
+			(drill 1.54)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 61 "Net-(D703-A)")
+			(pinfunction "5v")
+			(pintype "power_in")
+			(uuid "04c7fd75-c838-4b98-a43b-8c1f86c5534b")
+		)
+		(pad "2" thru_hole rect
+			(at 1.7 15.9 90)
+			(size 2.8 2.8)
+			(drill 1.54)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 5 "GND")
+			(pinfunction "GND")
+			(pintype "power_in")
+			(uuid "486f58d5-4f77-42d8-ab59-989b334502d0")
+		)
+		(pad "3" thru_hole rect
+			(at 24.6 1.7 90)
+			(size 2.8 2.8)
+			(drill 1.54)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 59 "/Power Supply/Vdd_Bat")
+			(pinfunction "Out+")
+			(pintype "power_out")
+			(uuid "1e6c3438-d99d-478d-84e3-b57c1c5e8d1f")
+		)
+		(pad "4" thru_hole rect
+			(at 24.6 16.2 90)
+			(size 2.8 2.8)
+			(drill 1.54)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 5 "GND")
+			(pinfunction "Out-")
+			(pintype "power_out")
+			(uuid "f5b77663-f70e-41ce-b0ff-be97224fc070")
+		)
+		(pad "5" thru_hole rect
+			(at 24.6 5.2 90)
+			(size 2.8 2.8)
+			(drill 1.54)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 153 "+BATT")
+			(pinfunction "B+")
+			(pintype "power_out")
+			(uuid "7921e643-24fd-4a9f-8ea9-d75cf87a450c")
+		)
+		(pad "6" thru_hole rect
+			(at 24.6 12.8 90)
+			(size 2.8 2.8)
+			(drill 1.54)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 5 "GND")
+			(pinfunction "B-")
+			(pintype "power_out")
+			(uuid "ab993aa8-51d8-42da-ab0d-4cbb61c81541")
+		)
+		(pad "7" thru_hole circle
+			(at 6.5 16 90)
+			(size 2.54 2.54)
+			(drill 1.54)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 254 "Net-(U701-PROG)")
+			(pinfunction "PROG")
+			(pintype "input")
+			(uuid "4f09c439-1364-4866-8748-c0bb41457b4c")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "18335290-d1ed-492f-9db6-48fcec433c01")
@@ -6214,7 +6817,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6428,7 +7031,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6890,7 +7493,7 @@
 			(at 2.712 3.81 270)
 			(size 0.65 1.525)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 244 "unconnected-(U702-OUT_C-Pad8)")
+			(net 243 "unconnected-(U702-OUT_C-Pad8)")
 			(pinfunction "OUT_C")
 			(pintype "output+no_connect")
 			(uuid "715a73ba-6f24-4cb2-aa38-3737dc853570")
@@ -6899,7 +7502,7 @@
 			(at 2.712 2.54 270)
 			(size 0.65 1.525)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 246 "unconnected-(U702-IN_C-Pad9)")
+			(net 245 "unconnected-(U702-IN_C-Pad9)")
 			(pinfunction "IN_C")
 			(pintype "input+no_connect")
 			(uuid "95066604-237c-4dac-8d45-8a76743605be")
@@ -6908,7 +7511,7 @@
 			(at 2.712 1.27 270)
 			(size 0.65 1.525)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 247 "unconnected-(U702-+IN_C-Pad10)")
+			(net 246 "unconnected-(U702-+IN_C-Pad10)")
 			(pinfunction "+IN_C")
 			(pintype "input+no_connect")
 			(uuid "a04f0aad-820c-4d38-be96-b46d6e6b64d2")
@@ -6926,7 +7529,7 @@
 			(at 2.712 -1.27 270)
 			(size 0.65 1.525)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 248 "unconnected-(U702-+IN_D-Pad12)")
+			(net 247 "unconnected-(U702-+IN_D-Pad12)")
 			(pinfunction "+IN_D")
 			(pintype "input+no_connect")
 			(uuid "c8dc820d-cb44-4cb8-9d38-d21c5aaf9c74")
@@ -6935,7 +7538,7 @@
 			(at 2.712 -2.54 270)
 			(size 0.65 1.525)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 245 "unconnected-(U702-IN_D-Pad13)")
+			(net 244 "unconnected-(U702-IN_D-Pad13)")
 			(pinfunction "IN_D")
 			(pintype "input+no_connect")
 			(uuid "8553ca1b-ea60-4592-9a90-829353567c6b")
@@ -6944,7 +7547,7 @@
 			(at 2.712 -3.81 270)
 			(size 0.65 1.525)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 243 "unconnected-(U702-OUT_D-Pad14)")
+			(net 242 "unconnected-(U702-OUT_D-Pad14)")
 			(pinfunction "OUT_D")
 			(pintype "output+no_connect")
 			(uuid "1a8f7ec0-c0ea-4f78-84b2-a5d43d14ed60")
@@ -6990,7 +7593,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7204,7 +7807,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7419,7 +8022,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7885,7 +8488,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8099,7 +8702,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8313,7 +8916,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8514,7 +9117,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8674,7 +9277,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pintype "passive")
 			(uuid "91c6c60e-cc79-47b7-a1e1-8fd057926597")
 		)
@@ -8728,7 +9331,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8942,7 +9545,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9128,6 +9731,331 @@
 			)
 		)
 	)
+	(footprint "Package_TO_SOT_SMD:SOT-23"
+		(layer "F.Cu")
+		(uuid "2938aadf-f33d-4db7-ab16-024b242d57c4")
+		(at 24.595 14.775)
+		(descr "SOT, 3 Pin (JEDEC TO-236 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=TO-236), generated with kicad-footprint-generator ipc_gullwing_generator.py")
+		(tags "SOT TO_SOT_SMD")
+		(property "Reference" "Q701"
+			(at 0 -2.4 0)
+			(layer "F.SilkS")
+			(uuid "2084ebb7-182f-41ed-9fa3-63dd2281b5fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "IRLML6402"
+			(at 0 2.4 0)
+			(layer "F.Fab")
+			(uuid "1ed628c1-fa8f-4954-9bef-d1cee08fd78a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f7c5b46-59ef-4635-aeb7-ae9d85669064")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "-3.7A Id, -20V Vds, 65mOhm Rds, P-Channel HEXFET Power MOSFET, SOT-23"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f280a25d-355d-4a36-b64b-ce813d4a6ff2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "SOT?23*")
+		(path "/6740d21d-71b5-4364-b2ea-66b4d911be84/6da0343a-3bfc-4ed0-819e-9104a378c824")
+		(sheetname "/Power Supply/")
+		(sheetfile "Power.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.76 -1.56)
+			(end 0.76 -1.56)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "50700a86-7ab1-4f53-8d72-130e72189b26")
+		)
+		(fp_line
+			(start -0.76 -1.51)
+			(end -0.76 -1.56)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "60a47b2b-3f41-4f12-b617-aae483b87c31")
+		)
+		(fp_line
+			(start -0.76 0.39)
+			(end -0.76 -0.39)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "29b301f0-245d-4761-b4fd-e533dd43836e")
+		)
+		(fp_line
+			(start -0.76 1.56)
+			(end -0.76 1.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "61404039-fee3-4372-a771-6db87bcaa46c")
+		)
+		(fp_line
+			(start 0.76 -1.56)
+			(end 0.76 -0.56)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b2578866-167f-4680-985b-491b4fc271e6")
+		)
+		(fp_line
+			(start 0.76 0.56)
+			(end 0.76 1.56)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "86782826-5dbc-48ea-85c1-34cb0ab1ee8e")
+		)
+		(fp_line
+			(start 0.76 1.56)
+			(end -0.76 1.56)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "cb0e0d47-0b2d-426d-8098-b50c61d4a9e6")
+		)
+		(fp_poly
+			(pts
+				(xy -1.3 -0.38) (xy -1.06 -0.05) (xy -1.54 -0.05)
+			)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.SilkS")
+			(uuid "382b3d08-e37c-44b6-a602-ac69d5397e14")
+		)
+		(fp_line
+			(start -1.93 -1.5)
+			(end -0.9 -1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "fe3bd6f8-9ae1-4693-8149-3e3ca27cce5c")
+		)
+		(fp_line
+			(start -1.93 1.5)
+			(end -1.93 -1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3531f986-3924-48ee-8697-f0a4c675fa69")
+		)
+		(fp_line
+			(start -0.9 -1.7)
+			(end 0.9 -1.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0dd195b2-0915-472c-8ace-04d2d2f89ecc")
+		)
+		(fp_line
+			(start -0.9 -1.5)
+			(end -0.9 -1.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "206fe3e8-c823-4195-823b-2819b41ae122")
+		)
+		(fp_line
+			(start -0.9 1.5)
+			(end -1.93 1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "62c8c961-e87b-4ae2-88bf-7b61d1718e2e")
+		)
+		(fp_line
+			(start -0.9 1.7)
+			(end -0.9 1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3f147cdd-9387-410f-9a82-2bb2c57dbf7c")
+		)
+		(fp_line
+			(start 0.9 -1.7)
+			(end 0.9 -0.55)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "57d6d479-ca9b-43ad-a7d1-b4cd95e509df")
+		)
+		(fp_line
+			(start 0.9 -0.55)
+			(end 1.93 -0.55)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "16262e34-4d78-4c72-97b1-a4eddddfbc5b")
+		)
+		(fp_line
+			(start 0.9 0.55)
+			(end 0.9 1.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "98a40b8f-f8d6-4d0c-a9fc-30ecb8b1ae1a")
+		)
+		(fp_line
+			(start 0.9 1.7)
+			(end -0.9 1.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3c81504c-2e80-415b-8be9-24f16e27588a")
+		)
+		(fp_line
+			(start 1.93 -0.55)
+			(end 1.93 0.55)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c57b93b8-3dff-47c5-8c4a-09474593dd84")
+		)
+		(fp_line
+			(start 1.93 0.55)
+			(end 0.9 0.55)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "60cb8d15-3075-4840-8780-ffbb8bd8450d")
+		)
+		(fp_poly
+			(pts
+				(xy -0.65 -1.125) (xy -0.65 1.45) (xy 0.65 1.45) (xy 0.65 -1.45) (xy -0.325 -1.45)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "4e576922-e5df-4807-ab00-736a4896f321")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "054bd89d-5660-4434-9a78-b4c765a308a1")
+			(effects
+				(font
+					(size 0.72 0.72)
+					(thickness 0.11)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.9375 -0.95)
+			(size 1.475 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 251 "/Power Supply/3V3_EN")
+			(pinfunction "G")
+			(pintype "input")
+			(uuid "437fd015-35c7-4cc2-8c6f-ce14a12ad438")
+		)
+		(pad "2" smd roundrect
+			(at -0.9375 0.95)
+			(size 1.475 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 192 "/Power Supply/3V3_VDD")
+			(pinfunction "S")
+			(pintype "passive")
+			(uuid "a7be2a8b-8a1e-4b2b-89be-71aad93af299")
+		)
+		(pad "3" smd roundrect
+			(at 0.9375 0)
+			(size 1.475 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 16 "+3.3V")
+			(pinfunction "D")
+			(pintype "passive")
+			(uuid "21198d4b-38fd-405a-84b4-8f385664b938")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "2b2913fe-9b43-41e7-b573-2bf7484dd1fd")
@@ -9156,7 +10084,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9303,7 +10231,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 251 "GND1")
+			(net 250 "GND1")
 			(pintype "passive")
 			(uuid "0270b5b4-0b4a-46ab-85f4-820ae3ebd820")
 		)
@@ -9357,7 +10285,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9517,7 +10445,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 16 "+3.3V")
+			(net 192 "/Power Supply/3V3_VDD")
 			(pintype "passive")
 			(uuid "2308a83c-0693-4a80-8178-bb0e5be8a07c")
 		)
@@ -9571,7 +10499,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9785,7 +10713,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9999,7 +10927,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10213,7 +11141,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10427,7 +11355,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10641,7 +11569,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10855,7 +11783,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11069,7 +11997,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11283,7 +12211,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12054,7 +12982,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12648,7 +13576,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12808,7 +13736,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pintype "passive")
 			(uuid "42345ccf-ece1-41ba-b511-dc421cc470c0")
 		)
@@ -12862,7 +13790,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13076,7 +14004,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13290,7 +14218,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13395,7 +14323,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13542,7 +14470,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 251 "GND1")
+			(net 250 "GND1")
 			(pintype "passive")
 			(uuid "ab2a40b3-f78b-4028-994d-ba36b8841ec1")
 		)
@@ -13597,7 +14525,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14061,7 +14989,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14276,7 +15204,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16523,7 +17451,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16737,7 +17665,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16951,7 +17879,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17098,7 +18026,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 251 "GND1")
+			(net 250 "GND1")
 			(pintype "passive")
 			(uuid "0a00864b-860e-4ac4-931d-950759d819db")
 		)
@@ -17152,7 +18080,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17323,7 +18251,7 @@
 			(at -0.65 0 270)
 			(size 1 0.5)
 			(layers "F.Cu" "F.Mask")
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pinfunction "A")
 			(pintype "passive")
 			(zone_connect 2)
@@ -17421,7 +18349,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18248,7 +19176,7 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "d9a5ed35-9e64-40cb-8842-4da39fbef01f")
@@ -18258,7 +19186,7 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 220 "unconnected-(U202-PF6-Pad18)")
+			(net 219 "unconnected-(U202-PF6-Pad18)")
 			(pinfunction "PF6")
 			(pintype "bidirectional+no_connect")
 			(uuid "89797244-4f82-426e-a495-d42f4f052148")
@@ -18288,7 +19216,7 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 232 "unconnected-(U202-PF9-Pad21)")
+			(net 231 "unconnected-(U202-PF9-Pad21)")
 			(pinfunction "PF9")
 			(pintype "bidirectional+no_connect")
 			(uuid "b5f20762-f5ab-43d9-831c-0999cf5741e6")
@@ -18298,7 +19226,7 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 235 "unconnected-(U202-PF10-Pad22)")
+			(net 234 "unconnected-(U202-PF10-Pad22)")
 			(pinfunction "PF10")
 			(pintype "bidirectional+no_connect")
 			(uuid "e53e8bb9-2636-4fc8-a66b-46b7c5bc3fb7")
@@ -18328,7 +19256,7 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 192 "/IO and mounting holes/NRST")
+			(net 213 "/IO and mounting holes/DEBUG_NRST")
 			(pinfunction "NRST")
 			(pintype "input")
 			(uuid "4f3c251c-8b9b-44b0-9bd8-fc033d97bf0a")
@@ -18428,9 +19356,9 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 214 "unconnected-(U202-PA2-Pad35)")
+			(net 241 "Net-(J1-Pin_2)")
 			(pinfunction "PA2")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "5bf081d7-eb68-426b-b48c-b6a3cb4cbaba")
 		)
 		(pad "36" smd roundrect
@@ -18438,9 +19366,9 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 236 "unconnected-(U202-PA3-Pad36)")
+			(net 235 "Net-(J1-Pin_3)")
 			(pinfunction "PA3")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "f171337c-d5f2-42f6-992a-96d753c31885")
 		)
 		(pad "37" smd roundrect
@@ -18458,7 +19386,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "2777efb0-7b64-4326-bb70-9a3f80d20ac9")
@@ -18528,7 +19456,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 206 "unconnected-(U202-PB2-Pad45)")
+			(net 205 "unconnected-(U202-PB2-Pad45)")
 			(pinfunction "PB2")
 			(pintype "bidirectional+no_connect")
 			(uuid "1e795351-301d-4fc8-8602-c47ce1fa88f7")
@@ -18538,7 +19466,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 237 "unconnected-(U202-PF11-Pad46)")
+			(net 236 "unconnected-(U202-PF11-Pad46)")
 			(pinfunction "PF11")
 			(pintype "bidirectional+no_connect")
 			(uuid "f6c22659-adb3-414a-8cde-3568c1ff9588")
@@ -18548,7 +19476,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 228 "unconnected-(U202-PF12-Pad47)")
+			(net 227 "unconnected-(U202-PF12-Pad47)")
 			(pinfunction "PF12")
 			(pintype "bidirectional+no_connect")
 			(uuid "a665032a-7246-456e-a8b9-fa642415f182")
@@ -18568,7 +19496,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "38296305-cdc9-4b44-b09e-c4927a3932ef")
@@ -18578,7 +19506,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 212 "unconnected-(U202-PF13-Pad50)")
+			(net 211 "unconnected-(U202-PF13-Pad50)")
 			(pinfunction "PF13")
 			(pintype "bidirectional+no_connect")
 			(uuid "4bf4c901-eb13-4894-9b5a-4c5a9fc57745")
@@ -18608,7 +19536,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 233 "unconnected-(U202-PG0-Pad53)")
+			(net 232 "unconnected-(U202-PG0-Pad53)")
 			(pinfunction "PG0")
 			(pintype "bidirectional+no_connect")
 			(uuid "bde6ad55-3e79-4825-9077-369d74453847")
@@ -18618,7 +19546,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 223 "unconnected-(U202-PG1-Pad54)")
+			(net 222 "unconnected-(U202-PG1-Pad54)")
 			(pinfunction "PG1")
 			(pintype "bidirectional+no_connect")
 			(uuid "8edf9069-8476-4434-a651-7163fcfe79d8")
@@ -18648,7 +19576,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 229 "unconnected-(U202-PE9-Pad57)")
+			(net 228 "unconnected-(U202-PE9-Pad57)")
 			(pinfunction "PE9")
 			(pintype "bidirectional+no_connect")
 			(uuid "afb2fc9c-524b-489b-8ce2-8a28a066098f")
@@ -18668,7 +19596,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "a6838587-7570-4001-acea-2b32ed049332")
@@ -18678,7 +19606,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 211 "unconnected-(U202-PE10-Pad60)")
+			(net 210 "unconnected-(U202-PE10-Pad60)")
 			(pinfunction "PE10")
 			(pintype "bidirectional+no_connect")
 			(uuid "475ca852-319d-406f-ba40-917d6c037203")
@@ -18688,7 +19616,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 207 "unconnected-(U202-PE11-Pad61)")
+			(net 206 "unconnected-(U202-PE11-Pad61)")
 			(pinfunction "PE11")
 			(pintype "bidirectional+no_connect")
 			(uuid "259e6b67-4455-4456-a845-e3a977776b38")
@@ -18738,7 +19666,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 217 "/STM32U575ZIT6Q/PAR_EN")
+			(net 216 "/STM32U575ZIT6Q/PAR_EN")
 			(pinfunction "PB10")
 			(pintype "bidirectional")
 			(uuid "5b905c2f-c291-4ff0-9e90-78d2062847ad")
@@ -18808,7 +19736,7 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "31dd36ef-37b4-46ef-aa46-50ffe522b8fd")
@@ -18838,9 +19766,9 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 205 "unconnected-(U202-PB15-Pad76)")
+			(net 251 "/Power Supply/3V3_EN")
 			(pinfunction "PB15")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "0487e3ca-152a-4686-a829-dc6446f3378c")
 		)
 		(pad "77" smd roundrect
@@ -18858,7 +19786,7 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 208 "unconnected-(U202-PD9-Pad78)")
+			(net 207 "unconnected-(U202-PD9-Pad78)")
 			(pinfunction "PD9")
 			(pintype "bidirectional+no_connect")
 			(uuid "3a10aae9-9791-424d-9fc5-45a46675ab34")
@@ -18868,7 +19796,7 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 215 "unconnected-(U202-PD10-Pad79)")
+			(net 214 "unconnected-(U202-PD10-Pad79)")
 			(pinfunction "PD10")
 			(pintype "bidirectional+no_connect")
 			(uuid "6d2d4415-1fa8-4d0d-aefd-03831ef86985")
@@ -18878,7 +19806,7 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 227 "unconnected-(U202-PD11-Pad80)")
+			(net 226 "unconnected-(U202-PD11-Pad80)")
 			(pinfunction "PD11")
 			(pintype "bidirectional+no_connect")
 			(uuid "9f76a7f6-f5ac-4b83-ab6b-0c60a282ee79")
@@ -18918,7 +19846,7 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "3285f18c-b9f3-428d-9072-fd9f696cca65")
@@ -18938,7 +19866,7 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 234 "unconnected-(U202-PD15-Pad86)")
+			(net 233 "unconnected-(U202-PD15-Pad86)")
 			(pinfunction "PD15")
 			(pintype "bidirectional+no_connect")
 			(uuid "cdf7a68b-4374-465e-87d1-c3f3608a3e66")
@@ -19158,7 +20086,7 @@
 			(size 1.475 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "c69680fc-d3fb-4f4c-8180-4184a872565f")
@@ -19218,7 +20146,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 216 "/ESP32-C6-WROOM-1-N8/ESP32_NSS")
+			(net 215 "/ESP32-C6-WROOM-1-N8/ESP32_NSS")
 			(pinfunction "PD0")
 			(pintype "bidirectional")
 			(uuid "28e2fd78-ab95-47c8-b656-1b1c0170f1cd")
@@ -19228,7 +20156,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 222 "/ESP32-C6-WROOM-1-N8/ESP32_SCK")
+			(net 221 "/ESP32-C6-WROOM-1-N8/ESP32_SCK")
 			(pinfunction "PD1")
 			(pintype "bidirectional")
 			(uuid "3d8e79fd-5678-4f12-857c-ee867d5a3568")
@@ -19258,7 +20186,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 231 "/ESP32-C6-WROOM-1-N8/ESP32_MOSI")
+			(net 230 "/ESP32-C6-WROOM-1-N8/ESP32_MOSI")
 			(pinfunction "PD4")
 			(pintype "bidirectional")
 			(uuid "3721973f-3c48-4ed5-9067-4d144b4f8a1a")
@@ -19288,7 +20216,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "11718a17-05e6-4d12-a816-0dfaf7fe8c08")
@@ -19298,7 +20226,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 213 "unconnected-(U202-PD6-Pad122)")
+			(net 212 "unconnected-(U202-PD6-Pad122)")
 			(pinfunction "PD6")
 			(pintype "bidirectional+no_connect")
 			(uuid "5928697a-f99c-4947-af4f-870d9351e61d")
@@ -19308,7 +20236,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 218 "unconnected-(U202-PD7-Pad123)")
+			(net 217 "unconnected-(U202-PD7-Pad123)")
 			(pinfunction "PD7")
 			(pintype "bidirectional+no_connect")
 			(uuid "6fca5daa-f9c8-4d7f-839c-9d3e2666ff7a")
@@ -19318,7 +20246,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 221 "unconnected-(U202-PG9-Pad124)")
+			(net 220 "unconnected-(U202-PG9-Pad124)")
 			(pinfunction "PG9")
 			(pintype "bidirectional+no_connect")
 			(uuid "8d24f101-3d08-4c0e-ae3a-17c04f528440")
@@ -19328,7 +20256,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 210 "unconnected-(U202-PG10-Pad125)")
+			(net 209 "unconnected-(U202-PG10-Pad125)")
 			(pinfunction "PG10")
 			(pintype "bidirectional+no_connect")
 			(uuid "3f666aa5-7264-411d-86f1-7cce27a4f4f7")
@@ -19338,7 +20266,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 225 "unconnected-(U202-PG12-Pad126)")
+			(net 224 "unconnected-(U202-PG12-Pad126)")
 			(pinfunction "PG12")
 			(pintype "bidirectional+no_connect")
 			(uuid "91654f53-5ef9-4824-bd40-2e0cdeeae086")
@@ -19348,7 +20276,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 209 "unconnected-(U202-PG13-Pad127)")
+			(net 208 "unconnected-(U202-PG13-Pad127)")
 			(pinfunction "PG13")
 			(pintype "bidirectional+no_connect")
 			(uuid "3a951a6c-8f98-4184-aa93-9d7ef1163919")
@@ -19358,7 +20286,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 224 "unconnected-(U202-PG14-Pad128)")
+			(net 223 "unconnected-(U202-PG14-Pad128)")
 			(pinfunction "PG14")
 			(pintype "bidirectional+no_connect")
 			(uuid "90b58e71-037b-4eec-8ab0-b83bb118004d")
@@ -19388,7 +20316,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 219 "unconnected-(U202-PG15-Pad131)")
+			(net 218 "unconnected-(U202-PG15-Pad131)")
 			(pinfunction "PG15")
 			(pintype "bidirectional+no_connect")
 			(uuid "72cd960d-1156-4bbc-b5a2-f42e2196dc79")
@@ -19408,9 +20336,9 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 64 "/STM32U575ZIT6Q/DEBUG_JTRST")
+			(net 252 "unconnected-(U202-PB4-Pad133)")
 			(pinfunction "PB4")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "251ee594-f9c4-45e8-97f2-9813f9673695")
 		)
 		(pad "134" smd roundrect
@@ -19478,7 +20406,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 226 "unconnected-(U202-PE0-Pad140)")
+			(net 225 "unconnected-(U202-PE0-Pad140)")
 			(pinfunction "PE0")
 			(pintype "bidirectional+no_connect")
 			(uuid "957de55c-a3ba-4996-ba67-2f40849448a2")
@@ -19488,7 +20416,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 230 "unconnected-(U202-PE1-Pad141)")
+			(net 229 "unconnected-(U202-PE1-Pad141)")
 			(pinfunction "PE1")
 			(pintype "bidirectional+no_connect")
 			(uuid "b09f9198-ab2e-46f5-bb58-ec1bc4ff19d3")
@@ -19518,7 +20446,7 @@
 			(size 0.3 1.475)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "5de0a96b-4120-4a45-a97b-bfbfd810eea9")
@@ -19564,7 +20492,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19778,7 +20706,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19993,7 +20921,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20248,7 +21176,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20462,7 +21390,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20913,7 +21841,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21179,7 +22107,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21393,7 +22321,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21607,7 +22535,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21821,7 +22749,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22035,7 +22963,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22249,7 +23177,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22463,7 +23391,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23033,7 +23961,7 @@
 			(drill 0.66)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 242 "Net-(U701-R_trim)")
+			(net 254 "Net-(U701-PROG)")
 			(pinfunction "CCW")
 			(pintype "passive")
 			(uuid "5041f80b-7f0c-4720-8fed-69e0ea76433d")
@@ -23044,7 +23972,7 @@
 			(drill 0.66)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 242 "Net-(U701-R_trim)")
+			(net 254 "Net-(U701-PROG)")
 			(pinfunction "WIPER")
 			(pintype "passive")
 			(uuid "53f42101-5b03-47a0-99f8-45d0c7117e2b")
@@ -23090,7 +24018,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23304,7 +24232,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23772,7 +24700,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24114,7 +25042,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25007,7 +25935,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25221,7 +26149,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25422,7 +26350,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25523,7 +26451,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25737,7 +26665,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25951,7 +26879,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -26165,7 +27093,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -26379,7 +27307,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -26593,7 +27521,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -26753,7 +27681,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pintype "passive")
 			(uuid "e90bea85-b072-49f3-8d94-100e3dd63bb1")
 		)
@@ -26807,7 +27735,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27021,7 +27949,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27508,7 +28436,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27722,7 +28650,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27882,7 +28810,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 250 "/IO and mounting holes/USB_1_D-")
+			(net 249 "/IO and mounting holes/USB_1_D-")
 			(pintype "passive")
 			(uuid "c3e314fb-cb6c-47d7-83de-a840befb6c54")
 		)
@@ -27936,7 +28864,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28150,7 +29078,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28364,7 +29292,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28577,7 +29505,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -28819,7 +29747,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29033,7 +29961,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29247,7 +30175,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29407,7 +30335,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pintype "passive")
 			(uuid "36503adf-61da-4465-ac27-89cb919dbacc")
 		)
@@ -29461,7 +30389,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29675,7 +30603,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29835,7 +30763,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 251 "GND1")
+			(net 250 "GND1")
 			(pintype "passive")
 			(uuid "c978b618-c455-48f9-872d-2ce237fa9117")
 		)
@@ -29890,7 +30818,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -30088,7 +31016,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 16 "+3.3V")
+			(net 192 "/Power Supply/3V3_VDD")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "c2db2165-c886-43d0-884d-73415530d8a5")
@@ -30099,7 +31027,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pinfunction "B")
 			(pintype "passive")
 			(uuid "8ad6cfb0-f404-4f0d-95a2-9d1d9dc3512c")
@@ -30440,7 +31368,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -30751,7 +31679,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31517,7 +32445,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31731,7 +32659,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31946,7 +32874,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32201,7 +33129,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -33130,7 +34058,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -33344,7 +34272,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -33558,7 +34486,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -33718,7 +34646,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 16 "+3.3V")
+			(net 192 "/Power Supply/3V3_VDD")
 			(pintype "passive")
 			(uuid "e1d51863-bce1-4331-9614-01f76852598d")
 		)
@@ -33772,7 +34700,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -33986,7 +34914,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -34146,7 +35074,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pintype "passive")
 			(uuid "cd4bf523-b4b3-433a-8e64-f1105c715b02")
 		)
@@ -34200,7 +35128,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -34414,7 +35342,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -34628,7 +35556,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -35095,7 +36023,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -35255,7 +36183,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pintype "passive")
 			(uuid "f1df4792-a6af-4319-89d3-54a6af38a25f")
 		)
@@ -35309,7 +36237,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -35523,7 +36451,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -35628,7 +36556,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -35842,7 +36770,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -36056,7 +36984,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -36270,7 +37198,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37092,7 +38020,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37307,7 +38235,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37433,7 +38361,7 @@
 			(at 0 0)
 			(size 1.5 1.5)
 			(layers "F.Cu" "F.Mask")
-			(net 16 "+3.3V")
+			(net 192 "/Power Supply/3V3_VDD")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "2143e4ab-67ba-43db-a7d9-9affa3c7be34")
@@ -37468,7 +38396,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37682,7 +38610,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37896,7 +38824,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~https://www.mouser.de/datasheet/2/308/1/MBR120VLSFT1_D-2315205.pdf"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/308/1/MBR120VLSFT1_D-2315205.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -38540,7 +39468,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -38726,6 +39654,218 @@
 			)
 		)
 	)
+	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(layer "F.Cu")
+		(uuid "9fc891f4-8607-4d66-a589-166487f0598c")
+		(at 18 14.5 -90)
+		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+		(tags "resistor handsolder")
+		(property "Reference" "R706"
+			(at 0 -1.65 90)
+			(layer "F.SilkS")
+			(uuid "f4be3f67-ed6c-42d0-86bb-9751856f01a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 0 1.65 90)
+			(layer "F.Fab")
+			(uuid "cb324c1e-bb4f-47b9-8478-f7551c6b0c26")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2e72253-9411-48c4-99b2-d0141ee78009")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93e39ff1-e095-4159-b9c6-f7a94ccfaf86")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "660-RK73B2ATTE104J"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3220f27d-39b7-430a-a802-d51b75b5ee53")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/6740d21d-71b5-4364-b2ea-66b4d911be84/caf0b8a0-0837-4a33-8ef7-1fa28fc1c8e4")
+		(sheetname "/Power Supply/")
+		(sheetfile "Power.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.227064 0.735)
+			(end 0.227064 0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5e8d4361-88f3-4edd-b710-71fe7d4c7c8c")
+		)
+		(fp_line
+			(start -0.227064 -0.735)
+			(end 0.227064 -0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2a1c0827-6f06-45cd-92b8-1a678de598d0")
+		)
+		(fp_line
+			(start -1.85 0.95)
+			(end -1.85 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "558f0127-4019-4a4a-9e0b-5cdc8af5e2ee")
+		)
+		(fp_line
+			(start 1.85 0.95)
+			(end -1.85 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4962f0e2-b376-41d9-82b6-5d5695b9306d")
+		)
+		(fp_line
+			(start -1.85 -0.95)
+			(end 1.85 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "588ef62b-7550-463a-ac90-9e7113beb534")
+		)
+		(fp_line
+			(start 1.85 -0.95)
+			(end 1.85 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "99fd102c-c510-4b79-80e9-b3bcbbd813bd")
+		)
+		(fp_line
+			(start -1 0.625)
+			(end -1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "20022ca9-9728-4c54-89e6-048bb8e7e97c")
+		)
+		(fp_line
+			(start 1 0.625)
+			(end -1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6f1fefb3-0479-4fea-b431-c60cc8070531")
+		)
+		(fp_line
+			(start -1 -0.625)
+			(end 1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8ca71fb7-6b00-4162-b892-750d430cd071")
+		)
+		(fp_line
+			(start 1 -0.625)
+			(end 1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b41be269-b018-46cd-b58c-6ea783c02fb7")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "765b689d-69b9-4df9-8cb4-4c9fe462fe9e")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1 0 270)
+			(size 1.2 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.208333)
+			(net 251 "/Power Supply/3V3_EN")
+			(pintype "passive")
+			(uuid "65d4f302-c8b2-4809-9c2f-70df78c1ce4a")
+		)
+		(pad "2" smd roundrect
+			(at 1 0 270)
+			(size 1.2 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.208333)
+			(net 192 "/Power Supply/3V3_VDD")
+			(pintype "passive")
+			(uuid "167247ec-90ea-461d-8e28-7f1eacf62a49")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK"
 		(layer "F.Cu")
 		(uuid "a0778ab2-ce0c-412a-b322-198d9cc0de0d")
@@ -38755,7 +39895,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -38962,7 +40102,7 @@
 			(size 0.8 2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 192 "/IO and mounting holes/NRST")
+			(net 213 "/IO and mounting holes/DEBUG_NRST")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "531b8b03-1965-46f6-b083-7e495bb07d04")
@@ -39008,7 +40148,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -39495,7 +40635,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -40022,7 +41162,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -40191,7 +41331,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 250 "/IO and mounting holes/USB_1_D-")
+			(net 249 "/IO and mounting holes/USB_1_D-")
 			(pintype "passive")
 			(uuid "3d5895d8-3af3-4787-979a-6734f11a2e22")
 		)
@@ -40236,7 +41376,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -40723,7 +41863,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41142,7 +42282,7 @@
 			(size 1.35 3.7)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.1851851852)
-			(net 251 "GND1")
+			(net 250 "GND1")
 			(pinfunction "Ext")
 			(pintype "passive")
 			(uuid "680bbec3-2fa8-4d5e-8874-22e4929103d9")
@@ -41152,7 +42292,7 @@
 			(size 1.35 3.7)
 			(layers "B.Cu" "B.Mask")
 			(roundrect_rratio 0.1851851852)
-			(net 251 "GND1")
+			(net 250 "GND1")
 			(pinfunction "Ext")
 			(pintype "passive")
 			(uuid "c5fc24d6-229d-4296-9bfa-e132151f696b")
@@ -41162,7 +42302,7 @@
 			(size 1.35 3.7)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.1851851852)
-			(net 251 "GND1")
+			(net 250 "GND1")
 			(pinfunction "Ext")
 			(pintype "passive")
 			(uuid "792a395b-eb04-49fe-86e2-b6fad3cf49cd")
@@ -41172,7 +42312,7 @@
 			(size 1.35 3.7)
 			(layers "B.Cu" "B.Mask")
 			(roundrect_rratio 0.1851851852)
-			(net 251 "GND1")
+			(net 250 "GND1")
 			(pinfunction "Ext")
 			(pintype "passive")
 			(uuid "7c89acfa-5e42-4fba-ac3d-7825cd79bd09")
@@ -41218,7 +42358,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41433,7 +42573,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41941,7 +43081,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42155,7 +43295,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42315,7 +43455,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pintype "passive")
 			(uuid "0c68c986-2a3c-4a42-97be-ab6200f643b4")
 		)
@@ -42369,7 +43509,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42584,7 +43724,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42861,7 +44001,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -43097,7 +44237,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -43622,7 +44762,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -43836,7 +44976,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44050,7 +45190,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44264,7 +45404,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44478,7 +45618,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44692,7 +45832,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44906,7 +46046,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -45121,7 +46261,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -45398,7 +46538,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -45601,7 +46741,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -45815,7 +46955,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46029,7 +47169,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46243,7 +47383,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46458,7 +47598,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46922,7 +48062,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47136,7 +48276,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47641,7 +48781,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47810,7 +48950,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 192 "/IO and mounting holes/NRST")
+			(net 213 "/IO and mounting holes/DEBUG_NRST")
 			(pintype "passive")
 			(uuid "6d7f8b58-ad55-4a7e-bc01-051e027b978f")
 		)
@@ -47855,7 +48995,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -48069,7 +49209,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -48283,7 +49423,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -48389,7 +49529,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -48855,7 +49995,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -49069,7 +50209,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -49283,7 +50423,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -49760,6 +50900,297 @@
 			)
 		)
 	)
+	(footprint "SamacSys_Parts:FC135327680KAAG5"
+		(layer "F.Cu")
+		(uuid "d4af71d3-7e4c-46c2-9698-da0132d58a8c")
+		(at 7.84 34.26)
+		(descr "FC-13532.7680KA-AG5-2")
+		(tags "Crystal or Oscillator")
+		(property "Reference" "Y1"
+			(at -0.225 0 0)
+			(layer "F.SilkS")
+			(uuid "da25e6f6-1a63-4903-8eb8-1a798b6892dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "FC-13532.7680KA-AG5"
+			(at -0.225 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8bc44dbc-d670-4fe0-8521-b73b86113742")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://support.epson.biz/td/api/doc_check.php?dl=brief_FC-135&lang=en"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07a29738-be2c-4457-a621-bd417239b6d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "32.768kHz +/-20ppm Crystal 7pF 70 kOhms 2-SMD, No Lead"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "318699c1-76cc-4729-a9ee-733987251eda")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.9"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2ae5d5ef-d277-40c6-a5d2-5764215df9a8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9162fc6f-7289-4309-b163-3a2c6c9c3a7f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4d02f152-637d-4588-854a-6d362aec9c8f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Seiko Epson Corporation"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9439baf-fb29-4b0c-a8d1-c9d0f9a41491")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FC-13532.7680KA-AG5"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd8dba69-f986-48f1-af95-d5b776bc47c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(sheetname "/STM32U575ZIT6Q/")
+		(sheetfile "STM32.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -2.2 -0.2)
+			(end -2.2 -0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "45d4e5de-e300-4d97-8356-a6712af554c6")
+		)
+		(fp_line
+			(start -2.1 -0.2)
+			(end -2.1 -0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "88271be7-fbf7-4a63-9328-99831ce1f029")
+		)
+		(fp_line
+			(start -0.4 -0.75)
+			(end 0.4 -0.75)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7eab9306-1868-485e-b745-f33f69c6a9c2")
+		)
+		(fp_line
+			(start -0.4 0.75)
+			(end 0.4 0.75)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2090e775-288b-41d8-971b-1e626947cea2")
+		)
+		(fp_arc
+			(start -2.2 -0.2)
+			(mid -2.15 -0.25)
+			(end -2.1 -0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2efc355a-09ee-40d5-aaa2-b02455945c39")
+		)
+		(fp_arc
+			(start -2.1 -0.2)
+			(mid -2.15 -0.15)
+			(end -2.2 -0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7aab136e-e04d-4727-a767-146a7d93ce51")
+		)
+		(fp_line
+			(start -3.2 -1.9)
+			(end 2.75 -1.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "16436060-feaa-4649-946c-3073425ebc54")
+		)
+		(fp_line
+			(start -3.2 1.9)
+			(end -3.2 -1.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ad057845-6f52-471e-bc68-cd9a7f4a33fd")
+		)
+		(fp_line
+			(start 2.75 -1.9)
+			(end 2.75 1.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3e2b5074-0730-43ce-8d70-cda0f64b0c8b")
+		)
+		(fp_line
+			(start 2.75 1.9)
+			(end -3.2 1.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "276e3092-6d19-4f92-afd6-33a2ecbc4c74")
+		)
+		(fp_line
+			(start -1.6 -0.75)
+			(end 1.6 -0.75)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3ede63f2-ca4c-4bf5-889d-8454c25ad2f8")
+		)
+		(fp_line
+			(start -1.6 0.75)
+			(end -1.6 -0.75)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1f0d7d59-cdc2-4eff-9f23-e9f2233ebb62")
+		)
+		(fp_line
+			(start 1.6 -0.75)
+			(end 1.6 0.75)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4271f7d5-01d5-4381-9e4f-e0b3204a74ab")
+		)
+		(fp_line
+			(start 1.6 0.75)
+			(end -1.6 0.75)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b037a6d3-3912-4644-a463-fe5c86cf3092")
+		)
+		(fp_text user "${REFERENCE}"
+			(at -0.225 0 0)
+			(layer "F.Fab")
+			(uuid "f268d9a2-fd63-4356-a82e-1a856105931e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -1.25 0)
+			(size 1 1.8)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(uuid "35124a9d-f826-4373-8c12-c3c7fee577f9")
+		)
+		(pad "2" smd rect
+			(at 1.25 0)
+			(size 1 1.8)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 253 "unconnected-(Y1-CRYSTAL_2-Pad2)")
+			(pinfunction "CRYSTAL_2")
+			(pintype "passive")
+			(uuid "c24cd27c-913c-4ae8-9acc-48bce9285429")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "TPS61023DRLR:DRL0006A"
 		(layer "F.Cu")
 		(uuid "d4b4d176-6fb8-448e-95d5-a30e033caf95")
@@ -50204,7 +51635,7 @@
 			(at -0.740001 -0.000003)
 			(size 0.299999 0.670001)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 217 "/STM32U575ZIT6Q/PAR_EN")
+			(net 216 "/STM32U575ZIT6Q/PAR_EN")
 			(pinfunction "EN")
 			(pintype "input")
 			(uuid "e30d3338-6b08-4beb-b534-4f66cd3af713")
@@ -50275,7 +51706,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -50435,7 +51866,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pintype "passive")
 			(uuid "dadbb164-9b4b-44e6-a95e-b33edc3312c2")
 		)
@@ -50489,7 +51920,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -50703,7 +52134,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -50863,7 +52294,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pintype "passive")
 			(uuid "d7db6266-9af7-446f-87bf-e508a36ca5fb")
 		)
@@ -50917,7 +52348,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51103,6 +52534,279 @@
 			)
 		)
 	)
+	(footprint "SamacSys_Parts:CAPAE1080X550N"
+		(layer "F.Cu")
+		(uuid "dafff952-0d3c-40f6-b2eb-9a71f5ed0ca4")
+		(at 48 20.5)
+		(descr "10.8mm x 10.8mm x 5.5mm")
+		(tags "Capacitor Polarised")
+		(property "Reference" "C733"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "3e20af4c-72e9-4c41-881d-b45a350c57f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "FC0V104ZFTBR24"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1109d56a-8d62-4250-812e-fd25766dec5e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://content.kemet.com/datasheets/KEM_S6011_FC.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "baebdf69-cfeb-4079-9eae-bbbc1453907a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "FC, Supercapacitors, SMD Can, 0.1 F, -20/+80%, 3.5 VDC, 70C, -25C, 70C, V-Chip, 0.09, 1 g, 10.5mm, 5.5mm, 10.8mm, 5mm"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08c5a0ab-d08a-4232-b9a6-dbd90a943790")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "5.5"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a01c9343-0dae-4d13-90cb-6c4505a6738b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "80-FC0V104ZFTBR24"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "014fa823-f00b-40f8-9496-8f491e999f22")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/KEMET/FC0V104ZFTBR24?qs=pfd5qewlna6EgB0gPZyt9Q%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b44fca80-ba7b-4c74-ae39-1d5bf8970a27")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "KEMET"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c48b9c1c-d12d-43dd-ad8c-c34cb6f7be09")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FC0V104ZFTBR24"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6745c2a-7bba-4655-bd6f-182830b69f2e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/6740d21d-71b5-4364-b2ea-66b4d911be84/13726156-6f19-406c-ab52-9abbcab8da89")
+		(sheetname "/Power Supply/")
+		(sheetfile "Power.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -7.275 -5.4)
+			(end 5.4 -5.4)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d0ceafab-a556-4a4f-9f45-1850a7622373")
+		)
+		(fp_line
+			(start -2.7 5.4)
+			(end 5.4 5.4)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a3c35fb1-a920-4675-b7d9-f9ec12df10ae")
+		)
+		(fp_line
+			(start -7.775 -6)
+			(end 7.775 -6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f054ea30-4992-4c59-958e-ed7041238d52")
+		)
+		(fp_line
+			(start -7.775 6)
+			(end -7.775 -6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "72a572ce-dd3f-46e1-aaf7-2a4de43a72c1")
+		)
+		(fp_line
+			(start 7.775 -6)
+			(end 7.775 6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d100bc92-a47d-4e7c-8cf5-1ba413a24514")
+		)
+		(fp_line
+			(start 7.775 6)
+			(end -7.775 6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1c018dcc-d11b-412c-bb7b-0ca6b398d577")
+		)
+		(fp_line
+			(start -5.4 -2.7)
+			(end -5.4 2.7)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b5b7338b-1957-478a-8872-053d39e41c51")
+		)
+		(fp_line
+			(start -5.4 2.7)
+			(end -2.7 5.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b1ac1409-89ba-422e-a89c-e5b4a97ecbc9")
+		)
+		(fp_line
+			(start -2.7 -5.4)
+			(end -5.4 -2.7)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a46a84eb-3ad2-4c82-a1f7-c5f2963a1020")
+		)
+		(fp_line
+			(start -2.7 5.4)
+			(end 5.4 5.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7b4d2bdf-7ee6-4dbb-8462-b4b04de39736")
+		)
+		(fp_line
+			(start 5.4 -5.4)
+			(end -2.7 -5.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f5c6ae1a-b0ab-425f-a549-8fd8374db16f")
+		)
+		(fp_line
+			(start 5.4 5.4)
+			(end 5.4 -5.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "23c7d3e8-e41b-4973-90f3-4f1cf256b564")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "5f9d21bc-3133-4e27-97d1-c2ec5ef144c4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -4.6 0 90)
+			(size 2.35 5.35)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 37 "/Power Supply/VBat")
+			(pinfunction "+")
+			(pintype "passive")
+			(uuid "2a22f04d-701e-48fe-b165-2ba94fb5e0fb")
+		)
+		(pad "2" smd rect
+			(at 4.6 0 90)
+			(size 2.35 5.35)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 5 "GND")
+			(pinfunction "-")
+			(pintype "passive")
+			(uuid "2675fe1f-629d-49de-9cb6-d2c29151fd61")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "db9b05d0-32e4-4d5c-8f89-b2bff93ad6a7")
@@ -51131,7 +52835,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51590,6 +53294,259 @@
 			)
 		)
 	)
+	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(layer "F.Cu")
+		(uuid "e65874d5-2e6b-4dd3-8ca1-ca9af7583f92")
+		(at 14.5 22.46)
+		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
+		(tags "Through hole pin header THT 1x02 2.54mm single row")
+		(property "Reference" "JP_3V3"
+			(at 0 -2.38 0)
+			(layer "F.SilkS")
+			(uuid "7c98d2fb-a215-4c61-9d3e-c0fb8b3e4cf5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Jumper_2_Bridged"
+			(at 0 4.92 0)
+			(layer "F.Fab")
+			(uuid "846b2d9e-2675-4e0b-b7ca-92ae7741f4b3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "59293a39-a042-4d5e-a11e-9d5724fb4e1b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a61f7e3-4046-4afe-b3d4-5971b2cd7752")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Jumper* TestPoint*2Pads* TestPoint*Bridge*")
+		(path "/6740d21d-71b5-4364-b2ea-66b4d911be84/b781d6e3-f4e5-4b14-b438-1f39426791f7")
+		(sheetname "/Power Supply/")
+		(sheetfile "Power.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -1.38 -1.38)
+			(end 0 -1.38)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3a9bbd3c-3172-4b0f-9435-e39595be15a2")
+		)
+		(fp_line
+			(start -1.38 0)
+			(end -1.38 -1.38)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "dd36f8fd-73c7-462c-9af5-da8d64ef2330")
+		)
+		(fp_line
+			(start -1.38 1.27)
+			(end -1.38 3.92)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1732c1b3-45f0-4f91-9dea-77d4c4389da2")
+		)
+		(fp_line
+			(start -1.38 1.27)
+			(end 1.38 1.27)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2ac7eccd-4d71-4187-91f6-1f5b1dac5b7a")
+		)
+		(fp_line
+			(start -1.38 3.92)
+			(end 1.38 3.92)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d2d3009a-5364-466b-9c98-b7e081b2fea5")
+		)
+		(fp_line
+			(start 1.38 1.27)
+			(end 1.38 3.92)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "42afeddf-709e-43b5-a0df-54875105ca7b")
+		)
+		(fp_line
+			(start -1.77 -1.77)
+			(end -1.77 4.32)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7ca4f8c5-5db1-44e7-a20b-a942a935700c")
+		)
+		(fp_line
+			(start -1.77 4.32)
+			(end 1.77 4.32)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f177fafa-0b91-451a-887a-ea0f378c3188")
+		)
+		(fp_line
+			(start 1.77 -1.77)
+			(end -1.77 -1.77)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0f3cdb07-2edf-48af-930d-ec5b1dbe2a60")
+		)
+		(fp_line
+			(start 1.77 4.32)
+			(end 1.77 -1.77)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8290efec-21b3-4343-80cf-ab6b2f6aee6c")
+		)
+		(fp_line
+			(start -1.27 -0.635)
+			(end -0.635 -1.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8b7f66a4-2eb4-4c5f-907a-2fa9664bfb0c")
+		)
+		(fp_line
+			(start -1.27 3.81)
+			(end -1.27 -0.635)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "522704dd-0c55-48ac-b361-15a01c99750f")
+		)
+		(fp_line
+			(start -0.635 -1.27)
+			(end 1.27 -1.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ba5b9eb1-3e7c-41de-8b0e-e02d191f7994")
+		)
+		(fp_line
+			(start 1.27 -1.27)
+			(end 1.27 3.81)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ed38716b-a117-4ca4-81cc-8f16a6362599")
+		)
+		(fp_line
+			(start 1.27 3.81)
+			(end -1.27 3.81)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0c08c47b-fc8e-426d-9042-c81653d1be07")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 1.27 90)
+			(layer "F.Fab")
+			(uuid "e4c4b3a1-79ec-44a0-83ef-f93eca908ce8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole rect
+			(at 0 0)
+			(size 1.7 1.7)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 192 "/Power Supply/3V3_VDD")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "8d7a0d2a-7f21-4d3a-983b-39c877cbad48")
+		)
+		(pad "2" thru_hole circle
+			(at 0 2.54)
+			(size 1.7 1.7)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 16 "+3.3V")
+			(pinfunction "B")
+			(pintype "passive")
+			(uuid "0378b663-cad9-4bf6-998c-364cd4c4a017")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "e7c780d2-df29-4de8-85aa-b279099473cd")
@@ -51618,7 +53575,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51833,7 +53790,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -52411,7 +54368,7 @@
 			(drill 0.7112)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 64 "/STM32U575ZIT6Q/DEBUG_JTRST")
+			(net 213 "/IO and mounting holes/DEBUG_NRST")
 			(pinfunction "10")
 			(pintype "unspecified")
 			(uuid "753f3819-54d3-457c-912a-e46a3960a257")
@@ -52447,7 +54404,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -52862,7 +54819,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -53117,7 +55074,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -53286,7 +55243,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 249 "/IO and mounting holes/USB_1_D+")
+			(net 248 "/IO and mounting holes/USB_1_D+")
 			(pintype "passive")
 			(uuid "8703a100-55b4-459e-9b9e-ad00d31b4ea3")
 		)
@@ -53331,7 +55288,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -53545,7 +55502,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -53759,7 +55716,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -54310,7 +56267,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -54587,7 +56544,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -54747,7 +56704,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pintype "passive")
 			(uuid "2bbef292-51cc-41cc-9ed3-8adee9c92ce0")
 		)
@@ -55046,7 +57003,7 @@
 			(at 0.95 -0.65)
 			(size 0.4 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 64 "/STM32U575ZIT6Q/DEBUG_JTRST")
+			(net 213 "/IO and mounting holes/DEBUG_NRST")
 			(pinfunction "I/04")
 			(pintype "passive")
 			(uuid "d4aec4c9-b675-40c4-bfc1-95322fd32bc1")
@@ -55092,7 +57049,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -55307,7 +57264,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -55771,7 +57728,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -56692,7 +58649,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -56906,7 +58863,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -57120,7 +59077,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -57562,7 +59519,7 @@
 			(at -1.45 -0.5 180)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 16 "+3.3V")
+			(net 192 "/Power Supply/3V3_VDD")
 			(pinfunction "FB")
 			(pintype "passive")
 			(uuid "889990af-fbed-461b-8b8e-635ebfc6a7fe")
@@ -57571,7 +59528,7 @@
 			(at -1.45 0 180)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 16 "+3.3V")
+			(net 192 "/Power Supply/3V3_VDD")
 			(pinfunction "VOUT_1")
 			(pintype "passive")
 			(uuid "c4900dfc-c699-4ee0-8b8d-a43fcd0c9f82")
@@ -57580,7 +59537,7 @@
 			(at -1.45 0.5 180)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 16 "+3.3V")
+			(net 192 "/Power Supply/3V3_VDD")
 			(pinfunction "VOUT_2")
 			(pintype "passive")
 			(uuid "625a9737-1f63-4bbb-a860-351d04b0088e")
@@ -57716,7 +59673,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -57953,7 +59910,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -58230,7 +60187,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -58390,7 +60347,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 249 "/IO and mounting holes/USB_1_D+")
+			(net 248 "/IO and mounting holes/USB_1_D+")
 			(pintype "passive")
 			(uuid "260ee2a7-41c2-4da3-a495-42d12f29551a")
 		)
@@ -58660,7 +60617,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -58820,7 +60777,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pintype "passive")
 			(uuid "f7655ccf-1a93-4ab2-8643-061aaefd4efd")
 		)
@@ -58874,7 +60831,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -59151,7 +61108,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -59407,7 +61364,7 @@
 			(at -0.675 -1.765 180)
 			(size 1.65 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 250 "/IO and mounting holes/USB_1_D-")
+			(net 249 "/IO and mounting holes/USB_1_D-")
 			(pinfunction "D-")
 			(pintype "bidirectional")
 			(uuid "f4f7828e-6e95-4be7-96d8-7101357202d4")
@@ -59416,7 +61373,7 @@
 			(at -0.025 -1.765 180)
 			(size 1.65 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 249 "/IO and mounting holes/USB_1_D+")
+			(net 248 "/IO and mounting holes/USB_1_D+")
 			(pinfunction "D+")
 			(pintype "bidirectional")
 			(uuid "c6790322-f0f2-419d-bf9c-75c73d5067dc")
@@ -59602,7 +61559,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -59775,7 +61732,7 @@
 			(at -0.65 0 270)
 			(size 1 0.5)
 			(layers "B.Cu" "B.Mask")
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pinfunction "A")
 			(pintype "passive")
 			(zone_connect 2)
@@ -59875,7 +61832,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -60048,7 +62005,7 @@
 			(at -0.65 0 270)
 			(size 1 0.5)
 			(layers "B.Cu" "B.Mask")
-			(net 17 "/Power Supply/Vdd_MCU")
+			(net 64 "VBAT")
 			(pinfunction "A")
 			(pintype "passive")
 			(zone_connect 2)
@@ -60177,7 +62134,6 @@
 			)
 		)
 		(property ki_fp_filters "SolderJumper*Bridged*")
-		(path "/6740d21d-71b5-4364-b2ea-66b4d911be84/a7513009-0db2-4d5e-b092-4890b5a3f4b2")
 		(sheetname "/Power Supply/")
 		(sheetfile "Power.kicad_sch")
 		(zone_connect 1)
@@ -60776,6 +62732,46 @@
 			)
 			(justify left bottom)
 		)
+	)
+	(segment
+		(start 77.825 69.775)
+		(end 79.026 68.574)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 0)
+		(uuid "20114fc7-6363-4a9f-a12d-303d09f6d762")
+	)
+	(segment
+		(start 75.175 80.1625)
+		(end 75.175 65.345)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 0)
+		(uuid "67453e63-bdb4-40a6-9f08-3d4fa039be64")
+	)
+	(segment
+		(start 75.175 65.345)
+		(end 78.425 62.095)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 0)
+		(uuid "74323978-12a8-4a3c-8bee-bebe2b4cad08")
+	)
+	(segment
+		(start 79.026 62.696)
+		(end 78.425 62.095)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 0)
+		(uuid "7f547ece-0191-4d75-97ec-88555fbbfe86")
+	)
+	(segment
+		(start 79.026 68.574)
+		(end 79.026 62.696)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 0)
+		(uuid "8925d06c-bb20-4a7f-990a-06a8c7974551")
 	)
 	(segment
 		(start 60.925 130.3625)
@@ -68300,28 +70296,12 @@
 		(uuid "2975939d-55c5-417b-8564-5067df905053")
 	)
 	(segment
-		(start 42.239 118.611)
-		(end 42.7 118.15)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 16)
-		(uuid "30daf971-b615-4e32-b5e0-718b015506c9")
-	)
-	(segment
 		(start 49.175 97.575)
 		(end 47.599 97.575)
 		(width 0.6)
 		(layer "F.Cu")
 		(net 16)
 		(uuid "32c088ea-8562-4e8a-8f40-15d1a7b8e44f")
-	)
-	(segment
-		(start 39.3475 117.97)
-		(end 39.9885 118.611)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 16)
-		(uuid "32f7f32e-d3bb-4905-89de-acafc4163071")
 	)
 	(segment
 		(start 57.175 107.075)
@@ -68388,14 +70368,6 @@
 		(uuid "4327cdb3-0bdf-4a48-b474-c1cff0f7db21")
 	)
 	(segment
-		(start 39.9885 118.611)
-		(end 42.239 118.611)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 16)
-		(uuid "45c0ed53-4560-4b9d-85e1-8e1b6b821224")
-	)
-	(segment
 		(start 34.175 93.575)
 		(end 35.175 93.575)
 		(width 0.6)
@@ -68410,14 +70382,6 @@
 		(layer "F.Cu")
 		(net 16)
 		(uuid "54f56350-8fa5-4282-bcf1-c908f7753cd0")
-	)
-	(segment
-		(start 22.175 121.075)
-		(end 19.925 121.075)
-		(width 0.6)
-		(layer "F.Cu")
-		(net 16)
-		(uuid "5c948b71-0849-4983-b340-ec9011fbd2a0")
 	)
 	(segment
 		(start 61.675 57.075)
@@ -68442,14 +70406,6 @@
 		(layer "F.Cu")
 		(net 16)
 		(uuid "71b485cd-c61c-4af3-9640-d6da2e6a0066")
-	)
-	(segment
-		(start 40.55 121.38)
-		(end 40.89 121.04)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 16)
-		(uuid "76074931-78c2-4f61-a993-45f1ac7518a5")
 	)
 	(segment
 		(start 56.175 98.075)
@@ -68668,14 +70624,6 @@
 		(uuid "e855c727-edb9-46ac-9067-3745b4ef3a38")
 	)
 	(segment
-		(start 40.55 122.3525)
-		(end 40.55 121.38)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 16)
-		(uuid "ea6034f5-bca1-4d4c-951b-e777cebb52b1")
-	)
-	(segment
 		(start 107.47 111.27)
 		(end 105.555 111.27)
 		(width 0.6)
@@ -68748,14 +70696,6 @@
 		(uuid "1edf303c-2092-4288-a1c3-889fde854772")
 	)
 	(via
-		(at 40.89 121.04)
-		(size 0.6)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(net 16)
-		(uuid "4113c1cb-f48c-4574-b600-5e150fd1d967")
-	)
-	(via
 		(at 110.425 111.325)
 		(size 0.6)
 		(drill 0.3)
@@ -68794,14 +70734,6 @@
 		(layers "F.Cu" "B.Cu")
 		(net 16)
 		(uuid "7b553373-cd14-4af7-8cc8-1b225ae74554")
-	)
-	(via
-		(at 22.175 121.075)
-		(size 0.6)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(net 16)
-		(uuid "84f6e6fd-e4ee-42b5-929f-145720843808")
 	)
 	(via
 		(at 42.7 118.15)
@@ -68907,22 +70839,6 @@
 		(layers "F.Cu" "B.Cu")
 		(net 16)
 		(uuid "f6101301-b5d7-498c-ada7-1c371ad4b013")
-	)
-	(segment
-		(start 40.89 121.04)
-		(end 40.89 119.96)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 16)
-		(uuid "c6e2a476-42e7-4707-9a20-22361e0995a6")
-	)
-	(segment
-		(start 40.89 119.96)
-		(end 42.7 118.15)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 16)
-		(uuid "ce24df64-665c-41c8-b869-aeae6aca658b")
 	)
 	(segment
 		(start 69.675 83.94)
@@ -75595,46 +77511,6 @@
 		(layer "F.Cu")
 		(net 62)
 		(uuid "f4edf4c9-7a24-4ce4-a32f-688fc9801e47")
-	)
-	(segment
-		(start 77.825 69.775)
-		(end 79.026 68.574)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 64)
-		(uuid "20114fc7-6363-4a9f-a12d-303d09f6d762")
-	)
-	(segment
-		(start 75.175 80.1625)
-		(end 75.175 65.345)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 64)
-		(uuid "67453e63-bdb4-40a6-9f08-3d4fa039be64")
-	)
-	(segment
-		(start 75.175 65.345)
-		(end 78.425 62.095)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 64)
-		(uuid "74323978-12a8-4a3c-8bee-bebe2b4cad08")
-	)
-	(segment
-		(start 79.026 62.696)
-		(end 78.425 62.095)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 64)
-		(uuid "7f547ece-0191-4d75-97ec-88555fbbfe86")
-	)
-	(segment
-		(start 79.026 68.574)
-		(end 79.026 62.696)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 64)
-		(uuid "8925d06c-bb20-4a7f-990a-06a8c7974551")
 	)
 	(segment
 		(start 95.6375 111.6125)
@@ -83077,84 +84953,84 @@
 		(uuid "aae59f2c-c22c-4633-bb64-de82f8318fbe")
 	)
 	(segment
-		(start 57.603354 88.054882)
-		(end 57.251297 87.702825)
+		(start 42.239 118.611)
+		(end 42.7 118.15)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 192)
-		(uuid "00aa4aef-b8d6-4d0c-a6b8-3e528b15f8ad")
+		(uuid "30daf971-b615-4e32-b5e0-718b015506c9")
 	)
 	(segment
-		(start 57.082825 87.702825)
-		(end 51.936 82.556)
+		(start 39.3475 117.97)
+		(end 39.9885 118.611)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 192)
-		(uuid "184fb13a-d55a-4df6-972a-e68c76f5cb2e")
+		(uuid "32f7f32e-d3bb-4905-89de-acafc4163071")
 	)
 	(segment
-		(start 40.925 79.825)
-		(end 32.425 79.825)
+		(start 39.9885 118.611)
+		(end 42.239 118.611)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 192)
-		(uuid "210be2c7-51cb-4982-bb44-704fb8de66f6")
+		(uuid "45c0ed53-4560-4b9d-85e1-8e1b6b821224")
 	)
 	(segment
-		(start 43.656 82.556)
-		(end 40.925 79.825)
-		(width 0.2)
+		(start 22.175 121.075)
+		(end 19.925 121.075)
+		(width 0.6)
 		(layer "F.Cu")
 		(net 192)
-		(uuid "49723b48-9dc1-4746-9d49-7048b51e1e9c")
+		(uuid "5c948b71-0849-4983-b340-ec9011fbd2a0")
 	)
 	(segment
-		(start 63.455 94.075)
-		(end 57.603354 88.223354)
+		(start 40.55 121.38)
+		(end 40.89 121.04)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 192)
-		(uuid "4d352e76-95b6-4ec1-8a49-7b471253c9b0")
+		(uuid "76074931-78c2-4f61-a993-45f1ac7518a5")
 	)
 	(segment
-		(start 57.603354 88.223354)
-		(end 57.603354 88.054882)
+		(start 40.55 122.3525)
+		(end 40.55 121.38)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 192)
-		(uuid "53d34568-23a6-4bd8-813c-83819bc4be39")
+		(uuid "ea6034f5-bca1-4d4c-951b-e777cebb52b1")
+	)
+	(via
+		(at 40.89 121.04)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 192)
+		(uuid "4113c1cb-f48c-4574-b600-5e150fd1d967")
+	)
+	(via
+		(at 22.175 121.075)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 192)
+		(uuid "84f6e6fd-e4ee-42b5-929f-145720843808")
 	)
 	(segment
-		(start 67.7625 94.075)
-		(end 63.455 94.075)
+		(start 40.89 121.04)
+		(end 40.89 119.96)
 		(width 0.2)
-		(layer "F.Cu")
+		(layer "B.Cu")
 		(net 192)
-		(uuid "9d1d640f-cb0c-458c-b9a0-2b69cc478c7c")
+		(uuid "c6e2a476-42e7-4707-9a20-22361e0995a6")
 	)
 	(segment
-		(start 51.936 82.556)
-		(end 43.656 82.556)
+		(start 40.89 119.96)
+		(end 42.7 118.15)
 		(width 0.2)
-		(layer "F.Cu")
+		(layer "B.Cu")
 		(net 192)
-		(uuid "bfb2dbcf-c481-40ad-888d-2f82ef8b1ebe")
-	)
-	(segment
-		(start 32.425 76.575)
-		(end 32.425 79.825)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 192)
-		(uuid "d2e499f5-8faa-4dab-8102-93ca88e6b415")
-	)
-	(segment
-		(start 57.251297 87.702825)
-		(end 57.082825 87.702825)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 192)
-		(uuid "db6a96be-0e02-4b37-8e71-050d3fecbce4")
+		(uuid "ce24df64-665c-41c8-b869-aeae6aca658b")
 	)
 	(segment
 		(start 110.654999 85.35)
@@ -84285,11 +86161,91 @@
 		(uuid "f230037e-a6fe-43f2-8db5-601e2ef1193c")
 	)
 	(segment
+		(start 57.603354 88.054882)
+		(end 57.251297 87.702825)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 213)
+		(uuid "00aa4aef-b8d6-4d0c-a6b8-3e528b15f8ad")
+	)
+	(segment
+		(start 57.082825 87.702825)
+		(end 51.936 82.556)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 213)
+		(uuid "184fb13a-d55a-4df6-972a-e68c76f5cb2e")
+	)
+	(segment
+		(start 40.925 79.825)
+		(end 32.425 79.825)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 213)
+		(uuid "210be2c7-51cb-4982-bb44-704fb8de66f6")
+	)
+	(segment
+		(start 43.656 82.556)
+		(end 40.925 79.825)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 213)
+		(uuid "49723b48-9dc1-4746-9d49-7048b51e1e9c")
+	)
+	(segment
+		(start 63.455 94.075)
+		(end 57.603354 88.223354)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 213)
+		(uuid "4d352e76-95b6-4ec1-8a49-7b471253c9b0")
+	)
+	(segment
+		(start 57.603354 88.223354)
+		(end 57.603354 88.054882)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 213)
+		(uuid "53d34568-23a6-4bd8-813c-83819bc4be39")
+	)
+	(segment
+		(start 67.7625 94.075)
+		(end 63.455 94.075)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 213)
+		(uuid "9d1d640f-cb0c-458c-b9a0-2b69cc478c7c")
+	)
+	(segment
+		(start 51.936 82.556)
+		(end 43.656 82.556)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 213)
+		(uuid "bfb2dbcf-c481-40ad-888d-2f82ef8b1ebe")
+	)
+	(segment
+		(start 32.425 76.575)
+		(end 32.425 79.825)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 213)
+		(uuid "d2e499f5-8faa-4dab-8102-93ca88e6b415")
+	)
+	(segment
+		(start 57.251297 87.702825)
+		(end 57.082825 87.702825)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 213)
+		(uuid "db6a96be-0e02-4b37-8e71-050d3fecbce4")
+	)
+	(segment
 		(start 95.524 73.575)
 		(end 103.8579 73.575)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 216)
+		(net 215)
 		(uuid "48815a98-5cf6-4e2b-97b6-226d50a34eeb")
 	)
 	(segment
@@ -84297,7 +86253,7 @@
 		(end 95.524 73.575)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 216)
+		(net 215)
 		(uuid "72f396be-253e-4d56-9173-695603f780a2")
 	)
 	(segment
@@ -84305,7 +86261,7 @@
 		(end 106.885 70.5479)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 216)
+		(net 215)
 		(uuid "7c46bcfc-7431-4181-9957-464359a42d9c")
 	)
 	(segment
@@ -84313,7 +86269,7 @@
 		(end 84.675 81.2579)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 216)
+		(net 215)
 		(uuid "7dd354e7-a336-4e83-866d-59f26e04fb79")
 	)
 	(segment
@@ -84321,7 +86277,7 @@
 		(end 106.885 62.825)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 216)
+		(net 215)
 		(uuid "c1286f11-f3a6-4617-89ab-c01d725db720")
 	)
 	(segment
@@ -84329,7 +86285,7 @@
 		(end 86.899 82.2)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 216)
+		(net 215)
 		(uuid "defe5f35-b019-4428-bc09-ff892fa855ec")
 	)
 	(segment
@@ -84337,7 +86293,7 @@
 		(end 85.6171 82.2)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 216)
+		(net 215)
 		(uuid "e306a63a-dd2b-4aef-b313-eda4ff3fa4e1")
 	)
 	(segment
@@ -84345,7 +86301,7 @@
 		(end 84.5089 105.306)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "0e0a0af5-2652-474d-b6d1-0989206a86cc")
 	)
 	(segment
@@ -84353,7 +86309,7 @@
 		(end 86.654957 107.482)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "0fddb7b3-23af-4e8c-a7af-e628a7a34984")
 	)
 	(segment
@@ -84361,7 +86317,7 @@
 		(end 84.274 105.004)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "21124c92-f0d5-432c-b39a-bff431370c1f")
 	)
 	(segment
@@ -84369,7 +86325,7 @@
 		(end 86.420057 107.2471)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "2a5eeff1-7b37-4668-b811-5a6b4cf99ae5")
 	)
 	(segment
@@ -84377,7 +86333,7 @@
 		(end 84.274 105.0711)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "4b8b5c78-9d37-470b-9930-eaf2471dc96c")
 	)
 	(segment
@@ -84385,7 +86341,7 @@
 		(end 86.6849 107.482)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "61e6c294-12f9-4fb2-831a-ae8c91946a86")
 	)
 	(segment
@@ -84393,7 +86349,7 @@
 		(end 92.5111 112.976)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "6b53dc71-e85d-4216-939d-da67289062cd")
 	)
 	(segment
@@ -84401,7 +86357,7 @@
 		(end 84.175 104.905)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "6b8d7640-8267-4eaf-93e6-b2daefd05fc5")
 	)
 	(segment
@@ -84409,7 +86365,7 @@
 		(end 93.100498 112.976)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "6d8a6a96-c3d2-4d0d-b1b6-45491ad539ad")
 	)
 	(segment
@@ -84417,7 +86373,7 @@
 		(end 86.3029 107.129943)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "97c6fd9f-1d5d-442b-9d22-de0a3cc5ba06")
 	)
 	(segment
@@ -84425,7 +86381,7 @@
 		(end 92.1789 112.976)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "af342274-c4fd-4213-942b-d095cc5428d6")
 	)
 	(segment
@@ -84433,7 +86389,7 @@
 		(end 86.068 106.8651)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "bb2f5dc5-c77a-4e94-a29a-24a613fa55aa")
 	)
 	(segment
@@ -84441,7 +86397,7 @@
 		(end 93.675001 114.1375)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "c40c67da-309d-4f63-a583-1156d9772333")
 	)
 	(segment
@@ -84449,7 +86405,7 @@
 		(end 86.068 106.895043)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "d4ee0a42-15e0-4e75-8102-45cd2eac4e3a")
 	)
 	(segment
@@ -84457,7 +86413,7 @@
 		(end 93.675001 113.550503)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "e3be9868-96e3-4e9e-8244-b7cde226604b")
 	)
 	(segment
@@ -84465,7 +86421,7 @@
 		(end 91.944 112.7411)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 217)
+		(net 216)
 		(uuid "f68356a8-60f4-4a53-a357-26560ea0d607")
 	)
 	(segment
@@ -84473,7 +86429,7 @@
 		(end 84.175 80.1625)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 222)
+		(net 221)
 		(uuid "089d32f1-5805-42ba-b939-dbda230386a6")
 	)
 	(segment
@@ -84481,7 +86437,7 @@
 		(end 95.675 74.075)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 222)
+		(net 221)
 		(uuid "156fbb2d-20cd-45c5-ba90-3e835b5d05b1")
 	)
 	(segment
@@ -84489,7 +86445,7 @@
 		(end 110.695 67.305)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 222)
+		(net 221)
 		(uuid "31b48c2b-2df7-4c91-bd4b-4bc7fbe596ee")
 	)
 	(segment
@@ -84497,7 +86453,7 @@
 		(end 84.175 81.325)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 222)
+		(net 221)
 		(uuid "4c39822f-0f75-43fb-92b6-96ba6918df97")
 	)
 	(segment
@@ -84505,7 +86461,7 @@
 		(end 103.925 74.075)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 222)
+		(net 221)
 		(uuid "691dba09-c52d-41cd-874d-31b32f7f8ad1")
 	)
 	(segment
@@ -84513,7 +86469,7 @@
 		(end 85.45 82.6)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 222)
+		(net 221)
 		(uuid "91936091-4530-4a8b-bc3c-d632a27dc94f")
 	)
 	(segment
@@ -84521,7 +86477,7 @@
 		(end 87.15 82.6)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 222)
+		(net 221)
 		(uuid "96d01a0a-aacf-4d3b-b59e-ec75d191ca40")
 	)
 	(segment
@@ -84529,7 +86485,7 @@
 		(end 100.925 57.825)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 231)
+		(net 230)
 		(uuid "0ab45afc-e95f-4621-a83e-641988fb2966")
 	)
 	(segment
@@ -84537,7 +86493,7 @@
 		(end 86.075 73.175)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 231)
+		(net 230)
 		(uuid "20676959-1a80-4be9-97f7-0cbdf8f8a283")
 	)
 	(segment
@@ -84545,7 +86501,7 @@
 		(end 98.675 63.16116)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 231)
+		(net 230)
 		(uuid "25b2556c-9494-4977-89eb-20e481b65c09")
 	)
 	(segment
@@ -84553,7 +86509,7 @@
 		(end 109.425 59.075)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 231)
+		(net 230)
 		(uuid "3158baf6-57df-4e4e-83d9-4d72e064f1a8")
 	)
 	(segment
@@ -84561,7 +86517,7 @@
 		(end 89.952 73.325)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 231)
+		(net 230)
 		(uuid "4983df08-6a5b-467c-b5f6-c71b27f32989")
 	)
 	(segment
@@ -84569,7 +86525,7 @@
 		(end 82.675 74.825)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 231)
+		(net 230)
 		(uuid "558ab53a-411d-4276-9181-12d0438bbd7d")
 	)
 	(segment
@@ -84577,7 +86533,7 @@
 		(end 98.675 60.075)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 231)
+		(net 230)
 		(uuid "636ee73b-8961-4095-b3c1-3fee8abd67f4")
 	)
 	(segment
@@ -84585,7 +86541,7 @@
 		(end 92.051 71.226)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 231)
+		(net 230)
 		(uuid "6441ad0d-d282-476c-8949-85aa2aa1444d")
 	)
 	(segment
@@ -84593,7 +86549,7 @@
 		(end 109.425 62.825)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 231)
+		(net 230)
 		(uuid "79e1a7b4-8420-4847-8cb9-6000eac2bd10")
 	)
 	(segment
@@ -84601,7 +86557,7 @@
 		(end 84.325 73.175)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 231)
+		(net 230)
 		(uuid "815cca80-09b0-4324-b7e8-bddd57d1f92e")
 	)
 	(segment
@@ -84609,7 +86565,7 @@
 		(end 84.175 73.325)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 231)
+		(net 230)
 		(uuid "c6070ca3-37ce-4aaa-b9e9-b6f9ae7ae064")
 	)
 	(segment
@@ -84617,7 +86573,7 @@
 		(end 108.175 57.825)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 231)
+		(net 230)
 		(uuid "d051d830-6363-4434-80b4-62b1457baa83")
 	)
 	(segment
@@ -84625,7 +86581,7 @@
 		(end 92.051 69.78516)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 231)
+		(net 230)
 		(uuid "f7100446-f874-41c1-bbf6-086a5123afe0")
 	)
 	(via
@@ -84633,7 +86589,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net 231)
+		(net 230)
 		(uuid "03fca0ad-a29b-46b8-846f-55827e433a8d")
 	)
 	(via
@@ -84641,7 +86597,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net 231)
+		(net 230)
 		(uuid "0e51b998-4a0c-480f-ae99-6bcddbafb18c")
 	)
 	(segment
@@ -84649,7 +86605,7 @@
 		(end 88.425 73.325)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 231)
+		(net 230)
 		(uuid "6c9b5d84-a213-4834-a166-c98b1464f33e")
 	)
 	(segment
@@ -84657,39 +86613,15 @@
 		(end 88.275 73.175)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 231)
+		(net 230)
 		(uuid "7e4537a9-18a1-4c32-8693-3b4659809aba")
-	)
-	(segment
-		(start 61.9025 139.495)
-		(end 62.175 139.495)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 242)
-		(uuid "5a174edd-7c16-47e8-afc5-757a36837f37")
-	)
-	(segment
-		(start 62.175 139.495)
-		(end 64.715 142.035)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 242)
-		(uuid "cc4c5788-8385-4c9b-b3bf-56ac6bd92cea")
-	)
-	(segment
-		(start 57.795 143.6025)
-		(end 61.9025 139.495)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 242)
-		(uuid "d60c6375-2c56-4c42-9647-184d369f74ef")
 	)
 	(segment
 		(start 118.4375 84.8875)
 		(end 118.812499 84.8875)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 249)
+		(net 248)
 		(uuid "11ae6d8f-8e61-4a89-af71-dee02343014c")
 	)
 	(segment
@@ -84697,7 +86629,7 @@
 		(end 120.675 84.1125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 249)
+		(net 248)
 		(uuid "1379ae91-ab9c-44b3-83b2-c092f7428e61")
 	)
 	(segment
@@ -84705,7 +86637,7 @@
 		(end 119.587499 84.1125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 249)
+		(net 248)
 		(uuid "21cc8111-261e-4747-bd3a-2af6a3954627")
 	)
 	(segment
@@ -84713,7 +86645,7 @@
 		(end 123.597206 84.8875)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 249)
+		(net 248)
 		(uuid "250c574e-f701-4d4b-a955-462225de2cca")
 	)
 	(segment
@@ -84721,7 +86653,7 @@
 		(end 123.614706 84.905)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 249)
+		(net 248)
 		(uuid "59b022da-f8b4-47b8-8a19-d6b3ce40d686")
 	)
 	(segment
@@ -84729,7 +86661,7 @@
 		(end 115.655001 84)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 249)
+		(net 248)
 		(uuid "5bb49bd4-49cc-4731-b8d9-b6823f81817d")
 	)
 	(segment
@@ -84737,7 +86669,7 @@
 		(end 124.07 84.905)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 249)
+		(net 248)
 		(uuid "5c8ae890-f2de-4ef1-9470-55f1e41205a2")
 	)
 	(segment
@@ -84745,7 +86677,7 @@
 		(end 118.425 84.9)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 249)
+		(net 248)
 		(uuid "69635c4a-ea8d-4bb5-b84c-d2459ee44d35")
 	)
 	(segment
@@ -84753,7 +86685,7 @@
 		(end 124.795 84.805)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 249)
+		(net 248)
 		(uuid "8b5a61a0-1a6a-4e74-9d91-79d06e84745c")
 	)
 	(segment
@@ -84761,7 +86693,7 @@
 		(end 118.4375 84.8875)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 249)
+		(net 248)
 		(uuid "aec4a3ce-1f82-4e1b-b702-b0fe01a9958e")
 	)
 	(segment
@@ -84769,7 +86701,7 @@
 		(end 124.17 84.805)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 249)
+		(net 248)
 		(uuid "c1894415-74b2-4b0f-9bae-841b5a56c05f")
 	)
 	(segment
@@ -84777,7 +86709,7 @@
 		(end 122.537501 84.8875)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 249)
+		(net 248)
 		(uuid "d3ee0070-8833-4a67-9b8b-adf142c7dd96")
 	)
 	(segment
@@ -84785,7 +86717,7 @@
 		(end 116.555001 84.9)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 249)
+		(net 248)
 		(uuid "d459503b-310e-4b6b-ba96-71554a38e298")
 	)
 	(segment
@@ -84793,7 +86725,7 @@
 		(end 121.762501 84.1125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 249)
+		(net 248)
 		(uuid "e73c8acb-f59b-4add-a833-5e2c26f6da90")
 	)
 	(segment
@@ -84801,7 +86733,7 @@
 		(end 118.609706 85.3375)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 250)
+		(net 249)
 		(uuid "042d3f29-b28a-4a52-9ca4-d23ac4aa2bbc")
 	)
 	(segment
@@ -84809,7 +86741,7 @@
 		(end 118.812499 85.3375)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 250)
+		(net 249)
 		(uuid "05f02301-64d3-48a2-9c75-627624b315a8")
 	)
 	(segment
@@ -84817,7 +86749,7 @@
 		(end 120.675 86.1125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 250)
+		(net 249)
 		(uuid "0dfc2b4d-7564-45ff-92e5-0e3f9866a9c9")
 	)
 	(segment
@@ -84825,7 +86757,7 @@
 		(end 124.795 85.455)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 250)
+		(net 249)
 		(uuid "12a00bc6-8a7c-4392-8e87-cab676b38df4")
 	)
 	(segment
@@ -84833,7 +86765,7 @@
 		(end 115.655001 86.25)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 250)
+		(net 249)
 		(uuid "1fed48b9-cfc2-48b0-9ae4-e3aa13541a33")
 	)
 	(segment
@@ -84841,7 +86773,7 @@
 		(end 123.4425 85.355)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 250)
+		(net 249)
 		(uuid "29315a04-60c7-412e-87c2-6c9a76850b9a")
 	)
 	(segment
@@ -84849,7 +86781,7 @@
 		(end 122.537501 85.3375)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 250)
+		(net 249)
 		(uuid "396ae145-9274-49db-9a37-3812168a97b0")
 	)
 	(segment
@@ -84857,7 +86789,7 @@
 		(end 116.555001 85.35)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 250)
+		(net 249)
 		(uuid "5df08619-3abb-4a8c-a5cd-b59365b51f16")
 	)
 	(segment
@@ -84865,7 +86797,7 @@
 		(end 124.07 85.355)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 250)
+		(net 249)
 		(uuid "8f015871-ca15-4655-b89a-68eea810a5ef")
 	)
 	(segment
@@ -84873,7 +86805,7 @@
 		(end 121.762501 86.1125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 250)
+		(net 249)
 		(uuid "9c7f2b33-84f0-4382-bc0a-e213fc32ba0d")
 	)
 	(segment
@@ -84881,7 +86813,7 @@
 		(end 123.425 85.3375)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 250)
+		(net 249)
 		(uuid "aa9f86a5-6da2-4d52-8fb9-61427b341e61")
 	)
 	(segment
@@ -84889,7 +86821,7 @@
 		(end 124.17 85.455)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 250)
+		(net 249)
 		(uuid "ca3ea173-423e-4bb3-98d3-24a561822fcc")
 	)
 	(segment
@@ -84897,7 +86829,7 @@
 		(end 119.587499 86.1125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 250)
+		(net 249)
 		(uuid "db8fcc27-700f-49d5-b1d8-44667778aac9")
 	)
 	(segment
@@ -84905,7 +86837,7 @@
 		(end 118.597206 85.35)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 250)
+		(net 249)
 		(uuid "e1819110-23b0-4ead-adc5-5c3bbc9212ef")
 	)
 	(via
@@ -84914,7 +86846,7 @@
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(free yes)
-		(net 251)
+		(net 250)
 		(uuid "05ef0030-0600-4ef7-b721-7d0a16a106d1")
 	)
 	(via
@@ -84923,7 +86855,7 @@
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(free yes)
-		(net 251)
+		(net 250)
 		(uuid "08655c1f-ab76-4165-8973-3da2731a4250")
 	)
 	(via
@@ -84932,7 +86864,7 @@
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(free yes)
-		(net 251)
+		(net 250)
 		(uuid "1105b64c-8355-4fc7-9a64-2f660ee50ebe")
 	)
 	(via
@@ -84940,7 +86872,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net 251)
+		(net 250)
 		(uuid "1847f609-29f9-47ef-842a-e42398e1608c")
 	)
 	(via
@@ -84949,7 +86881,7 @@
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(free yes)
-		(net 251)
+		(net 250)
 		(uuid "2696726b-c1c7-4117-86a4-e68984c80a2b")
 	)
 	(via
@@ -84957,7 +86889,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net 251)
+		(net 250)
 		(uuid "2e463ba7-5871-453a-b320-7a1d0239998f")
 	)
 	(via
@@ -84965,7 +86897,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net 251)
+		(net 250)
 		(uuid "4cb77d9e-5f26-4101-b83f-82e79ce679ff")
 	)
 	(via
@@ -84973,7 +86905,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net 251)
+		(net 250)
 		(uuid "6225ccd3-d693-4f5e-8972-2ac7e770191c")
 	)
 	(via
@@ -84981,7 +86913,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net 251)
+		(net 250)
 		(uuid "6887ee92-af01-4a03-bc1c-914f7fb65326")
 	)
 	(via
@@ -84990,7 +86922,7 @@
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(free yes)
-		(net 251)
+		(net 250)
 		(uuid "7eb3b3b3-0f1a-402a-903f-1614de6d319d")
 	)
 	(via
@@ -84999,7 +86931,7 @@
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(free yes)
-		(net 251)
+		(net 250)
 		(uuid "83b797f7-f7f6-4ce4-8298-23e5bf426bd4")
 	)
 	(via
@@ -85008,7 +86940,7 @@
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(free yes)
-		(net 251)
+		(net 250)
 		(uuid "8807b06a-d04a-4daf-8f8b-550d7091f1fa")
 	)
 	(via
@@ -85017,7 +86949,7 @@
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(free yes)
-		(net 251)
+		(net 250)
 		(uuid "9908ae22-9ba2-47ac-9cb4-497c4adf624b")
 	)
 	(via
@@ -85026,7 +86958,7 @@
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(free yes)
-		(net 251)
+		(net 250)
 		(uuid "a1536585-e56d-4603-af4b-3148f7517446")
 	)
 	(via
@@ -85035,7 +86967,7 @@
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(free yes)
-		(net 251)
+		(net 250)
 		(uuid "c475a4bc-9218-4ae9-a747-a58d3ca28497")
 	)
 	(via
@@ -85043,7 +86975,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net 251)
+		(net 250)
 		(uuid "cc699aae-3523-4d0d-886a-6420ff0ca588")
 	)
 	(via
@@ -85052,7 +86984,7 @@
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(free yes)
-		(net 251)
+		(net 250)
 		(uuid "d34a86f1-12c5-42e3-8b7a-8ad0e579d8c2")
 	)
 	(segment
@@ -85060,7 +86992,7 @@
 		(end 117.285 142.765)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 251)
+		(net 250)
 		(uuid "2fd69211-1875-4d37-b49e-d87ca6f727ac")
 	)
 	(segment
@@ -85068,7 +87000,7 @@
 		(end 118.55 145.63)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 251)
+		(net 250)
 		(uuid "42f3aeba-9f55-4c6b-b687-e8073191fb68")
 	)
 	(segment
@@ -85076,7 +87008,7 @@
 		(end 117.285 145.63)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 251)
+		(net 250)
 		(uuid "45a24b94-9042-4b9d-ad77-35173be8917f")
 	)
 	(segment
@@ -85084,7 +87016,7 @@
 		(end 117.29 142.76)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 251)
+		(net 250)
 		(uuid "7cdda708-539d-4396-b117-40caa1a8be25")
 	)
 	(segment
@@ -85092,7 +87024,7 @@
 		(end 122.935 145.63)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 251)
+		(net 250)
 		(uuid "7f66d07d-e5a8-4a21-9603-cedb66ac3c27")
 	)
 	(segment
@@ -85100,7 +87032,7 @@
 		(end 115.29 145.63)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 251)
+		(net 250)
 		(uuid "9b6e1ef7-5f42-4e7e-95d3-43ef8851199a")
 	)
 	(segment
@@ -85108,7 +87040,7 @@
 		(end 122.935 145.63)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 251)
+		(net 250)
 		(uuid "9b861624-bdee-45da-a444-43418ec2e6d9")
 	)
 	(segment
@@ -85116,7 +87048,7 @@
 		(end 115.27 145.65)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 251)
+		(net 250)
 		(uuid "c029bcb0-6e0b-4ebd-bd12-09a549a7b12f")
 	)
 	(segment
@@ -85124,11 +87056,27 @@
 		(end 122.935 145.63)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 251)
+		(net 250)
 		(uuid "cd851f7d-73bb-4822-93bf-18fb581a3022")
 	)
+	(segment
+		(start 61.9025 139.495)
+		(end 62.175 139.495)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 254)
+		(uuid "5a174edd-7c16-47e8-afc5-757a36837f37")
+	)
+	(segment
+		(start 62.175 139.495)
+		(end 64.715 142.035)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 254)
+		(uuid "cc4c5788-8385-4c9b-b3bf-56ac6bd92cea")
+	)
 	(zone
-		(net 251)
+		(net 250)
 		(net_name "GND1")
 		(layer "F.Cu")
 		(uuid "27803e43-e718-4555-8992-1441300c2bde")
@@ -94422,7 +96370,7 @@
 		)
 	)
 	(zone
-		(net 251)
+		(net 250)
 		(net_name "GND1")
 		(layer "B.Cu")
 		(uuid "04e49a5a-269e-4df7-9d8f-8abf741a773f")
