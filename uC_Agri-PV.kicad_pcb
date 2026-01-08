@@ -21211,12 +21211,12 @@
 			(uuid "a556814e-f96a-428e-b5c5-2a9b4f1a72a0")
 		)
 		(embedded_fonts no)
-		(model "/Users/tobiasbaas/Downloads/LoRa-E5/lorae5.STEP"
+		(model "${KIPRJMOD}/Bibliothek/317990687/3D/317990687.stp"
 			(offset
-				(xyz 0 1.5 0)
+				(xyz 0 0 2.5)
 			)
 			(scale
-				(xyz 1 2.9 1)
+				(xyz 0.04 0.04 0.04)
 			)
 			(rotate
 				(xyz 90 -0 -0)
