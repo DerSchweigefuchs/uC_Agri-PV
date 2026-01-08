@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NX1610SA_32.768000kHz
+D NX1610SE Data Sheet (for Mobile Communications and OA / AV)  , -40 to +85C , 0.1 (Max. 0.5) , +25 +/- 5 , STD-MUD-2
+K
+F https://www.ndk.com/images/products/catalog/crystal_e.pdf
+$ENDCMP
+#
+#End Doc Library

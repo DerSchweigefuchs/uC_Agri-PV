@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP FC0V104ZFTBR24
+D FC, Supercapacitors, SMD Can, 0.1 F, -20/+80%, 3.5 VDC, 70C, -25C, 70C, V-Chip, 0.09, 1 g, 10.5mm, 5.5mm, 10.8mm, 5mm
+K
+F https://content.kemet.com/datasheets/KEM_S6011_FC.pdf
+$ENDCMP
+#
+$CMP FC-13532.7680KA-AG5
+D 32.768kHz +/-20ppm Crystal 7pF 70 kOhms 2-SMD, No Lead
+K
+F https://support.epson.biz/td/api/doc_check.php?dl=brief_FC-135&lang=en
+$ENDCMP
+#
+#End Doc Library

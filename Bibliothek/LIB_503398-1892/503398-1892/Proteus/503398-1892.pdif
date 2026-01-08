@@ -6,8 +6,9 @@
   (part "503398-1892"
    (description "MicroSD SMT Push-Push 1.28mm height MicroSD SMT Push-Push 1.28mm height")
    (family "CON")
-   (package "503398-1892-1")
+   (package "5033981892")
    (attribute "Datasheet Link" "http://www.molex.com/webdocs/datasheets/pdf/en-us//5033981892_MEMORY_CARD_SOCKET.pdf")
+   (attribute "Geometry.Height" "1.28mm")
    (attribute "Mouser Part Number" "538-503398-1892")
    (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Molex/503398-1892?qs=b0v8CoHHvSMxV%252BW12iKaSg%3D%3D")
    (attribute "Manufacturer_Name" "Molex")
@@ -24,6 +25,10 @@
     (pin "DAT1" 8 PS)
     (pin "DETECT_LEVER" 9 PS)
     (pin "DETECT_SWITCH" 10 PS)
+    (pin "11" 11 PS)
+    (pin "12" 12 PS)
+    (pin "13" 13 PS)
+    (pin "14" 14 PS)
    )
   )
   (symbol "503398-1892"
@@ -31,7 +36,7 @@
    (origin (pt 0 0))
    (graphic
     (stroke 10)
-    (path (pt 200 100) (pt 1500 100) (pt 1500 -500) (pt 200 -500) (pt 200 100) (closed))
+    (path (pt 200 100) (pt 1500 100) (pt 1500 -700) (pt 200 -700) (pt 200 100) (closed))
    )
    (terminal
     (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
@@ -54,6 +59,14 @@
     (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
     (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
    (terminal
+    (body (symbol "PIN") (pt 0 -500) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -600) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
     (body (symbol "PIN") (pt 1700 0) (rot 0) (mir X) (visible true))
     (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
     (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
@@ -73,6 +86,14 @@
     (body (symbol "PIN") (pt 1700 -400) (rot 0) (mir X) (visible true))
     (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
     (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1700 -500) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1700 -600) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
   )
   (symbol "PIN"
    (units THOU)
@@ -86,8 +107,18 @@
    (graphic
     (stroke 10)
     (path (pt 0 0) (pt 100 0))))
-  (package "503398-1892-1"
+  (package "5033981892"
    (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.28 1)
+      (pt 14.38 1)
+      (pt 14.38 -15.33)
+      (pt -1.28 -15.33)
+      (pt -1.28 1))))
    (layer TASM
     (graphic
      (stroke 0.2)
@@ -185,53 +216,55 @@
       (pt 1.6 -14.05))))
    (layer TSLK
     (graphic
-     (stroke 0.2)
-     (circle
-      (pt 4.06143 -0.356) (pt 4.17057 -0.356)
-     )
-    )
-   )
-   (leg 1 (pt 4.17 -1.4) (padstack 0))
-   (leg 2 (pt 5.27 -1.4) (padstack 0))
-   (leg 3 (pt 6.37 -1.4) (padstack 0))
-   (leg 4 (pt 7.47 -1.4) (padstack 0))
-   (leg 5 (pt 8.57 -1.4) (padstack 0))
-   (leg 6 (pt 9.67 -1.4) (padstack 0))
-   (leg 7 (pt 10.77 -1.4) (padstack 0))
-   (leg 8 (pt 11.87 -1.4) (padstack 0))
-   (leg 9 (pt 2.38 -13.865) (padstack 9))
-   (leg 10 (pt 6.645 -13.94) (padstack 10))
-   (leg 11 (pt 13.03 -12.665) (padstack 11))
-   (leg 12 (pt 12.95 -1.9) (padstack 12))
-   (leg 13 (pt 0.29 -1.415) (padstack 13))
-   (leg 14 (pt 0.07 -12.665) (padstack 14))
+     (stroke 0.05457000000000001)
+     (path
+      (closed true)
+      (pt 4.089 -0.356)
+      (arc (pt 4.089 -0.356) (pt 4.089 -0.383) (pt 4.143 -0.329) (start 180.0) (sweep 180.0))
+      (pt 4.143 -0.356)
+      (arc (pt 4.143 -0.356) (pt 4.089 -0.383) (pt 4.143 -0.329) (start 180.0) (sweep .0))
+      (pt 4.089 -0.356))))
+   (leg 1 (pt 4.170 -1.400) (padstack 0))
+   (leg 2 (pt 5.270 -1.400) (padstack 0))
+   (leg 3 (pt 6.370 -1.400) (padstack 0))
+   (leg 4 (pt 7.470 -1.400) (padstack 0))
+   (leg 5 (pt 8.570 -1.400) (padstack 0))
+   (leg 6 (pt 9.670 -1.400) (padstack 0))
+   (leg 7 (pt 10.770 -1.400) (padstack 0))
+   (leg 8 (pt 11.870 -1.400) (padstack 0))
+   (leg 9 (pt 2.380 -13.865) (padstack 9))
+   (leg 10 (pt 6.645 -13.940) (padstack 10))
+   (leg 11 (pt 13.030 -12.665) (padstack 11))
+   (leg 12 (pt 12.950 -1.900) (padstack 12))
+   (leg 13 (pt 0.290 -1.415) (padstack 13))
+   (leg 14 (pt 0.070 -12.665) (padstack 14))
    (padstack 0
     (plated false)
-    (pad (layer TCOP) (rectf 0.7 1.1 0 0 90))
-   )
-   (padstack 13
-    (plated false)
-    (pad (layer TCOP) (rectf 1.14 1.83 0 0 90))
-   )
-   (padstack 14
-    (plated false)
-    (pad (layer TCOP) (rectf 0.7 3.33 0 0 90))
+    (pad (layer TCOP) (rectf 0.700 1.100 0 0 90.000))
    )
    (padstack 9
     (plated false)
-    (pad (layer TCOP) (rectf 0.9 0.93 0 0 90))
+    (pad (layer TCOP) (rectf 0.900 0.930 0 0 90.000))
    )
    (padstack 10
     (plated false)
-    (pad (layer TCOP) (rectf 0.78 1.05 0 0 0))
+    (pad (layer TCOP) (rectf 0.780 1.050 0 0 0.000))
    )
    (padstack 11
     (plated false)
-    (pad (layer TCOP) (rectf 0.7 3.33 0 0 90))
+    (pad (layer TCOP) (rectf 0.700 3.330 0 0 90.000))
    )
    (padstack 12
     (plated false)
-    (pad (layer TCOP) (rectf 0.86 2.8 0 0 90))
+    (pad (layer TCOP) (rectf 0.860 2.800 0 0 90.000))
+   )
+   (padstack 13
+    (plated false)
+    (pad (layer TCOP) (rectf 1.140 1.830 0 0 90.000))
+   )
+   (padstack 14
+    (plated false)
+    (pad (layer TCOP) (rectf 0.700 3.330 0 0 90.000))
    )
    (model "503398-1892.stp"
     (euler 0 0 0)

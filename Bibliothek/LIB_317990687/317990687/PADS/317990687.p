@@ -1,7 +1,7 @@
 *PADS-LIBRARY-PART-TYPES-V9*
 
 317990687 317990687 I ANA 7 1 0 0 0
-TIMESTAMP 2025.04.07.15.30.38
+TIMESTAMP 2025.12.29.21.44.02
 "Mouser Part Number" 713-317990687
 "Mouser Price/Stock" https://www.mouser.co.uk/ProductDetail/Seeed-Studio/317990687?qs=hd1VzrDQEGhZOj13wvzSLA%3D%3D
 "Manufacturer_Name" Seeed Studio
@@ -42,4 +42,4 @@ GATE 1 28 0
 
 *END*
 *REMARK* SamacSys ECAD Model
-13322322/1638757/2.50/28/3/Integrated Circuit
+13322322/1066212/2.50/28/3/Integrated Circuit

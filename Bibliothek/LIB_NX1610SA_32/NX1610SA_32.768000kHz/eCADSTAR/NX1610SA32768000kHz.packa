@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "NX1610SA_32_768000kHz"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2025-04-18-10:01:15)
+    (mountForm default
+        (footprintRef "NX1610SA32768000kHz")
+        (spec "System")
+    )
+)

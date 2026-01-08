@@ -1,0 +1,80 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model NE555DR
+#/6648/2/2.37/8/4/Integrated Circuit
+DEF NE555DR IC 0 30 Y Y 1 F N
+F0 "IC" 1050 600 50 H V L CNN
+F1 "NE555DR" 1050 500 50 H V L CNN
+F2 "SOIC127P600X175-8N" 1050 400 50 H I L CNN
+F3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" 1050 300 50 H I L CNN
+F4 "Single Precision Timer" 1050 200 50 H I L CNN "Description"
+F5 "1.75" 1050 100 50 H I L CNN "Height"
+F6 "Texas Instruments" 1050 0 50 H I L CNN "Manufacturer_Name"
+F7 "NE555DR" 1050 -100 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-NE555DR" 1050 -200 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-NE555DR" 1050 -300 50 H I L CNN "Mouser Price/Stock"
+F10 "1218414" 1050 -400 50 H I L CNN "RS Part Number"
+F11 "http//uk.rs-online.com/web/p/products/1218414" 1050 -500 50 H I L CNN "RS Price/Stock"
+DRAW
+X GND 1 600 -1000 200 U 50 50 0 0 B
+X TRIG 2 0 -400 200 R 50 50 0 0 B
+X OUT 3 1200 -200 200 L 50 50 0 0 B
+X ~RESET 4 0 0 200 R 50 50 0 0 B
+X CONT 5 500 600 200 D 50 50 0 0 B
+X THRES 6 0 -300 200 R 50 50 0 0 B
+X DISCH 7 0 -100 200 R 50 50 0 0 B
+X VCC 8 700 600 200 D 50 50 0 0 B
+P 5 0 1 6 200 400 1000 400 1000 -800 200 -800 200 400 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model FC0V104ZFTBR24
+#/1052175/1848388/2.50/2/2/Capacitor Polarised
+DEF FC0V104ZFTBR24 C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "FC0V104ZFTBR24" 350 150 50 H V L CNN
+F2 "CAPAE1080X550N" 350 50 50 H I L CNN
+F3 "https://content.kemet.com/datasheets/KEM_S6011_FC.pdf" 350 -50 50 H I L CNN
+F4 "FC, Supercapacitors, SMD Can, 0.1 F, -20/+80%, 3.5 VDC, 70C, -25C, 70C, V-Chip, 0.09, 1 g, 10.5mm, 5.5mm, 10.8mm, 5mm" 350 -150 50 H I L CNN "Description"
+F5 "5.5" 350 -250 50 H I L CNN "Height"
+F6 "80-FC0V104ZFTBR24" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/KEMET/FC0V104ZFTBR24?qs=pfd5qewlna6EgB0gPZyt9Q%3D%3D" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "KEMET" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "FC0V104ZFTBR24" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 500 0 100 L 50 50 0 0 P
+P 5 0 1 6 200 100 200 -100 230 -100 230 100 200 100 N
+P 2 0 1 6 180 50 140 50 N
+P 2 0 1 6 160 70 160 30 N
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 300 0 400 0 N
+P 5 0 1 10 300 100 300 -100 270 -100 270 100 300 100 F
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model FC-13532.7680KA-AG5
+#/12731007/1848388/2.50/2/4/Crystal or Oscillator
+DEF FC-13532.7680KA-AG5 Y 0 30 Y Y 1 F N
+F0 "Y" 350 250 50 H V L CNN
+F1 "FC-13532.7680KA-AG5" 350 150 50 H V L CNN
+F2 "FC135327680KAAG5" 350 50 50 H I L CNN
+F3 "https://support.epson.biz/td/api/doc_check.php?dl=brief_FC-135&lang=en" 350 -50 50 H I L CNN
+F4 "32.768kHz +/-20ppm Crystal 7pF 70 kOhms 2-SMD, No Lead" 350 -150 50 H I L CNN "Description"
+F5 "0.9" 350 -250 50 H I L CNN "Height"
+F6 "" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Seiko Epson Corporation" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "FC-13532.7680KA-AG5" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 2 0 0 100 R 50 50 0 0 P
+X ~  400 0 100 L 50 50 0 0 P
+P 2 0 1 6 120 100 120 -100 N
+P 2 0 1 6 280 100 280 -100 N
+P 5 0 1 6 160 140 160 -140 240 -140 240 140 160 140 N
+P 2 0 1 6 280 0 300 0 N
+P 2 0 1 6 120 0 100 0 N
+ENDDRAW
+ENDDEF
+#
+#End Library

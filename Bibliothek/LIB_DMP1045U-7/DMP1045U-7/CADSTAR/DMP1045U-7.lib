@@ -1,0 +1,16 @@
+.DMP1045U-7 :1 ;P-Channel Enhancement MOSFET SOT-23 Diodes Inc DMP1045U-7 P-channel MOSFET Transistor, 5.2 A, -12 V, 3-Pin SOT23
+SOT96P240X110-3N
+*STM IC
+*NGS
+*PLB 1="G" 2="S" 3="D"
+*MXP 3
+*DFN DMP1045U-7
+~!Mouser Part Number (621-DMP1045U-7)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMP1045U-7?qs=T%2FOtf55vL7eEKnIWhgMvTQ%3D%3D)
+~!Manufacturer_Name (Diodes Incorporated)
+~!Manufacturer_Part_Number (DMP1045U-7)
+~!Link Datasheet (https://www.diodes.com//assets/Datasheets/DMP1045U.pdf)
+~!Height (1.1mm)
+~!3D_Model (DMP1045U-7)
+DMP1045U-7
+1.1!U 2.1!U 3.1!U 

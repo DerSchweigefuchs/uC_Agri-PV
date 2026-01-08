@@ -1,0 +1,9 @@
+Manufacturer=Diodes Incorporated
+PartNumber=DMP1045U-7
+PartCategory=Integrated Circuit
+PackageCategory=SOT23 (3-Pin)
+PinCount=3
+Version=6.1
+Released=2016-02-14 12:01:24
+Downloaded=2026-01-01 14:34:46
+3D=Y
