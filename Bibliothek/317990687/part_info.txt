@@ -1,0 +1,9 @@
+Manufacturer=Seeed Studio
+PartNumber=317990687
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=28
+Version=2.3
+Released=2021-10-03 06:22:12
+Downloaded=2026-01-08 14:14:07
+3D=Y
