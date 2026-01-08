@@ -6,8 +6,8 @@
 	(paper "A4" portrait)
 	(title_block
 		(title "Micro-SD Reader")
-		(date "2025-12-18")
-		(rev "1.3")
+		(date "2026-01-08")
+		(rev "2.0")
 	)
 	(lib_symbols
 		(symbol "Connector:503398-1892"
@@ -1471,7 +1471,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 91.44) (xy 40.64 91.44)
+			(xy 26.035 91.44) (xy 40.64 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1860,7 +1860,7 @@
 		(uuid "ed9ac1b0-6199-4acc-a587-15f7e5999c12")
 	)
 	(label "3V3_SD"
-		(at 24.13 91.44 180)
+		(at 26.035 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1967,7 +1967,7 @@
 		(dnp no)
 		(uuid "11590872-f4a5-4f4c-9ea4-e514a2ffc16f")
 		(property "Reference" "R502"
-			(at 50.8 81.28 0)
+			(at 91.44 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1975,7 +1975,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 50.8 72.39 0)
+			(at 91.44 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)

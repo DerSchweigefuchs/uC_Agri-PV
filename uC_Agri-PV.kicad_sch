@@ -6,8 +6,8 @@
 	(paper "A4" portrait)
 	(title_block
 		(title "µC Agri-PV")
-		(date "2025-12-18")
-		(rev "1.3")
+		(date "2026-01-08")
+		(rev "2.0")
 		(company "Hochschule Karlsruhe ")
 	)
 	(lib_symbols)
@@ -795,7 +795,7 @@
 			)
 		)
 		(instances
-			(project "µC_Agri-PV"
+			(project "uC_Agri-PV"
 				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc"
 					(page "7")
 				)
@@ -1437,7 +1437,7 @@
 			)
 		)
 		(instances
-			(project "µC_Agri-PV"
+			(project "uC_Agri-PV"
 				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc"
 					(page "2")
 				)
@@ -1579,7 +1579,7 @@
 			)
 		)
 		(instances
-			(project "µC_Agri-PV"
+			(project "uC_Agri-PV"
 				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc"
 					(page "4")
 				)
@@ -1771,7 +1771,7 @@
 			)
 		)
 		(instances
-			(project "µC_Agri-PV"
+			(project "uC_Agri-PV"
 				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc"
 					(page "8")
 				)
@@ -1933,7 +1933,7 @@
 			)
 		)
 		(instances
-			(project "µC_Agri-PV"
+			(project "uC_Agri-PV"
 				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc"
 					(page "6")
 				)
@@ -2025,7 +2025,7 @@
 			)
 		)
 		(instances
-			(project "µC_Agri-PV"
+			(project "uC_Agri-PV"
 				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc"
 					(page "3")
 				)
@@ -2147,7 +2147,7 @@
 			)
 		)
 		(instances
-			(project "µC_Agri-PV"
+			(project "uC_Agri-PV"
 				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc"
 					(page "5")
 				)
