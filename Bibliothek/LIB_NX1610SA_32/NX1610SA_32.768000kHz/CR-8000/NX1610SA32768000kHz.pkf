@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "NX1610SA32768000kHz"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "NX1610SA32768000kHz")
+        (spec "default")
+    )
+)

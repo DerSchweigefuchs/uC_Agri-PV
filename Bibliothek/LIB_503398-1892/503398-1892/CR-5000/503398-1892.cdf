@@ -1,5 +1,5 @@
 (part "503398-1892"
-    (packageRef "503398-1892-1")
+    (packageRef "5033981892")
     (interface
         (port "1" (symbPinId 1) (portName "DAT2") (portType INOUT))
         (port "2" (symbPinId 2) (portName "CD/DAT3") (portType INOUT))
@@ -11,6 +11,10 @@
         (port "8" (symbPinId 8) (portName "DAT1") (portType INOUT))
         (port "9" (symbPinId 9) (portName "DETECT_LEVER") (portType INOUT))
         (port "10" (symbPinId 10) (portName "DETECT_SWITCH") (portType INOUT))
+        (port "11" (symbPinId 11) (portName "11") (portType INOUT))
+        (port "12" (symbPinId 12) (portName "12") (portType INOUT))
+        (port "13" (symbPinId 13) (portName "13") (portType INOUT))
+        (port "14" (symbPinId 14) (portName "14") (portType INOUT))
     )
     (partClass UNDEF)
     (useInSchema Y)

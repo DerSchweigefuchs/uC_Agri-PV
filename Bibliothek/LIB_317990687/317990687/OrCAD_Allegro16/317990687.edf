@@ -6,8 +6,8 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2025 04 07 15 30 38)
-      (dataOrigin "13322322/1638757/2.50/28/3/Integrated Circuit")
+      (timestamp 2025 12 29 21 44 02)
+      (dataOrigin "13322322/1066212/2.50/28/3/Integrated Circuit")
       (program "SamacSys ECAD Model 317990687"
         (version "2.3"))))
   (library

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FC0V104ZFTBR24
+D FC, Supercapacitors, SMD Can, 0.1 F, -20/+80%, 3.5 VDC, 70C, -25C, 70C, V-Chip, 0.09, 1 g, 10.5mm, 5.5mm, 10.8mm, 5mm
+K
+F https://content.kemet.com/datasheets/KEM_S6011_FC.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,16 @@
+.NX1610SA_32.768000kHz :1 ;NX1610SE Data Sheet (for Mobile Communications and OA / AV)  , -40 to +85C , 0.1 (Max. 0.5) , +25 +/- 5 , STD-MUD-2
+NX1610SA32768000kHz
+*STM Y
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN NX1610SA_32.768000kHz
+~!Mouser Part Number (344-NX1610SA32768000)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/NDK/NX1610SA-32.768000kHz?qs=9vOqFld9vZXsCVvc%252BcanRw%3D%3D)
+~!Manufacturer_Name (NDK)
+~!Manufacturer_Part_Number (NX1610SA 32.768000kHz)
+~!Link Datasheet (https://www.ndk.com/images/products/catalog/crystal_e.pdf)
+~!Height (0.5mm)
+~!3D_Model (NX1610SA_32.768000kHz)
+NX1610SA_32.768000kHz
+1.1!U 2.1!U 

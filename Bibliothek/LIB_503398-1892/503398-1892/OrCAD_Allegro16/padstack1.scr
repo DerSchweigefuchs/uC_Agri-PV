@@ -7,8 +7,8 @@ FORM padedit layers
 
 FORM padedit grid row 1
 FORM padedit geometry Rectangle
-FORM padedit width 0.7
-FORM padedit height 1.1
+FORM padedit width 0.700
+FORM padedit height 1.100
 FORM padedit x_offset 0
 FORM padedit y_offset 0
 FORM padedit geometry_th Null

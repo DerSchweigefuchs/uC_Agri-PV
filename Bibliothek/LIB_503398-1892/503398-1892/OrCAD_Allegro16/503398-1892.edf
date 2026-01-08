@@ -6,10 +6,10 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2025 04 05 13 36 40)
-      (dataOrigin "269057/1638757/2.50/10/4/Connector")
+      (timestamp 2025 12 29 21 31 13)
+      (dataOrigin "269057/1066212/2.50/14/4/Connector")
       (program "SamacSys ECAD Model 503398_1892"
-        (version "1.1"))))
+        (version "1.2"))))
   (library
   (rename &503398_1892 "503398_1892")
     (EDIFLevel 0)
@@ -38,16 +38,16 @@
           (property (rename DEVICESINPACKAGE "DevicesInPackage") (string "1"))
           (property (rename DEVICEDESIGNATOR "DeviceDesignator") (string "A"))
           (property (rename DEVICENUMBERING "DeviceNumbering") (string "Alpha"))
-          (property (rename PCB_32_FOOTPRINT "PCB Footprint") (string "503398-1892-1"))
+          (property (rename PCB_32_FOOTPRINT "PCB Footprint") (string "5033981892"))
           (property (rename &Mouser_Part_Number "Mouser Part Number") (string "538-503398-1892"))
           (property (rename &Mouser_Price_Stock "Mouser Price/Stock") (string "https://www.mouser.co.uk/ProductDetail/Molex/503398-1892?qs=b0v8CoHHvSMxV%252BW12iKaSg%3D%3D"))
           (property (rename &Manufacturer_Name "Manufacturer_Name") (string "Molex"))
           (property (rename &Manufacturer_Part_Number "Manufacturer_Part_Number") (string "503398-1892"))
           (property (rename &Description "Description") (string "MicroSD SMT Push-Push 1.28mm height MicroSD SMT Push-Push 1.28mm height"))
           (property (rename &Datasheet_Link "Datasheet Link") (string "http://www.molex.com/webdocs/datasheets/pdf/en-us//5033981892_MEMORY_CARD_SOCKET.pdf"))
+          (property (rename &Height "Height") (string "1.28 mm"))
           (property (rename &_60__32_VALUE_32__62_ "Value") (string "503398_1892"))
           (property (rename VALUE "Value") (string "Value"))
-          (property (rename &NC "NC") (string "11,12,13,14"))
           (port
             (rename &DAT2 "DAT2")
             (designator "1")
@@ -98,6 +98,26 @@
             (designator "10")
             (property (rename ORDER "Order") (string "9") (owner "OrCAD"))
           )
+          (port
+            (rename &11 "11")
+            (designator "11")
+            (property (rename ORDER "Order") (string "10") (owner "OrCAD"))
+          )
+          (port
+            (rename &12 "12")
+            (designator "12")
+            (property (rename ORDER "Order") (string "11") (owner "OrCAD"))
+          )
+          (port
+            (rename &13 "13")
+            (designator "13")
+            (property (rename ORDER "Order") (string "12") (owner "OrCAD"))
+          )
+          (port
+            (rename &14 "14")
+            (designator "14")
+            (property (rename ORDER "Order") (string "13") (owner "OrCAD"))
+          )
           (symbol
             (portImplementation
               (name &DAT2 (display PINNAME))
@@ -132,32 +152,56 @@
             (portImplementation
               (name &VSS (display PINNAME))
               (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt -200 -600) (pt 0 -600))))
+              (connectLocation (figure GRAPHIC (dot (pt -200 -600))))
+            )
+            (portImplementation
+              (name &DAT0 (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt -200 -700) (pt 0 -700))))
+              (connectLocation (figure GRAPHIC (dot (pt -200 -700))))
+            )
+            (portImplementation
+              (name &DAT1 (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
               (figure PIN (path (pointList (pt 1300 -100) (pt 1500 -100))))
               (connectLocation (figure GRAPHIC (dot (pt 1500 -100))))
             )
             (portImplementation
-              (name &DAT0 (display PINNAME))
+              (name &DETECT_LEVER (display PINNAME))
               (keywordDisplay DESIGNATOR (display PINNUMBER))
               (figure PIN (path (pointList (pt 1300 -200) (pt 1500 -200))))
               (connectLocation (figure GRAPHIC (dot (pt 1500 -200))))
             )
             (portImplementation
-              (name &DAT1 (display PINNAME))
+              (name &DETECT_SWITCH (display PINNAME))
               (keywordDisplay DESIGNATOR (display PINNUMBER))
               (figure PIN (path (pointList (pt 1300 -300) (pt 1500 -300))))
               (connectLocation (figure GRAPHIC (dot (pt 1500 -300))))
             )
             (portImplementation
-              (name &DETECT_LEVER (display PINNAME))
+              (name &11 (display PINNAME))
               (keywordDisplay DESIGNATOR (display PINNUMBER))
               (figure PIN (path (pointList (pt 1300 -400) (pt 1500 -400))))
               (connectLocation (figure GRAPHIC (dot (pt 1500 -400))))
             )
             (portImplementation
-              (name &DETECT_SWITCH (display PINNAME))
+              (name &12 (display PINNAME))
               (keywordDisplay DESIGNATOR (display PINNUMBER))
               (figure PIN (path (pointList (pt 1300 -500) (pt 1500 -500))))
               (connectLocation (figure GRAPHIC (dot (pt 1500 -500))))
+            )
+            (portImplementation
+              (name &13 (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt 1300 -600) (pt 1500 -600))))
+              (connectLocation (figure GRAPHIC (dot (pt 1500 -600))))
+            )
+            (portImplementation
+              (name &14 (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt 1300 -700) (pt 1500 -700))))
+              (connectLocation (figure GRAPHIC (dot (pt 1500 -700))))
             )
             (figure GRAPHIC
               (figureGroupOverride GRAPHIC
@@ -166,8 +210,8 @@
                 (pointList
                   (pt 0 0)
                   (pt 1300 0)
-                  (pt 1300 -600)
-                  (pt 0 -600)
+                  (pt 1300 -800)
+                  (pt 0 -800)
                   (pt 0 0)
                 )
               )

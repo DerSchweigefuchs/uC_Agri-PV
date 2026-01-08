@@ -1,7 +1,7 @@
 EESchema-LIBRARY Version 2.3
 #encoding utf-8
 #SamacSys ECAD Model 317990687
-#/13322322/1638757/2.50/28/3/Integrated Circuit
+#/13322322/1066212/2.50/28/3/Integrated Circuit
 DEF 317990687 IC 0 30 Y Y 1 F N
 F0 "IC" 1050 700 50 H V L CNN
 F1 "317990687" 1050 600 50 H V L CNN

@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "FC0V104ZFTBR24"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2022-02-22-09:57:08)
+    (mountForm default
+        (footprintRef "CAPAE1080X550N")
+        (spec "System")
+    )
+)
