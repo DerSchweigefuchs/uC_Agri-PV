@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'NX1610SA_32.768000kHz'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "NDK", "NX1610SA 32.768000kHz" (!) = "", "NX1610SA32768000kHz", "Other", "344-NX1610SA32768000", "https://www.mouser.co.uk/ProductDetail/NDK/NX1610SA-32.768000kHz?qs=9vOqFld9vZXsCVvc%252BcanRw%3D%3D", "NX1610SE Data Sheet (for Mobile Communications and OA / AV)  , -40 to +85C , 0.1 (Max. 0.5) , +25 +/- 5 , STD-MUD-2", "https://www.ndk.com/images/products/catalog/crystal_e.pdf", "0.5 mm"
+END_PART
+
+END.

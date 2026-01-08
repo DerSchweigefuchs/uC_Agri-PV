@@ -1,4 +1,5 @@
 (fp_lib_table
   (version 7)
   (lib (name "TP4056")(type "KiCad")(uri "${KIPRJMOD}/Bibliothek")(options "")(descr ""))
+  (lib (name "Bibliothek")(type "KiCad")(uri "${KIPRJMOD}/Bibliothek.pretty")(options "")(descr ""))
 )
