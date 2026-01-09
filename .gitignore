@@ -1,3 +1,48 @@
-uC_Agri-PV-backups/
-µC_Agri-PV-backups/
+# KiCad Backup Files
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.kicad_pro-bak
+*-bak
+*-backups/
+*_autosave*
+
+# KiCad Local Settings (user-specific)
+*.kicad_prl
+fp-info-cache
+
+# KiCad Lock Files
 *.lck
+
+# KiCad Gerber/Output (regenerate as needed)
+# Uncomment if you don't want to track these:
+# gerber/
+# output/
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE/Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Obsidian (note-taking app)
+.obsidian/
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+
+# Python
+__pycache__/
+*.py[cod]

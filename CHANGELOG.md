@@ -1,140 +1,140 @@
 # Changelog
 
-## v2.0 (2026-01-08) - Komplettes Neudesign
+## v2.0 (2026-01-08) - Complete Redesign
 
-**Hinweis:** v2.0 ist ein komplettes Neudesign basierend auf den Erkenntnissen aus v1.2 und v1.3. Version 1.3 wurde nie produziert, sondern diente nur als Zwischenschritt.
+**Note:** v2.0 is a complete redesign based on lessons learned from v1.2 and v1.3. Version 1.3 was never produced and served only as an intermediate step.
 
-### Layout (komplett neu)
+### Layout (completely new)
 
-- **Komplettes neues PCB-Layout** - sauberere Leiterbahnführung und optimierte Platzierung
-- **Quarz X602 näher an STM32** - vorher zu weit entfernt (Issue aus v1.3 behoben)
-- **Projekt umbenannt** von `µC_Agri-PV` zu `uC_Agri-PV` (ASCII-kompatibel)
+- **Complete new PCB layout** - cleaner trace routing and optimized placement
+- **Crystal X602 closer to STM32** - previously too far away (issue from v1.3 resolved)
+- **Project renamed** from `µC_Agri-PV` to `uC_Agri-PV` (ASCII-compatible)
 
 ### Power Management
 
-- **DMP1045U-7 ersetzt IRLML6402** - neuer PMOS für 3V3-Schaltung (bessere Spezifikationen)
-- **TPS61023DRLR Boost-Konverter** - neuer 3.3V Step-Up für Sensorversorgung
-- **Separate analoge Masse (GNDA)** - getrennt von digitalem GND für bessere Signalqualität
-- **Vollständige Abschaltung der Sensor-Peripherie:**
-  - Pull-up Widerstände an schaltbare 3V3-Schiene gehängt (nicht mehr an permanente VDD)
-  - Zugehörige ICs (z.B. OpAmps, Buffer) ebenfalls an schaltbare Versorgung
-  - MOSFET trennt somit nicht nur Sensor, sondern alle zugehörigen Komponenten
-  - → Eliminiert Leckströme über Pull-ups und ICs im Deep Sleep
-- **Neue Power-Rails:**
-  - `3V3_OPV_EN` - Enable für OPV-Versorgung
-  - `3V3_EN` - Enable für schaltbare 3.3V-Schiene
-  - `VDDA` - Separate analoge Versorgung
-  - `VBat_meas` - Batteriespannungsmessung via ADC
-  - `Vdd_11` - 1.1V Referenz/Core-Spannung
-- **SuperCap für RTC** - FC0V104ZFTBR24 für Backup-Versorgung
+- **DMP1045U-7 replaces IRLML6402** - new PMOS for 3V3 switching (better specifications)
+- **TPS61023DRLR boost converter** - new 3.3V step-up for sensor supply
+- **Separate analog ground (GNDA)** - separated from digital GND for better signal quality
+- **Complete shutdown of sensor peripherals:**
+  - Pull-up resistors connected to switchable 3V3 rail (no longer on permanent VDD)
+  - Associated ICs (e.g., OpAmps, buffers) also on switchable supply
+  - MOSFET now disconnects not only the sensor but all associated components
+  - Eliminates leakage currents through pull-ups and ICs during deep sleep
+- **New power rails:**
+  - `3V3_OPV_EN` - Enable for OpAmp supply
+  - `3V3_EN` - Enable for switchable 3.3V rail
+  - `VDDA` - Separate analog supply
+  - `VBat_meas` - Battery voltage measurement via ADC
+  - `Vdd_11` - 1.1V reference/core voltage
+- **SuperCap for RTC** - FC0V104ZFTBR24 for backup power
 
-### STM32 Peripherie
+### STM32 Peripherals
 
-- **TLV9304IDR OpAmp** - für Signalaufbereitung (ADC-Eingang)
-- **2.2µH Induktor (L201)** - für LC-Filter am ADC
-- **DMG1012T-13 N-MOSFET (Q203)** - für Sensor-Schaltung
-- **Neue Filterkondensatoren:**
-  - 33nF (C201) - Tiefpassfilter
-  - 15nF (C206) - Anti-Aliasing Filter
-  - 4.7pF (C1) - Hochfrequenz-Filterung
-- **ADC-Anbindung geändert** - optimierte Signalwege zum MCU
+- **TLV9304IDR OpAmp** - for signal conditioning (ADC input)
+- **2.2µH inductor (L201)** - for LC filter at ADC
+- **DMG1012T-13 N-MOSFET (Q203)** - for sensor switching
+- **New filter capacitors:**
+  - 33nF (C201) - Low-pass filter
+  - 15nF (C206) - Anti-aliasing filter
+  - 4.7pF (C1) - High-frequency filtering
+- **ADC connection changed** - optimized signal paths to MCU
 
-### Sensoren
+### Sensors
 
-- **TPS61023DRLR Boost** - 3.3V Versorgung für Sensoren (mit 1µH Induktor L801)
-- **IRLML6402 PMOS (Q804/Q805)** - schaltbare Sensorversorgung
-- **Spannungsteiler für ADC:**
-  - 100k/20k Teiler für Batteriemessung (R803, R808)
-  - 100k Pull-ups (R804, R805, R801)
-- **22µF Pufferkondensatoren (C806, C807, C812)** - Entkopplung
-- **Neue Sensor-Konnektoren:**
+- **TPS61023DRLR boost** - 3.3V supply for sensors (with 1µH inductor L801)
+- **IRLML6402 PMOS (Q804/Q805)** - switchable sensor supply
+- **Voltage dividers for ADC:**
+  - 100k/20k divider for battery measurement (R803, R808)
+  - 100k pull-ups (R804, R805, R801)
+- **22µF buffer capacitors (C806, C807, C812)** - decoupling
+- **New sensor connectors:**
   - X12: Conn_01x04_Pin (Current Sink)
   - X13: Conn_01x07_Pin (Multi-Sensor)
   - X15, X16: Conn_01x03_Pin (Soil/Temp)
 
 ### LoRa
 
-- **Status-LED hinzugefügt (LED_3)** - mit 1k Vorwiderstand (R19)
-- **22 Ohm Serienwiderstand (R34)** - Impedanzanpassung
-- **Separate Ground-Domain (GND1)** - für bessere HF-Isolation
-- **4.7µF Entkopplungskondensator (C12)** - Modul-Versorgung
-- **LoRa-E5 STEP-Modell** - 3D-Modell für Layout-Visualisierung (317990687)
+- **Status LED added (LED_3)** - with 1k series resistor (R19)
+- **22 Ohm series resistor (R34)** - impedance matching
+- **Separate ground domain (GND1)** - for better RF isolation
+- **4.7µF decoupling capacitor (C12)** - module supply
+- **LoRa-E5 STEP model** - 3D model for layout visualization (317990687)
 
 ### ESP32
 
-- **Neuer Footprint** - `Bibliothek:ESP32C6WROOM1N8` statt externer Library
-- **Referenz-Nummerierung** - U3 statt U8
-- **0R Konfigurationswiderstände** - für flexible Pin-Belegung
-- **GND-Netze reorganisiert** - sauberere Masseführung
+- **New footprint** - `Library:ESP32C6WROOM1N8` instead of external library
+- **Reference numbering** - U3 instead of U8
+- **0R configuration resistors** - for flexible pin assignment
+- **GND nets reorganized** - cleaner ground routing
 
-### Debug & Programmierung
+### Debug & Programming
 
-- **ARM-Cortex-Buchse korrigiert:** Pin 10 von JTRST → NRST (Pin 25 STM32U5)
-  - Ermöglicht Flashvorgang auch im Deep Sleep
-- **Debug-UART herausgeführt** (PA2/PA3 + GND + 3V3)
-- **Debug-Konnektor (X20):** 3220-10-0100-00 (10-Pin ARM Cortex)
-- **OneWire-Konnektor (X10):** 2x2 Pin für Dallas-Sensoren
+- **ARM Cortex connector corrected:** Pin 10 from JTRST → NRST (Pin 25 STM32U5)
+  - Enables flashing even during deep sleep
+- **Debug UART exposed** (PA2/PA3 + GND + 3V3)
+- **Debug connector (X20):** 3220-10-0100-00 (10-pin ARM Cortex)
+- **OneWire connector (X10):** 2x2 pin for Dallas sensors
 
-### Komponenten-Bibliothek (neu)
+### Component Library (new)
 
-| Komponente | Typ | Beschreibung |
-|------------|-----|--------------|
-| DMP1045U-7 | PMOS | Power-Switch (SOT-23) |
-| NX1610SA 32.768kHz | Quarz | RTC-Quarz |
-| FC0V104ZFTBR24 | SuperCap | RTC-Backup |
-| TPS61023DRLR | Boost IC | 3.3V Step-Up |
-| DMG1012T-13 | N-MOSFET | Low-Side Switch |
-| 317990687 | LoRa-E5 | STEP-3D-Modell |
-| TP4056-18650 | Footprint | Ladecontroller (korrigiert) |
+| Component | Type | Description |
+|-----------|------|-------------|
+| DMP1045U-7 | PMOS | Power switch (SOT-23) |
+| NX1610SA 32.768kHz | Crystal | RTC crystal |
+| FC0V104ZFTBR24 | SuperCap | RTC backup |
+| TPS61023DRLR | Boost IC | 3.3V step-up |
+| DMG1012T-13 | N-MOSFET | Low-side switch |
+| 317990687 | LoRa-E5 | STEP 3D model |
+| TP4056-18650 | Footprint | Charge controller (corrected) |
 
-### Sonstiges
+### Miscellaneous
 
-- **BOM/iBOM aktualisiert** - interaktive Stückliste regeneriert
-- **CSV-Export** - Stückliste als CSV
-- **Bauteil-Referenzen** - komplett neu nummeriert
+- **BOM/iBOM updated** - interactive BOM regenerated
+- **CSV export** - BOM as CSV
+- **Component references** - completely renumbered
 
 ---
 
-## v1.3 (2025-12-18) - Zwischenversion (nie produziert)
+## v1.3 (2025-12-18) - Intermediate Version (never produced)
 
-**Hinweis:** Diese Version diente als Planungs- und Entwicklungsschritt zwischen v1.2 und v2.0.
+**Note:** This version served as a planning and development step between v1.2 and v2.0.
 
-### Umgesetzt (Schematic)
+### Implemented (Schematic)
 
-#### Debug & Programmierung
-- **ARM-Cortex-Buchse:** Pin 10 von JTRST → NRST (Pin 25 STM32U5)
-  - Ermöglicht Flashvorgang auch im Deep Sleep
+#### Debug & Programming
+- **ARM Cortex connector:** Pin 10 from JTRST → NRST (Pin 25 STM32U5)
+  - Enables flashing even during deep sleep
 
 #### Power Management
-- **Schaltbare 3V3-Peripherie-Schiene** für minimalen Deep Sleep Verbrauch
-- **RTC Backup-Versorgung** via SuperCap für Uhrzeiterhalt bei kurzen Stromverlusten
+- **Switchable 3V3 peripheral rail** for minimal deep sleep consumption
+- **RTC backup supply** via SuperCap for timekeeping during brief power losses
 
-#### Kommunikation
-- **Debug-UART herausgeführt** (PA2/PA3 + GND + 3V3) für ST-Link oder externe Geräte
+#### Communication
+- **Debug UART exposed** (PA2/PA3 + GND + 3V3) for ST-Link or external devices
 
 #### Layout
-- **Ladecontroller Footprint/Symbol korrigiert**
+- **Charge controller footprint/symbol corrected**
 
-### Offen geblieben (in v2.0 umgesetzt)
+### Remaining Open (implemented in v2.0)
 
-- Schematic-Änderungen ins Layout übernehmen
-- Quarz X602 näher an STM32 platzieren
+- Transfer schematic changes to layout
+- Place crystal X602 closer to STM32
 
-### Nicht umgesetzt (nicht nötig)
+### Not Implemented (not necessary)
 
-| Geplant                             | Begründung                        |
-| ----------------------------------- | --------------------------------- |
-| ~~UART zwischen STM32 ↔ ESP32~~     | Bereits über SPI verbunden        |
-| ~~WakeUp-Pin zum LoRa-E5~~          | Modul wacht durch UART-Befehl auf |
-| ~~Separater PMOS für PAR Receiver~~ | Hängt an schaltbarer 3V3-Schiene  |
-| ~~Separater PMOS für TLV9304~~      | Hängt an schaltbarer 3V3-Schiene  |
+| Planned                             | Reason                              |
+| ----------------------------------- | ----------------------------------- |
+| ~~UART between STM32 ↔ ESP32~~      | Already connected via SPI           |
+| ~~WakeUp pin to LoRa-E5~~           | Module wakes up via UART command    |
+| ~~Separate PMOS for PAR receiver~~  | Connected to switchable 3V3 rail    |
+| ~~Separate PMOS for TLV9304~~       | Connected to switchable 3V3 rail    |
 
 ---
 
-## v1.2 (2025) - Ursprüngliche Version
+## v1.2 (2025) - Original Version
 
-- Erste vollständige Version des uC_Agri-PV Boards
-- Basis-Layout mit STM32U5, ESP32-C6, LoRa-E5
-- Sensoren: PAR, Bodenfeuchte, Temperatur
-- SD-Karten-Slot für Datenlogging
-- Lithium-Batterie Ladecontroller (TP4056)
+- First complete version of the uC_Agri-PV board
+- Base layout with STM32U5, ESP32-C6, LoRa-E5
+- Sensors: PAR, soil moisture, temperature
+- SD card slot for data logging
+- Lithium battery charge controller (TP4056)
