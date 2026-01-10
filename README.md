@@ -122,7 +122,7 @@ uC_Agri-PV/
 
 - **[Hardware Pinout](HARDWARE_PINOUT.md)** - GPIO assignments, sensor data pins, communication protocols
 - **[Changelog](CHANGELOG.md)** - Version history and changes between revisions
-- **[Interactive BOM](bom/ibom.html)** - Component placement and bill of materials
+- **[Interactive BOM](https://derschweigefuchs.github.io/uC_Agri-PV/bom/ibom.html)** - Component placement and bill of materials
 
 ---
 
