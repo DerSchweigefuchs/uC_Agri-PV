@@ -34,15 +34,15 @@ A custom PCB designed for environmental monitoring in agricultural photovoltaic 
 
 ## Supported Sensors
 
-| Sensor | Interface | Connector |
-|--------|-----------|-----------|
-| PAR (Photosynthetically Active Radiation) | ADC | X12 |
-| UV Radiation | ADC | X17 |
-| Soil Moisture | ADC | X16 |
-| Soil Temperature (DS18B20) | OneWire | X15 |
-| Wind Speed (Anemometer) | RS485 | X14 |
-| BME680 (Temp, Humidity, Pressure, Gas) | I2C | X13 |
-| Generic Analog (2 channels) | ADC | X18 |
+| Sensor | Interface |
+|--------|-----------|
+| PAR (Photosynthetically Active Radiation) | RS485 |
+| UV Radiation | ADC |
+| Soil Moisture | ADC |
+| Soil Temperature (DS18B20) | OneWire |
+| Wind Speed (Anemometer) | ADC |
+| BME680 (Temp, Humidity, Pressure, Gas) | I2C |
+| Generic Analog (2 channels) | ADC |
 
 All sensor power rails are individually switchable via GPIO-controlled MOSFETs for minimal deep sleep current consumption.
 
@@ -122,7 +122,7 @@ uC_Agri-PV/
 
 - **[Hardware Pinout](HARDWARE_PINOUT.md)** - GPIO assignments, sensor data pins, communication protocols
 - **[Changelog](CHANGELOG.md)** - Version history and changes between revisions
-- **[Interactive BOM](https://derschweigefuchs.github.io/uC_Agri-PV/bom/ibom.html)** - Component placement and bill of materials
+- **[Interactive BOM](https://derschweigefuchs.github.io/uC_Agri-PV/bom/ibom.html)** - Component placement of materials
 
 ---
 
@@ -135,24 +135,6 @@ uC_Agri-PV/
 | v1.2 | 2025 | Initial release |
 
 See **[CHANGELOG.md](CHANGELOG.md)** for detailed changes.
-
----
-
-## Getting Started
-
-### Hardware Requirements
-
-- ST-Link V2/V3 or J-Link debugger
-- USB-C cable (for charging/ESP32 debug)
-- Li-Ion battery (18650 or similar)
-- Sensors as needed
-
-### Firmware Development
-
-The board is designed for use with:
-- **STM32CubeIDE** / **STM32CubeMX** for STM32U5 firmware
-- **ESP-IDF** or **Arduino** for ESP32-C6 (optional)
-- **AT Commands** for LoRa-E5 module
 
 ---
 

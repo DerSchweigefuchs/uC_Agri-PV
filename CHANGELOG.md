@@ -4,7 +4,7 @@
 
 **Note:** v2.0 is a complete redesign based on lessons learned from v1.2 and v1.3. Version 1.3 was never produced and served only as an intermediate step.
 
-### Layout (completely new)
+### Layout
 
 - **Complete new PCB layout** - cleaner trace routing and optimized placement
 - **Crystal X602 closer to STM32** - previously too far away (issue from v1.3 resolved)
@@ -95,7 +95,7 @@
 
 ---
 
-## v1.3 (2025-12-18) - Intermediate Version (never produced)
+## v1.3 (2025-12-18) - Intermediate Version
 
 **Note:** This version served as a planning and development step between v1.2 and v2.0.
 
@@ -131,7 +131,7 @@
 
 ---
 
-## v1.2 (2025) - Original Version
+## v1.2 (2025-04-17) - Original Version
 
 - First complete version of the uC_Agri-PV board
 - Base layout with STM32U5, ESP32-C6, LoRa-E5
