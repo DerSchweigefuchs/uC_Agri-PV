@@ -6,10 +6,32 @@ This document describes how the power management on the uC_Agri-PV board works. 
 
 ### Power Lanes
 
-| Lanes   | Control STM32 PIN | Bridge Jumper | Comment                                       |
-| ------- | ----------------- | ------------- | --------------------------------------------- |
-| 3V3_VDD | -                 | -             | Always powered                                |
-| +3.3V   | PB15 (3V3_EN)     | JP4           | Can be controlled by STM or bridged by jumper |
+The board has three 3.3V power lanes:
+
+| Lane    | Description                                           |
+| ------- | ----------------------------------------------------- |
+| 3V3_VDD | Always powered - for essential components             |
+| +3.3V   | Switchable lane - for sensors and peripherals         |
+| VDD_MCU | Only for the MCU - connected over JP2 to 3V3_VDD lane |
+
+#### 3.3V Lane Control (JP4)
+
+The +3.3V lane can be controlled by the STM32 or permanently enabled with a jumper.
+
+![3.3V Lane Control](images/3v3_lane_control.png)
+
+| Mode | JP4 | STM32 (PB15) | +3.3V Lane | Use Case |
+| ---- | --- | ------------ | ---------- | -------- |
+| Always ON | closed | ignored | always powered | Simple operation, no power saving |
+| MCU controlled | open | LOW = ON, HIGH = OFF | STM32 controlled | Low power operation |
+
+**How it works:**
+
+- **JP4 closed:** The jumper bridges 3V3_VDD directly to +3.3V, the MOSFET is bypassed
+- **JP4 open:** The STM32 controls the P-MOSFET (Q701) via PB15 (Active Low)
+
+**Recommendation:** For low power applications keep JP4 open so the STM32 can turn off the +3.3V lane during deep sleep.
+
 
 ### Enable Jumper
 

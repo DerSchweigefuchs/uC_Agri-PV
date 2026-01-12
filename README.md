@@ -48,14 +48,6 @@ All sensor power rails are individually switchable via GPIO-controlled MOSFETs f
 
 ---
 
-## Pin Definition
-
-![Pin Definition](images/V2_0_Pin_definition.png)
-
-For detailed GPIO mappings and communication protocols, see **[Hardware Pinout Documentation](HARDWARE_PINOUT.md)**.
-
----
-
 ## Power Management
 
 The board has flexible power options and MCU-controlled power switching for low-power operation.

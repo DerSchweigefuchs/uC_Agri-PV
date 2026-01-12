@@ -2,6 +2,8 @@
 
 **uC_Agri-PV v2.0** - STM32U575ZIT6Q (LQFP-144)
 
+![Pin Definition](images/V2_0_Pin_definition.png)
+
 ---
 
 ## 1. Sensors - Data Reception
@@ -188,17 +190,19 @@ The STM32 receives analog values via ADC1:
 
 ## Summary: All Enable Signals
 
+All enable signals are **Active LOW** (Pin LOW = Power ON). See [Power Control](POWER_CONTROL.md) for details.
+
 | Signal | GPIO | Pin | Active | What is Powered |
 |--------|------|-----|--------|-----------------|
-| `PAR_EN` | **PB10** | 66 | HIGH | PAR light sensor + OpAmp |
-| `UV_EN` | **PB5** | 134 | HIGH | UV sensor + OpAmp |
-| `SoilMoist_EN` | **PB11** | 67 | HIGH | Soil moisture sensor |
-| `SoilTemp_EN` | **PB13** | 74 | HIGH | Dallas DS18B20 |
-| `Wind_EN` | **PB0** | 43 | HIGH | Anemometer + RS485 |
-| `BME_EN` | **PB14** | 75 | HIGH | BME680 |
-| `SD_EN` | **PA8** | 100 | HIGH | SD card slot |
-| `LoRa_EN` | **PD13** | 82 | HIGH | LoRa-E5 module |
-| `ESP32_EN` | **PD5** | 119 | HIGH | ESP32-C6 |
+| `PAR_EN` | **PB10** | 66 | LOW | PAR light sensor + OpAmp |
+| `UV_EN` | **PB5** | 134 | LOW | UV sensor + OpAmp |
+| `SoilMoist_EN` | **PB11** | 67 | LOW | Soil moisture sensor |
+| `SoilTemp_EN` | **PB13** | 74 | LOW | Dallas DS18B20 |
+| `Wind_EN` | **PB0** | 43 | LOW | Anemometer + RS485 |
+| `BME_EN` | **PB14** | 75 | LOW | BME680 |
+| `SD_EN` | **PA8** | 100 | LOW | SD card slot |
+| `LoRa_EN` | **PD13** | 82 | LOW | LoRa-E5 module |
+| `ESP32_EN` | **PD5** | 119 | LOW | ESP32-C6 |
 
 ---
 
