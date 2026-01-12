@@ -4,7 +4,7 @@
 
 A custom PCB designed for environmental monitoring in agricultural photovoltaic installations. Built around the STM32U5 ultra-low-power microcontroller with LoRaWAN connectivity and multiple sensor interfaces.
 
-![PCB Front View](uC_Agri-PV-front.png)
+![PCB Front View](images/uC_Agri-PV-front.png)
 
 ---
 
@@ -50,7 +50,7 @@ All sensor power rails are individually switchable via GPIO-controlled MOSFETs f
 
 ## Pin Definition
 
-![Pin Definition](V2_0_Pin_definition.png)
+![Pin Definition](images/V2_0_Pin_definition.png)
 
 For detailed GPIO mappings and communication protocols, see **[Hardware Pinout Documentation](HARDWARE_PINOUT.md)**.
 
@@ -58,23 +58,9 @@ For detailed GPIO mappings and communication protocols, see **[Hardware Pinout D
 
 ## Power Management
 
-### Power Input Selection (PWR Select)
+The board has flexible power options and MCU-controlled power switching for low-power operation.
 
-| Position | Power Source |
-|----------|--------------|
-| Vdd_Bat | Lithium battery |
-| Vdd_USB | USB 5V (from charger IC) |
-| Vdd_Solar | Solar panel input |
-| 5V_Input | External 5V DC jack |
-
-### ESP32 Power Selection
-
-| Jumper | Connection | Function |
-|--------|------------|----------|
-| 1-2 | MOSFET → Vdd | MCU-controlled (for deep sleep) |
-| 2-3 | USB → Vdd | Powered only when USB connected (debug mode) |
-
-**Note:** Do not bridge all three pins simultaneously - this can cause backfeed current through the MOSFET body diode.
+For detailed information about power input selection, jumper settings, and GPIO power control see **[Power Control Documentation](POWER_CONTROL.md)**.
 
 ---
 
@@ -89,38 +75,21 @@ For detailed GPIO mappings and communication protocols, see **[Hardware Pinout D
 | LORA JTAG | LoRa-E5 programming header |
 | UART_ESP | ESP32 UART (RXD0, TXD0) |
 
-### GPIO Headers
+### GPIO/UART Headers
 
 | Connector | Signals |
 |-----------|---------|
-| X7 (GPIO STM) | General purpose STM32 GPIOs |
+| X7 (GPIO STM) | STM32 GPIOs for UART debugging or other UART devices |
 | X5 (GPIO STM) | Additional STM32 GPIOs |
 | X4 (I2C STM) | I2C bus expansion |
 | GPIO_ESP | ESP32-C6 GPIO breakout |
 
 ---
 
-## Project Structure
-
-```
-uC_Agri-PV/
-├── uC_Agri-PV.kicad_pro      # KiCad project file
-├── uC_Agri-PV.kicad_sch      # Main schematic
-├── uC_Agri-PV.kicad_pcb      # PCB layout
-├── uC_Agri-PV.pdf            # Schematic PDF export
-├── Bibliothek/               # Component libraries
-├── bom/
-│   └── ibom.html             # Interactive BOM
-└── docs/
-    ├── HARDWARE_PINOUT.md    # GPIO and communication details
-    └── CHANGELOG.md          # Version history
-```
-
----
-
 ## Documentation
 
 - **[Hardware Pinout](HARDWARE_PINOUT.md)** - GPIO assignments, sensor data pins, communication protocols
+- **[Power Control](POWER_CONTROL.md)** - Power input selection, jumper settings, GPIO power switching
 - **[Changelog](CHANGELOG.md)** - Version history and changes between revisions
 - **[Interactive BOM](https://derschweigefuchs.github.io/uC_Agri-PV/bom/ibom.html)** - Component placement of materials
 
@@ -140,7 +109,7 @@ See **[CHANGELOG.md](CHANGELOG.md)** for detailed changes.
 
 ## License
 
-This hardware design is part of a master's thesis project for Agri-PV research.
+This hardware design is part of a master's thesis of the University of Applied Science Karlsruhe of the project for Agri-PV research.
 
 ---
 
