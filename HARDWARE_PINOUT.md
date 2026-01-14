@@ -16,7 +16,7 @@
 | **UV Radiation** | PB1 (Pin 44) | ADC | PB5 (Pin 134) | Analog voltage via OpAmp |
 | **Soil Moisture** | PD12 (Pin 81) | ADC | PB11 (Pin 67) | Analog voltage 0-3.3V |
 | **Soil Temperature** | PA7 (Pin 42) | OneWire (USART2) | PB13 (Pin 74) | Dallas DS18B20, half-duplex |
-| **Wind Speed** | PA0/PA1 (Pin 33/34) | RS485 (UART4) | PB0 (Pin 43) | Digital data via ISL83078 |
+| **Wind Speed** | PB6 (Pin 135) | Digital (Frequency) | PB0 (Pin 43) | Pulse signal, internal pull-up, TIM4_CH1 |
 | **BME680 (Environmental)** | PC1/PC0 (Pin 27/26) | I2C3 | PB14 (Pin 75) | Temp, humidity, pressure, gas |
 | **Battery Voltage** | PA6 (Pin 41) | ADC | - (always on) | Voltage divider 100k/20k |
 
@@ -30,7 +30,6 @@ The STM32 receives analog values via ADC1:
 |--------|------|-----|-------------|--------|-------------|
 | `Soil_Moisture` | **PD12** | 81 | ADC1_IN7 | Soil moisture | 0-3.3V |
 | `UV_Radiation` | **PB1** | 44 | ADC1_IN16 | UV/PAR via OpAmp | 0-3.3V |
-| `Signal_wind_velocity` | **PB6** | 135 | ADC1 | Anemometer (analog) | 0-3.3V |
 | `VBat_meas` | **PA6** | 41 | ADC1_IN11 | Battery (÷6) | 0-3.3V → 0-19.8V |
 
 **Data Flow:** Sensor → (OpAmp) → ADC Pin → ADC1 Peripheral → DMA/Register
@@ -63,19 +62,23 @@ The STM32 receives analog values via ADC1:
 
 ---
 
-## 5. RS485 Sensor (Anemometer)
+## 5. Wind Speed Sensor (Anemometer SEN0170)
 
 | Signal | GPIO | Pin | Function | Direction |
 |--------|------|-----|----------|-----------|
-| `UART4_TX` | **PA0** | 33 | Transmit data | STM32 → ISL83078 → Sensor |
-| `UART4_RX` | **PA1** | 34 | Receive data | Sensor → ISL83078 → STM32 |
-| `DE/RE` | **PB7** | 136 | Direction control | HIGH=Transmit, LOW=Receive |
+| `Signal_wind_velocity` | **PB6** | 135 | Frequency input | Sensor → STM32 |
 
-- **Protocol:** RS485 via UART4 + ISL83078 transceiver
-- **Enable:** PB0 (HIGH = power on)
-- **Data Flow:**
-  - Transmit: PB7=HIGH → PA0 (TX) → ISL83078 → RS485 bus → Sensor
-  - Receive: PB7=LOW → Sensor → RS485 bus → ISL83078 → PA1 (RX)
+- **Protocol:** Digital pulse/frequency measurement via TIM4_CH1 Input Capture
+- **Enable:** PB0 (LOW = power on)
+- **Pull-Up:** Internal pull-up enabled on PB6
+- **Signal:** Rectangular pulse signal (frequency proportional to wind speed)
+- **Conversion:** Frequency × 0.106 = Wind speed [m/s]
+- **Supply:** 3.3V (sensor internal PCB removed)
+- **Current:** ~2.2 mA
+
+**Data Flow:** Wind rotation → Sensor pulse → PB6 (internal pull-up) → TIM4 Input Capture → Frequency measurement
+
+**Note:** The SEN0170 sensor's internal voltage regulator PCB must be removed. The bare sensor element operates directly at 3.3V and outputs a digital pulse signal.
 
 ---
 
@@ -213,8 +216,12 @@ All enable signals are **Active LOW** (Pin LOW = Power ON). See [Power Control](
 |-----|--------|--------|
 | PA6 | VBat_meas | Battery voltage |
 | PB1 | UV_Radiation | UV/PAR sensor |
-| PB6 | Signal_wind_velocity | Wind (analog) |
 | PD12 | Soil_Moisture | Soil moisture |
+
+### Timer (Digital Frequency Input)
+| Pin | Signal | Timer | Sensor |
+|-----|--------|-------|--------|
+| PB6 | Signal_wind_velocity | TIM4_CH1 | Wind speed (pulse) |
 
 ### I2C
 | Bus | SCL | SDA | Device |
@@ -233,7 +240,6 @@ All enable signals are **Active LOW** (Pin LOW = Power ON). See [Power Control](
 |-----|----|----|--------|
 | USART1 | PA9 | PA10 | LoRa-E5 |
 | USART2 | PA7 | PA7 | OneWire (DS18B20) |
-| UART4 | PA0 | PA1 | RS485 (Anemometer) |
 
 ### SDMMC
 | Bus | CLK | CMD | DAT0-3 | Device |

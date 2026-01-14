@@ -5409,6 +5409,12 @@
 		(uuid "99b24f40-3320-48a2-bdb5-86b811d35c26")
 	)
 	(junction
+		(at 214.63 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c055044-08f2-4f14-ae08-7509b2c494d9")
+	)
+	(junction
 		(at 214.63 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5497,12 +5503,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c6a51f2e-de0a-4a25-a1f9-244762e18277")
-	)
-	(junction
-		(at 214.63 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d0cb2020-bf74-4642-8d8e-04537ab7628c")
 	)
 	(junction
 		(at 92.71 66.04)
@@ -5966,7 +5966,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 60.96) (xy 228.6 68.58)
+			(xy 228.6 60.96) (xy 228.6 62.23)
 		)
 		(stroke
 			(width 0)
@@ -6856,7 +6856,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 48.26) (xy 214.63 55.88)
+			(xy 214.63 48.26) (xy 214.63 51.435)
 		)
 		(stroke
 			(width 0)
@@ -7436,7 +7436,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 68.58) (xy 214.63 68.58)
+			(xy 211.455 62.23) (xy 214.63 62.23)
 		)
 		(stroke
 			(width 0)
@@ -7496,7 +7496,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 68.58) (xy 228.6 68.58)
+			(xy 214.63 62.23) (xy 228.6 62.23)
 		)
 		(stroke
 			(width 0)
@@ -7696,7 +7696,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 63.5) (xy 214.63 68.58)
+			(xy 214.63 59.055) (xy 214.63 62.23)
 		)
 		(stroke
 			(width 0)
@@ -8261,7 +8261,7 @@
 	)
 	(hierarchical_label "3V3_EN"
 		(shape input)
-		(at 210.82 68.58 180)
+		(at 211.455 62.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15728,7 +15728,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 214.63 59.69 0)
+		(at 214.63 55.245 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15737,7 +15737,7 @@
 		(dnp no)
 		(uuid "caf0b8a0-0837-4a33-8ef7-1fa28fc1c8e4")
 		(property "Reference" "R706"
-			(at 217.17 60.96 0)
+			(at 208.28 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15746,7 +15746,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 217.17 58.42 0)
+			(at 208.28 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15755,7 +15755,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 212.852 59.69 90)
+			(at 212.852 55.245 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15764,7 +15764,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 214.63 59.69 0)
+			(at 214.63 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15773,7 +15773,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 214.63 59.69 0)
+			(at 214.63 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15781,7 +15781,7 @@
 			)
 		)
 		(property "Mouser Part Number" "660-RK73B2ATTE104J"
-			(at 214.63 59.69 0)
+			(at 214.63 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15790,7 +15790,7 @@
 			)
 		)
 		(property "AVAILABILITY" ""
-			(at 214.63 59.69 0)
+			(at 214.63 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15799,7 +15799,7 @@
 			)
 		)
 		(property "ECCN_EU" ""
-			(at 214.63 59.69 0)
+			(at 214.63 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15808,7 +15808,7 @@
 			)
 		)
 		(property "ECCN_US" ""
-			(at 214.63 59.69 0)
+			(at 214.63 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15817,7 +15817,7 @@
 			)
 		)
 		(property "PRICE" ""
-			(at 214.63 59.69 0)
+			(at 214.63 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -42,6 +42,7 @@ Desktop.ini
 *.tmp
 *.temp
 *.log
+"#auto_saved_files#"
 
 # Python
 __pycache__/
