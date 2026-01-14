@@ -86,18 +86,40 @@ Each sensor has its own power control pin. This allows to power only the sensors
 
 ## Power Select
 
-### Board Power Supply (JP8)
+### Power Supply Chain
 
-The board can be powered from different sources. Use the **PWR Select** jumper (JP8) to choose your power source.
+The board uses a two-stage power architecture:
+
+1. **Battery Charger (TP4056)** – Charges the LiPo battery from solar input and provides Power-Path Load-Sharing
+2. **Buck-Boost Converter (TPS63021)** – Regulates the selected input voltage to stable 3.3V (3V3_VDD)
+
+#### Battery Charger & Power-Path (TP4056)
+
+The TP4056 charges the battery from the solar input (X22). The Power-Path circuit (MOSFET + Schottky diode) provides two voltage sources:
+
+![Battery Charger Circuit](images/TP4056_BatteryCharger.png)
+
+| Output  | Source |
+| ------- | ------ |
+| Vdd_Bat | Direct battery voltage (3.0–4.2V) |
+| Vdd_Ext | Power-Path output – Solar when available, otherwise battery |
+
+#### Buck-Boost Converter (TPS63021)
+
+The selected voltage source is regulated to 3.3V by the Buck-Boost converter. Use the **PWR Select** jumper (JP8) to choose the input.
+
+![Buck-Boost Converter Circuit](images/TPS63021DSJR_Buck-boost_Converter.png)
+
+### Board Power Supply (JP8)
 
 ![Board Power Select](images/supply_power_select.png)
 
-| Position | Pins  | Power Source         | Comment                              |
-| -------- | ----- | -------------------- | ------------------------------------ |
-| 1        | 1-2   | Vdd_Bat              | Lithium battery (X21)                |
-| 2        | 3-4   | Vdd_USB              | USB 5V from charger IC               |
-| 3        | 5-6   | Vdd_Solar            | Solar panel input (X22)              |
-| 4        | 7-8   | 5V_Input             | External 5V DC jack (1A max)         |
+| Position | Pins | Power Source | Description |
+| -------- | ---- | ------------ | ----------- |
+| 1 | 1-2 | Vdd_Bat | Direct battery voltage (3.0–4.2V). The Buck-Boost converter is fed directly from the LiPo cell. Drawback: When charging and powering the load simultaneously, current flows into the battery and out to the load – more inefficient and increased cycle stress. |
+| 2 | 3-4 | Vdd_USB | USB 5V from the J601 micro USB plug |
+| 3 | 5-6 | Vdd_Ext | Output of the Power-Path Load-Sharing (MOSFET + Schottky). Automatic source selection: With solar supply the load is powered directly, allowing the battery to charge unloaded. Without solar the battery takes over seamlessly. **Recommended setting for autonomous battery operation.** |
+| 4 | 7-8 | 5V_Input | External 5V DC jack J1 (1A max). For stationary operation with external power supply. |
 
 **Note:** Only select ONE power source at a time.
 
