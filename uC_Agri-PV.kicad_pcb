@@ -8061,7 +8061,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C602"
-			(at -2.85 -1.3 270)
+			(at -2.75 -1.5 270)
 			(layer "F.SilkS")
 			(uuid "d791f2e1-6599-4645-8a3f-0b04f6481b39")
 			(effects
@@ -15779,7 +15779,7 @@
 		(descr "http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKRK/SKRKAHE020.html")
 		(tags "SMD SMT button")
 		(property "Reference" "SW_B1"
-			(at 3.75 -0.1 270)
+			(at 3.75 -0.6 270)
 			(layer "F.SilkS")
 			(uuid "0387ede3-00bc-49a1-a061-864bb9d7a79f")
 			(effects
@@ -16097,13 +16097,14 @@
 		(descr "SMD 1x-dip-switch SPST , Slide, row spacing 6.73 mm (264 mils), body size 6.7x4.1mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile, JPin")
 		(tags "SMD DIP Switch SPST Slide 6.73mm 264mil SMD LowProfile JPin")
 		(property "Reference" "SW2"
-			(at 5.7 -1.2 0)
+			(at 5.9 -1.2 0)
 			(layer "F.SilkS")
 			(uuid "7e57ebe3-7cfe-48af-95eb-af9cd526db90")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 1.27 1.27)
+					(thickness 0.2)
+					(bold yes)
 				)
 			)
 		)
@@ -46917,13 +46918,14 @@
 		(descr "SMD 1x-dip-switch SPST , Slide, row spacing 6.73 mm (264 mils), body size 6.7x4.1mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile, JPin")
 		(tags "SMD DIP Switch SPST Slide 6.73mm 264mil SMD LowProfile JPin")
 		(property "Reference" "SW3"
-			(at -5.9 -0.2 0)
+			(at -5.9 1.1 0)
 			(layer "F.SilkS")
 			(uuid "4cacf535-b693-4db1-92ad-3af9ab0df17c")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 1.27 1.27)
+					(thickness 0.2)
+					(bold yes)
 				)
 			)
 		)
@@ -79860,8 +79862,7 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
-				(bold yes)
+				(thickness 0.125)
 			)
 			(justify left bottom)
 		)
@@ -79912,8 +79913,7 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
-				(bold yes)
+				(thickness 0.125)
 			)
 			(justify left bottom)
 		)
@@ -80079,8 +80079,7 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
-				(bold yes)
+				(thickness 0.125)
 			)
 			(justify left bottom)
 		)
@@ -80091,7 +80090,7 @@
 		(uuid "65c2debb-744d-4761-b798-26bb0e2ca65c")
 		(effects
 			(font
-				(size 1 1)
+				(size 1.27 1.27)
 				(thickness 0.2)
 				(bold yes)
 			)
@@ -80190,12 +80189,12 @@
 		)
 	)
 	(gr_text "USER"
-		(at 41.4 92 0)
+		(at 40.9 92.4 0)
 		(layer "F.SilkS")
 		(uuid "78e5f6bd-fa4f-41e5-be85-9ecc1c327551")
 		(effects
 			(font
-				(size 1 1)
+				(size 1.27 1.27)
 				(thickness 0.2)
 				(bold yes)
 			)
@@ -80235,8 +80234,7 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
-				(bold yes)
+				(thickness 0.125)
 			)
 			(justify left bottom)
 		)
