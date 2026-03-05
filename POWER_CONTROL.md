@@ -65,8 +65,8 @@ The STM32 can control the power supply for nearly every part on the board. To ac
 | Part      | STM32 PIN | Active | Comment                         |
 | --------- | --------- | ------ | ------------------------------- |
 | SD_EN     | PA8       | LOW    | Micro SD card slot              |
-| ESP32     | PD5       | LOW    | ESP32 module                    |
-| LoRa E5   | PD13      | LOW    | LoRa E5 communication module    |
+| ESP32_EN  | PD5       | LOW    | ESP32 module                    |
+| LoRa_EN   | PD13      | LOW    | LoRa E5 communication module    |
 | 3V3 OPV   | PG1       | LOW    | 3.3V for operational amplifiers |
 | 3.3V Lane | PB15      | LOW    | General 3.3V power lane         |
 

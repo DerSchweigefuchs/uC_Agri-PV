@@ -12317,6 +12317,17 @@
 		)
 		(uuid "9d7e8bdf-6662-4910-9655-ef3da6738fa9")
 	)
+	(hierarchical_label "Vdd_MCU"
+		(shape input)
+		(at 53.34 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a1675e0c-b866-4b7c-a939-b401e06252dd")
+	)
 	(hierarchical_label "USB_D-"
 		(shape bidirectional)
 		(at 246.38 85.09 0)
@@ -14838,73 +14849,6 @@
 			(project "µC_Agri-PV"
 				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/68eeaf65-50b7-4f21-91a4-9a8eefc615e6"
 					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 53.34 165.1 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "42544413-e267-4ec4-9992-b51451b720be")
-		(property "Reference" "#PWR0203"
-			(at 49.53 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 57.15 165.0999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 53.34 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a77f57db-af70-4687-bbc9-59949dc3a3bf")
-		)
-		(instances
-			(project ""
-				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/68eeaf65-50b7-4f21-91a4-9a8eefc615e6"
-					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
