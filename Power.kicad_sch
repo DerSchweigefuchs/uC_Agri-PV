@@ -7,7 +7,7 @@
 	(title_block
 		(title "Power Supply")
 		(date "2026-01-08")
-		(rev "2.0")
+		(rev "2.1")
 	)
 	(lib_symbols
 		(symbol "2025-03-25_12-16-20:TLV9304IDR"
@@ -555,6 +555,316 @@
 						(effects
 							(font
 								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "870585375004:870585375004"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 8.89 6.35 0)
+				(effects
+					(font
+						(size 1.5833 1.3333)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "cadstarpcblib:CAPPRD500W65D1000H1150"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "WCAP-HTAH Al. Hybrid Polymer Capacitors HTKF100471M016DSPA9D000; THT Radial; 470 F +/-20%; 16 V(DC); 4000 h; -55C / +125C; size DxL 10.0 x 10.0; pitch 5.0; Pin  0.6; Max. Iripple 2620 mA @100 kHz; LC 75.2 A; DF 16 %"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Part Name" "870585375004"
+				(at 8.89 3.81 0)
+				(effects
+					(font
+						(size 1.5833 1.3333)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Version" "1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "3D_Model" "870585375004"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "11.5mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Link Datasheet" "https://www.we-online.com/catalog/datasheet/870585375004.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Link Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/870585375004?qs=9vOqFld9vZXYFgU%2FkyI%2Fmg%3D%3D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Wurth Elektronik"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "870585375004"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "710-870585375004"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CAPPRD500W65D1000H1150"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "870585375004_1_0"
+				(polyline
+					(pts
+						(xy 0 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.064 1.778) (xy 4.064 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.572 1.27) (xy 3.556 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 5.842 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.842 2.54) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.842 -2.54) (xy 5.842 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 7.62 -2.54) (xy 6.858 -2.54) (xy 6.858 2.54) (xy 7.62 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 10.16 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 0) (xy 10.16 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.5833 1.5833)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.5833 1.5833)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 0)
+					(length 0)
+					(name "-"
+						(effects
+							(font
+								(size 1.5833 1.5833)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.5833 1.5833)
 							)
 						)
 					)
@@ -2082,411 +2392,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GNDA_1"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GNDA"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GNDA_1_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GNDA_1_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "GND_1"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_1_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "GND_2"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_2_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_2_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "GND_5"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_5_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_5_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Jumper:Jumper_2_Bridged"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -2634,12 +2543,15 @@
 			(embedded_fonts no)
 		)
 		(symbol "Jumper:SolderJumper_2_Bridged"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "JP"
 				(at 0 2.032 0)
@@ -4213,8 +4125,12 @@
 		)
 		(symbol "power:+BATT"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4314,8 +4230,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(hide yes)
-					(name "+BATT"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4335,8 +4250,12 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4412,8 +4331,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(hide yes)
-					(name "GND"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4433,8 +4351,12 @@
 		)
 		(symbol "power:GNDA"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4510,8 +4432,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(hide yes)
-					(name "GNDA"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4598,7 +4519,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4632,8 +4553,12 @@
 		)
 		(symbol "power:VDDA"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4648,7 +4573,7 @@
 				)
 			)
 			(property "Value" "VDDA"
-				(at 0 3.81 0)
+				(at 0 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4733,8 +4658,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(hide yes)
-					(name "VDDA"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4802,8 +4726,8 @@
 		(uuid 9b86732f-ee4e-4561-ae71-f3adfebd986f)
 	)
 	(rectangle
-		(start 27.94 55.245)
-		(end 69.215 88.9)
+		(start 24.13 55.245)
+		(end 58.42 88.9)
 		(stroke
 			(width 0)
 			(type dash)
@@ -5112,6 +5036,18 @@
 		)
 		(uuid "b44af124-439a-4269-a2de-f8ac481e1558")
 	)
+	(text "IC701 Extern ersetzt durch ein Pololu 3.3V Step-Up/Step-Down Voltage Regulator\nVinMAX=16V\nVinMin=3V\nIMax=1,5A\nWirkungsgrad=85%"
+		(exclude_from_sim no)
+		(at 71.12 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+			(href "https://eckstein-shop.de/Pololu33VStep-Up2FStep-DownVoltageRegulatorw2FFixed3VLow-VoltageCutoffS9V11F3S5C3")
+		)
+		(uuid "bc09683a-af5c-41cc-adbc-b15fd506ffcf")
+	)
 	(text "3,3V Versorgungsspannung: TPS63021DSJR Buck-boost Converter"
 		(exclude_from_sim no)
 		(at 21.082 24.892 0)
@@ -5137,9 +5073,9 @@
 		)
 		(uuid "c09fe61e-d918-494a-b70e-0fc290fc069a")
 	)
-	(text "Last beim Laden der Batterie com TP4056 abängen"
+	(text "Last beim Laden der Batterie\ncom TP4056 abängen"
 		(exclude_from_sim no)
-		(at 24.892 92.964 0)
+		(at 24.13 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5183,7 +5119,7 @@
 	)
 	(text "Inputpower select"
 		(exclude_from_sim no)
-		(at 27.94 54.61 0)
+		(at 24.13 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5258,6 +5194,12 @@
 		(uuid "0925d2a2-483f-471b-963b-8969584c0ff9")
 	)
 	(junction
+		(at 74.93 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0aa5c2ed-705e-479e-a6e8-ad46c7d5fab2")
+	)
+	(junction
 		(at 133.35 345.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5288,7 +5230,7 @@
 		(uuid "14b97a40-e907-4784-ae22-1e2dbfe64a97")
 	)
 	(junction
-		(at 60.96 66.04)
+		(at 57.15 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "192c9107-5712-4431-aeb1-f34c2dfd8b0c")
@@ -5298,6 +5240,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "19317928-4b38-4145-8a06-d7c392f07f75")
+	)
+	(junction
+		(at 64.77 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1df3d89d-5bfc-4dc0-97e5-de2803ee7f87")
 	)
 	(junction
 		(at 77.47 223.52)
@@ -5588,7 +5536,7 @@
 		(uuid "bf80eb65-6f0c-4319-a016-194ed200f0be")
 	)
 	(junction
-		(at 60.96 68.58)
+		(at 57.15 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c451f490-1874-4232-b763-c7f46d71ff32")
@@ -5696,7 +5644,7 @@
 		(uuid "fdf4e259-ee95-4707-9304-b9950cb0cb46")
 	)
 	(no_connect
-		(at 30.48 82.55)
+		(at 26.67 82.55)
 		(uuid "4c911846-5cfa-487b-9436-d584fac72507")
 	)
 	(wire
@@ -5838,6 +5786,16 @@
 			(type default)
 		)
 		(uuid "11168ce2-5b38-4ab1-8e6f-4813d1ac349e")
+	)
+	(wire
+		(pts
+			(xy 64.77 88.9) (xy 64.77 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14d08e34-fe1f-4290-8c63-09f3940271a7")
 	)
 	(wire
 		(pts
@@ -5991,7 +5949,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 71.12) (xy 39.37 71.12)
+			(xy 34.29 71.12) (xy 35.56 71.12)
 		)
 		(stroke
 			(width 0)
@@ -6021,7 +5979,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 85.09) (xy 60.96 76.2)
+			(xy 57.15 85.09) (xy 57.15 76.2)
 		)
 		(stroke
 			(width 0)
@@ -6041,7 +5999,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 66.04) (xy 59.69 66.04)
+			(xy 57.15 66.04) (xy 55.88 66.04)
 		)
 		(stroke
 			(width 0)
@@ -6081,7 +6039,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 68.58) (xy 46.99 68.58)
+			(xy 35.56 68.58) (xy 43.18 68.58)
 		)
 		(stroke
 			(width 0)
@@ -6331,7 +6289,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 71.12) (xy 46.99 76.2)
+			(xy 43.18 71.12) (xy 43.18 76.2)
 		)
 		(stroke
 			(width 0)
@@ -6561,7 +6519,17 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 66.04) (xy 46.99 66.04)
+			(xy 64.77 93.98) (xy 74.93 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58f9bc08-fab1-46aa-97fd-cd46c6665f59")
+	)
+	(wire
+		(pts
+			(xy 35.56 66.04) (xy 43.18 66.04)
 		)
 		(stroke
 			(width 0)
@@ -6641,7 +6609,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 68.58) (xy 59.69 68.58)
+			(xy 57.15 68.58) (xy 55.88 68.58)
 		)
 		(stroke
 			(width 0)
@@ -6668,16 +6636,6 @@
 			(type default)
 		)
 		(uuid "64910749-b400-48a8-965e-0d4d56d4ca40")
-	)
-	(wire
-		(pts
-			(xy 77.47 86.36) (xy 77.47 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64bb3f38-2051-4af7-9c00-579e7c1313e8")
 	)
 	(wire
 		(pts
@@ -6711,7 +6669,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 62.23) (xy 39.37 62.23)
+			(xy 34.29 62.23) (xy 35.56 62.23)
 		)
 		(stroke
 			(width 0)
@@ -6821,6 +6779,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 93.98) (xy 77.47 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7030c873-797d-4df9-bdd1-e71dafb26a78")
+	)
+	(wire
+		(pts
 			(xy 128.27 86.36) (xy 128.27 76.2)
 		)
 		(stroke
@@ -6841,7 +6809,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 63.5) (xy 60.96 66.04)
+			(xy 57.15 63.5) (xy 57.15 66.04)
 		)
 		(stroke
 			(width 0)
@@ -7031,7 +6999,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 62.23) (xy 39.37 63.5)
+			(xy 35.56 62.23) (xy 35.56 63.5)
 		)
 		(stroke
 			(width 0)
@@ -7041,7 +7009,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 76.2) (xy 46.99 76.2)
+			(xy 57.15 76.2) (xy 43.18 76.2)
 		)
 		(stroke
 			(width 0)
@@ -7161,7 +7129,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 63.5) (xy 46.99 63.5)
+			(xy 35.56 63.5) (xy 43.18 63.5)
 		)
 		(stroke
 			(width 0)
@@ -7171,7 +7139,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 71.12) (xy 59.69 71.12)
+			(xy 57.15 71.12) (xy 55.88 71.12)
 		)
 		(stroke
 			(width 0)
@@ -7271,6 +7239,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 66.04) (xy 64.77 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a04e9a4e-6fe2-422a-8b1b-fd1508da3822")
+	)
+	(wire
+		(pts
 			(xy 82.55 180.34) (xy 86.36 180.34)
 		)
 		(stroke
@@ -7291,7 +7269,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 71.12) (xy 39.37 68.58)
+			(xy 35.56 71.12) (xy 35.56 68.58)
 		)
 		(stroke
 			(width 0)
@@ -7318,6 +7296,16 @@
 			(type default)
 		)
 		(uuid "a3ec9a51-2493-457e-9d6c-8977da55d6f4")
+	)
+	(wire
+		(pts
+			(xy 77.47 93.98) (xy 77.47 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a438412d-0c5a-4a53-9465-177b6495755f")
 	)
 	(wire
 		(pts
@@ -7531,7 +7519,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 63.5) (xy 59.69 63.5)
+			(xy 57.15 63.5) (xy 55.88 63.5)
 		)
 		(stroke
 			(width 0)
@@ -7661,7 +7649,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 68.58) (xy 60.96 71.12)
+			(xy 57.15 68.58) (xy 57.15 71.12)
 		)
 		(stroke
 			(width 0)
@@ -7791,7 +7779,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 66.04) (xy 77.47 66.04)
+			(xy 57.15 66.04) (xy 64.77 66.04)
 		)
 		(stroke
 			(width 0)
@@ -7941,7 +7929,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 85.09) (xy 60.96 85.09)
+			(xy 46.99 85.09) (xy 57.15 85.09)
 		)
 		(stroke
 			(width 0)
@@ -7978,6 +7966,16 @@
 			(type default)
 		)
 		(uuid "ead3938c-da0b-4b11-abff-d48ab18a6911")
+	)
+	(wire
+		(pts
+			(xy 64.77 66.04) (xy 77.47 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec586633-9441-4ed6-9186-8f144e71fd24")
 	)
 	(wire
 		(pts
@@ -8021,7 +8019,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 66.04) (xy 60.96 68.58)
+			(xy 57.15 66.04) (xy 57.15 68.58)
 		)
 		(stroke
 			(width 0)
@@ -8260,7 +8258,7 @@
 		(uuid "8fba7184-767f-4a1d-86e1-2a4641c499b4")
 	)
 	(label "Vdd_Bat"
-		(at 38.1 62.23 180)
+		(at 34.29 62.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8290,7 +8288,7 @@
 		(uuid "b53acd1c-cb38-4527-b036-d3aa4726e609")
 	)
 	(label "Vdd_Ext"
-		(at 38.1 71.12 180)
+		(at 34.29 71.12 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8378,7 +8376,7 @@
 	)
 	(hierarchical_label "VBUS"
 		(shape input)
-		(at 39.37 66.04 180)
+		(at 35.56 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8644,7 +8642,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GNDA_1")
 		(lib_id "power:GNDA")
 		(at 77.47 255.27 0)
 		(unit 1)
@@ -9868,7 +9865,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GNDA_1")
 		(lib_id "power:GNDA")
 		(at 173.99 245.11 0)
 		(unit 1)
@@ -10387,7 +10383,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 77.47 97.79 0)
+		(at 74.93 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10395,7 +10391,7 @@
 		(dnp no)
 		(uuid "29168ece-ad35-4f63-bc79-37de9270ceb0")
 		(property "Reference" "#PWR0712"
-			(at 77.47 104.14 0)
+			(at 74.93 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10404,7 +10400,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 81.534 99.822 0)
+			(at 78.994 96.012 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10412,7 +10408,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 97.79 0)
+			(at 74.93 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10421,7 +10417,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 97.79 0)
+			(at 74.93 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10430,7 +10426,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 77.47 97.79 0)
+			(at 74.93 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10958,9 +10954,8 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 50.8 82.55 90)
+		(at 46.99 82.55 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10969,7 +10964,7 @@
 		(fields_autoplaced yes)
 		(uuid "39f2f5a2-3117-4f42-abbb-2d555e762677")
 		(property "Reference" "#PWR0705"
-			(at 57.15 82.55 0)
+			(at 53.34 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10978,7 +10973,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 82.5499 90)
+			(at 50.8 82.5499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10987,7 +10982,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 82.55 0)
+			(at 46.99 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10996,7 +10991,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 82.55 0)
+			(at 46.99 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11005,7 +11000,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 82.55 0)
+			(at 46.99 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11240,7 +11235,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GNDA_1")
 		(lib_id "power:GNDA")
 		(at 105.41 233.68 0)
 		(unit 1)
@@ -11829,7 +11823,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "5e2b4962-2271-405f-8eab-69550709716e")
 		(property "Reference" "C725"
 			(at 157.734 71.12 0)
@@ -12223,7 +12217,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x04_Odd_Even")
-		(at 52.07 66.04 0)
+		(at 48.26 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12231,7 +12225,7 @@
 		(dnp no)
 		(uuid "656f8fe2-d4a9-4599-856f-84510320b109")
 		(property "Reference" "JP8"
-			(at 53.34 57.15 0)
+			(at 49.53 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12239,7 +12233,7 @@
 			)
 		)
 		(property "Value" "Conn_02x04_Odd_Even"
-			(at 53.34 59.69 0)
+			(at 49.53 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12248,7 +12242,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical"
-			(at 52.07 66.04 0)
+			(at 48.26 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12257,7 +12251,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 66.04 0)
+			(at 48.26 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12266,7 +12260,7 @@
 			)
 		)
 		(property "Description" "PWR Select"
-			(at 53.086 59.944 0)
+			(at 49.276 59.944 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12274,7 +12268,7 @@
 			)
 		)
 		(property "AVAILABILITY" ""
-			(at 52.07 66.04 0)
+			(at 48.26 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12283,7 +12277,7 @@
 			)
 		)
 		(property "ECCN_EU" ""
-			(at 52.07 66.04 0)
+			(at 48.26 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12292,7 +12286,7 @@
 			)
 		)
 		(property "ECCN_US" ""
-			(at 52.07 66.04 0)
+			(at 48.26 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12301,7 +12295,7 @@
 			)
 		)
 		(property "PRICE" ""
-			(at 52.07 66.04 0)
+			(at 48.26 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12310,7 +12304,7 @@
 			)
 		)
 		(property "Mouser Part Number" "649-1012938190403BLF"
-			(at 52.07 66.04 0)
+			(at 48.26 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13291,7 +13285,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_2")
 		(lib_id "power:GND")
 		(at 86.995 76.2 0)
 		(unit 1)
@@ -13538,8 +13531,8 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(uuid "8d944885-e4ab-413a-b93a-a3e03d103685")
 		(property "Reference" "IC701"
 			(at 110.49 81.28 0)
@@ -14063,7 +14056,7 @@
 	)
 	(symbol
 		(lib_id "PJ-102B:PJ-102B")
-		(at 30.48 82.55 0)
+		(at 26.67 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14072,7 +14065,7 @@
 		(fields_autoplaced yes)
 		(uuid "a79c4b81-66fb-43de-9358-cccd12804a22")
 		(property "Reference" "J1"
-			(at 40.64 74.93 0)
+			(at 36.83 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14080,7 +14073,7 @@
 			)
 		)
 		(property "Value" "PJ-102B"
-			(at 40.64 77.47 0)
+			(at 36.83 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14088,7 +14081,7 @@
 			)
 		)
 		(property "Footprint" "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal"
-			(at 46.99 177.47 0)
+			(at 43.18 177.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14098,7 +14091,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.sameskydevices.com/product/resource/supplyframepdf/pj-102b.pdf"
-			(at 46.99 277.47 0)
+			(at 43.18 277.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14108,7 +14101,7 @@
 			)
 		)
 		(property "Description" "5V Input 1A"
-			(at 30.48 82.55 0)
+			(at 26.67 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14117,7 +14110,7 @@
 			)
 		)
 		(property "Height" "11.2"
-			(at 46.99 477.47 0)
+			(at 43.18 477.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14127,7 +14120,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Same Sky"
-			(at 46.99 577.47 0)
+			(at 43.18 577.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14137,7 +14130,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "PJ-102B"
-			(at 46.99 677.47 0)
+			(at 43.18 677.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14147,7 +14140,7 @@
 			)
 		)
 		(property "Mouser Part Number" "490-PJ-102B"
-			(at 46.99 777.47 0)
+			(at 43.18 777.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14157,7 +14150,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Same-Sky/PJ-102B?qs=WyjlAZoYn50OhgyxNd%252BH3w%3D%3D"
-			(at 46.99 877.47 0)
+			(at 43.18 877.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14167,7 +14160,7 @@
 			)
 		)
 		(property "Arrow Part Number" "PJ-102B"
-			(at 46.99 977.47 0)
+			(at 43.18 977.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14177,7 +14170,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/pj-102b/cui-devices?utm_currency=USD&region=nac"
-			(at 46.99 1077.47 0)
+			(at 43.18 1077.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14187,7 +14180,7 @@
 			)
 		)
 		(property "AVAILABILITY" ""
-			(at 30.48 82.55 0)
+			(at 26.67 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14196,7 +14189,7 @@
 			)
 		)
 		(property "ECCN_EU" ""
-			(at 30.48 82.55 0)
+			(at 26.67 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14205,7 +14198,7 @@
 			)
 		)
 		(property "ECCN_US" ""
-			(at 30.48 82.55 0)
+			(at 26.67 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14214,7 +14207,7 @@
 			)
 		)
 		(property "PRICE" ""
-			(at 30.48 82.55 0)
+			(at 26.67 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15484,7 +15477,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "100R"
 			(at 80.01 238.76 0)
 			(effects
 				(font
@@ -17155,7 +17148,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_5")
 		(lib_id "power:GND")
 		(at 228.6 172.72 0)
 		(unit 1)
@@ -17327,6 +17319,158 @@
 			(project "µC_Agri-PV"
 				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/6740d21d-71b5-4364-b2ea-66b4d911be84"
 					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "870585375004:870585375004")
+		(at 64.77 76.2 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e99070d1-ee2d-45a1-b372-a3f03cf88a85")
+		(property "Reference" "C734"
+			(at 68.58 81.2799 90)
+			(effects
+				(font
+					(size 1.5833 1.3333)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470uF"
+			(at 68.58 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "cadstarpcblib:CAPPRD500W65D1000H1150"
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "WCAP-HTAH Al. Hybrid Polymer Capacitors HTKF100471M016DSPA9D000; THT Radial; 470 F +/-20%; 16 V(DC); 4000 h; -55C / +125C; size DxL 10.0 x 10.0; pitch 5.0; Pin  0.6; Max. Iripple 2620 mA @100 kHz; LC 75.2 A; DF 16 %"
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" "870585375004"
+			(at 68.58 85.0899 90)
+			(effects
+				(font
+					(size 1.5833 1.3333)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Version" "1"
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "3D_Model" "870585375004"
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "11.5mm"
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link Datasheet" "https://www.we-online.com/catalog/datasheet/870585375004.pdf"
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/870585375004?qs=9vOqFld9vZXYFgU%2FkyI%2Fmg%3D%3D"
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Wurth Elektronik"
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "870585375004"
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "710-870585375004"
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2c7754e7-c36f-4ac4-98b8-326865f6c2e9")
+		)
+		(pin "2"
+			(uuid "66d5003b-cb39-4312-a4a4-d3f6e0616a06")
+		)
+		(instances
+			(project ""
+				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/6740d21d-71b5-4364-b2ea-66b4d911be84"
+					(reference "C734")
 					(unit 1)
 				)
 			)
@@ -17759,7 +17903,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "f869386a-0302-48c1-8937-656521e592fb")
 		(property "Reference" "C726"

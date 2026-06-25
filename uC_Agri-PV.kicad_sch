@@ -11,6 +11,12 @@
 		(company "Hochschule Karlsruhe ")
 	)
 	(lib_symbols)
+	(junction
+		(at 141.605 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96937631-bef8-4be3-9ecf-ab49472b8368")
+	)
 	(wire
 		(pts
 			(xy 52.07 200.66) (xy 80.01 200.66)
@@ -33,6 +39,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 180.975) (xy 67.945 180.975)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c4d4f6d-a3e9-4680-a066-70a431887904")
+	)
+	(wire
+		(pts
 			(xy 132.08 195.58) (xy 147.32 195.58)
 		)
 		(stroke
@@ -50,6 +66,16 @@
 			(type default)
 		)
 		(uuid "10a7168e-0bf5-46bb-a01f-4f0d508f59c3")
+	)
+	(wire
+		(pts
+			(xy 67.945 228.6) (xy 141.605 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12390922-2f47-4bce-b245-e320db4fa74c")
 	)
 	(wire
 		(pts
@@ -463,6 +489,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.945 180.975) (xy 67.945 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5a41d61-6ff5-4974-a76b-dff4a431993e")
+	)
+	(wire
+		(pts
 			(xy 132.08 53.34) (xy 147.32 53.34)
 		)
 		(stroke
@@ -543,6 +579,16 @@
 	)
 	(wire
 		(pts
+			(xy 141.605 228.6) (xy 141.605 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd59bc42-4131-483d-8a11-dcb6af3fe7ae")
+	)
+	(wire
+		(pts
 			(xy 132.08 119.38) (xy 147.32 119.38)
 		)
 		(stroke
@@ -573,7 +619,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 130.81) (xy 147.32 130.81)
+			(xy 132.08 130.81) (xy 141.605 130.81)
 		)
 		(stroke
 			(width 0)
@@ -640,6 +686,16 @@
 			(type default)
 		)
 		(uuid "fed2af14-8f81-41f2-808d-7aaa35272cb4")
+	)
+	(wire
+		(pts
+			(xy 141.605 130.81) (xy 147.32 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff4ffbc0-a05b-4e36-8d9d-5be2461e3d2b")
 	)
 	(sheet
 		(at 147.32 109.22)
@@ -1571,6 +1627,16 @@
 		(pin "NRST2" input
 			(at 52.07 200.66 0)
 			(uuid "8c8d9d6b-3c6c-4ef1-a545-41fd1ca34e41")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Vdd_MCU" input
+			(at 52.07 180.975 0)
+			(uuid "47c89d9f-b719-4c41-9321-1d4989086bb2")
 			(effects
 				(font
 					(size 1.27 1.27)

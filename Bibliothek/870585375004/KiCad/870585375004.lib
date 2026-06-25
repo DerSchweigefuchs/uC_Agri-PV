@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 870585375004
+#/18448857/1848388/2.50/2/2/Capacitor Polarised
+DEF 870585375004 C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "870585375004" 350 150 50 H V L CNN
+F2 "CAPPRD500W65D1000H1150" 350 50 50 H I L CNN
+F3 "https://www.we-online.com/catalog/datasheet/870585375004.pdf" 350 -50 50 H I L CNN
+F4 "WCAP-HTAH Al. Hybrid Polymer Capacitors HTKF100471M016DSPA9D000; THT Radial; 470 F +/-20%; 16 V(DC); 4000 h; -55C / +125C; size DxL 10.0 x 10.0; pitch 5.0; Pin  0.6; Max. Iripple 2620 mA @100 kHz; LC 75.2 A; DF 16 %" 350 -150 50 H I L CNN "Description"
+F5 "11.5" 350 -250 50 H I L CNN "Height"
+F6 "710-870585375004" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/870585375004?qs=9vOqFld9vZXYFgU%2FkyI%2Fmg%3D%3D" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Wurth Elektronik" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "870585375004" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 500 0 100 L 50 50 0 0 P
+P 5 0 1 6 200 100 200 -100 230 -100 230 100 200 100 N
+P 2 0 1 6 180 50 140 50 N
+P 2 0 1 6 160 70 160 30 N
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 300 0 400 0 N
+P 5 0 1 10 300 100 300 -100 270 -100 270 100 300 100 F
+ENDDRAW
+ENDDEF
+#
+#End Library

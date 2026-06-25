@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '870585375004'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Wurth Elektronik", "870585375004" (!) = "", "CAPPRD500W65D1000H1150", "Capacitor, Polarized Radial Diameter", "710-870585375004", "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/870585375004?qs=9vOqFld9vZXYFgU%2FkyI%2Fmg%3D%3D", "WCAP-HTAH Al. Hybrid Polymer Capacitors HTKF100471M016DSPA9D000; THT Radial; 470 F +/-20%; 16 V(DC); 4000 h; -55C / +125C; size DxL 10.0 x 10.0; pitch 5.0; Pin  0.6; Max. Iripple 2620 mA @100 kHz; LC 75.2 A; DF 16 %", "https://www.we-online.com/catalog/datasheet/870585375004.pdf", "11.5 mm"
+END_PART
+
+END.

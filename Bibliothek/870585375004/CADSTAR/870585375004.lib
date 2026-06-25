@@ -1,0 +1,16 @@
+.870585375004 :1 ;WCAP-HTAH Al. Hybrid Polymer Capacitors HTKF100471M016DSPA9D000; THT Radial; 470 F +/-20%; 16 V(DC); 4000 h; -55C / +125C; size DxL 10.0 x 10.0; pitch 5.0; Pin  0.6; Max. Iripple 2620 mA @100 kHz; LC 75.2 A; DF 16 %
+CAPPRD500W65D1000H1150
+*STM C
+*NGS
+*PLB 1="+" 2="-"
+*MXP 2
+*DFN 870585375004
+~!Mouser Part Number (710-870585375004)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/870585375004?qs=9vOqFld9vZXYFgU%2FkyI%2Fmg%3D%3D)
+~!Manufacturer_Name (Wurth Elektronik)
+~!Manufacturer_Part_Number (870585375004)
+~!Link Datasheet (https://www.we-online.com/catalog/datasheet/870585375004.pdf)
+~!Height (11.5mm)
+~!3D_Model (870585375004)
+"870585375004"
+1.1!U 2.1!U 

@@ -71,7 +71,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "USB*"
+			(property "ki_fp_filters" "USB*Micro*B*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1182,12 +1182,15 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MMS-9013:MMS9013-L-TP"
+		(symbol "MOSFET_Nchannel_DMG1012T-13:DMG1012T-13"
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "IC"
-				(at 16.51 7.62 0)
+			(property "Reference" "Q"
+				(at 11.43 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1195,8 +1198,8 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "MMS9013-L-TP"
-				(at 16.51 5.08 0)
+			(property "Value" "DMG1012T-13"
+				(at 11.43 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1204,18 +1207,8 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "SOT95P237X125-3N"
-				(at 16.51 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://mccsemi.com/pdf/Products/MMS9013(SOT-23).pdf"
-				(at 16.51 -194.92 0)
+			(property "Footprint" "SOT50P160X90-3N"
+				(at 11.43 -98.73 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1224,7 +1217,17 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Small Signal Bipolar Transistors"
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds31783.pdf"
+				(at 11.43 -198.73 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "MOSFET 20V N-Ch Enhance Mode MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1233,8 +1236,8 @@
 					(hide yes)
 				)
 			)
-			(property "Height" "1.25"
-				(at 16.51 -394.92 0)
+			(property "Height" "0.9"
+				(at 11.43 -398.73 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1243,8 +1246,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Part Number" "833-MMS9013L-TP"
-				(at 16.51 -494.92 0)
+			(property "Mouser Part Number" "621-DMG1012T-13"
+				(at 11.43 -498.73 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1253,8 +1256,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Micro-Commercial-Components-MCC/MMS9013-L-TP?qs=P1JMDcb91o6OmgJiBYj6kQ%3D%3D"
-				(at 16.51 -594.92 0)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMG1012T-13?qs=w%2Fv1CP2dgqpw%252ByWBJOGGBA%3D%3D"
+				(at 11.43 -598.73 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1263,8 +1266,8 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "MCC"
-				(at 16.51 -694.92 0)
+			(property "Manufacturer_Name" "Diodes Incorporated"
+				(at 11.43 -698.73 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1273,8 +1276,8 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "MMS9013-L-TP"
-				(at 16.51 -794.92 0)
+			(property "Manufacturer_Part_Number" "DMG1012T-13"
+				(at 11.43 -798.73 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1283,22 +1286,154 @@
 					(hide yes)
 				)
 			)
-			(symbol "MMS9013-L-TP_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 15.24 -5.08)
+			(symbol "DMG1012T-13_1_1"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 5.08 0)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 5.08) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.842 5.588) (xy 5.842 4.572)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.842 2.54) (xy 6.858 3.048) (xy 6.858 2.032) (xy 5.842 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.842 2.032) (xy 5.842 3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.842 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.842 -0.508) (xy 5.842 0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 6.35 2.54)
+					(radius 3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 5.842 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 5.842 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 7.62 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin passive line
 					(at 0 0 0)
-					(length 5.08)
-					(name "B"
+					(length 2.54)
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1314,16 +1449,16 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "E"
+					(at 7.62 10.16 270)
+					(length 2.54)
+					(name "D"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1332,16 +1467,16 @@
 					)
 				)
 				(pin passive line
-					(at 20.32 0 180)
-					(length 5.08)
-					(name "C"
+					(at 7.62 -5.08 90)
+					(length 2.54)
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1360,7 +1495,7 @@
 				(offset 1.016)
 				(hide yes)
 			)
-			(exclude_from_sim yes)
+			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
@@ -2065,16 +2200,34 @@
 		(uuid "58a4cd2d-f9c1-472b-b83b-59b1b46ed0c8")
 	)
 	(junction
+		(at 91.44 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59633bc0-e29a-4931-a296-e109edf1dc72")
+	)
+	(junction
 		(at 144.78 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5cab9105-7015-4778-8a98-3fb23278a7ca")
 	)
 	(junction
+		(at 48.26 151.765)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7803045a-024d-41ac-8dfa-e3539af2386c")
+	)
+	(junction
 		(at 149.86 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7e42751c-b6df-4348-b4c1-447c2613f315")
+	)
+	(junction
+		(at 34.29 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a01d1428-73c2-47c9-b7db-eafb9b16c88f")
 	)
 	(junction
 		(at 156.21 50.8)
@@ -2087,12 +2240,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad8fa01e-53b2-4f94-8fdb-f2057674cd7d")
-	)
-	(junction
-		(at 86.36 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b633cc8e-669b-405d-a95c-cdf7b7219d2d")
 	)
 	(junction
 		(at 74.93 41.91)
@@ -2125,22 +2272,10 @@
 		(uuid "e12d5f10-e27c-4b54-a2b4-e1e1eb291faf")
 	)
 	(junction
-		(at 39.37 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e465578a-65d3-46ad-85d1-70511a3f64af")
-	)
-	(junction
 		(at 58.42 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e483e109-4ecc-4d3e-80a3-753bf831f1ac")
-	)
-	(junction
-		(at 50.8 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e5837417-01ee-49b3-ac7c-44a9af2c60e3")
 	)
 	(junction
 		(at 53.34 41.91)
@@ -2154,7 +2289,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 154.94) (xy 50.8 154.94)
+			(xy 34.29 151.765) (xy 48.26 151.765)
 		)
 		(stroke
 			(width 0)
@@ -2171,6 +2306,16 @@
 			(type default)
 		)
 		(uuid "0086b237-0e4b-4f36-afb5-83e83ba44486")
+	)
+	(wire
+		(pts
+			(xy 91.44 153.67) (xy 91.44 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01167d16-39b9-4253-8c4d-b45601e544b1")
 	)
 	(wire
 		(pts
@@ -2204,6 +2349,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 133.35) (xy 48.26 136.525)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d0fe1c3-28ff-4feb-82ac-381b44d6ba0f")
+	)
+	(wire
+		(pts
 			(xy 165.1 133.35) (xy 170.18 133.35)
 		)
 		(stroke
@@ -2224,7 +2379,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 151.13) (xy 74.93 156.21)
+			(xy 74.93 150.495) (xy 74.93 153.67)
 		)
 		(stroke
 			(width 0)
@@ -2264,7 +2419,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 151.13) (xy 39.37 154.94)
+			(xy 34.29 151.765) (xy 34.29 149.86)
 		)
 		(stroke
 			(width 0)
@@ -2274,23 +2429,13 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 138.43) (xy 39.37 138.43)
+			(xy 80.645 146.685) (xy 83.82 146.685)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1ee17e14-e75a-48ff-9950-370425603fcd")
-	)
-	(wire
-		(pts
-			(xy 78.74 139.7) (xy 78.74 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20663a84-f649-4553-9bce-4d0a9c598276")
+		(uuid "21360e8e-746e-485f-9b77-962633d4b453")
 	)
 	(wire
 		(pts
@@ -2314,16 +2459,6 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 154.94) (xy 78.74 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2bac38b3-02fa-4cc2-91c1-8eaa70ab51da")
-	)
-	(wire
-		(pts
 			(xy 142.24 88.9) (xy 142.24 90.17)
 		)
 		(stroke
@@ -2341,16 +2476,6 @@
 			(type default)
 		)
 		(uuid "2fb28ea5-02e6-4af2-8612-06951440da9d")
-	)
-	(wire
-		(pts
-			(xy 86.36 156.21) (xy 86.36 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "366b9cb5-2dba-43f5-bfa5-78350b69fff6")
 	)
 	(wire
 		(pts
@@ -2394,13 +2519,13 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 138.43) (xy 36.83 138.43)
+			(xy 33.655 138.43) (xy 34.29 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5005da58-39cc-4a5c-bc0c-aa60780fe84a")
+		(uuid "4f3a2f33-7b03-48bc-a001-1ab34e88b6c6")
 	)
 	(wire
 		(pts
@@ -2494,6 +2619,26 @@
 	)
 	(wire
 		(pts
+			(xy 80.645 139.7) (xy 80.645 146.685)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65e4e45f-562b-4995-a65e-ef2cdc20329b")
+	)
+	(wire
+		(pts
+			(xy 34.29 138.43) (xy 38.735 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6675e06b-cc1c-456e-9a6e-64660f62fe08")
+	)
+	(wire
+		(pts
 			(xy 156.21 50.8) (xy 156.21 53.34)
 		)
 		(stroke
@@ -2501,16 +2646,6 @@
 			(type default)
 		)
 		(uuid "679f743d-40bc-4d3d-bd0a-6c3d085e210c")
-	)
-	(wire
-		(pts
-			(xy 50.8 154.94) (xy 50.8 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67e4d8da-7e2e-4f5e-ad87-d62d6e71b4c7")
 	)
 	(wire
 		(pts
@@ -2531,6 +2666,16 @@
 			(type default)
 		)
 		(uuid "6c3a8c34-c18d-4d6d-bb1c-f19970537c8f")
+	)
+	(wire
+		(pts
+			(xy 38.735 146.685) (xy 40.64 146.685)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ee49b07-4e3e-42dc-8007-8b98ae1a2018")
 	)
 	(wire
 		(pts
@@ -2704,6 +2849,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 151.765) (xy 48.26 155.575)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a147d2f5-7f57-4e91-867b-901f656a2638")
+	)
+	(wire
+		(pts
 			(xy 74.93 52.07) (xy 74.93 54.61)
 		)
 		(stroke
@@ -2714,7 +2869,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 156.21) (xy 86.36 156.21)
+			(xy 74.93 153.67) (xy 91.44 153.67)
 		)
 		(stroke
 			(width 0)
@@ -2744,7 +2899,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 138.43) (xy 39.37 143.51)
+			(xy 34.29 138.43) (xy 34.29 142.24)
 		)
 		(stroke
 			(width 0)
@@ -2754,17 +2909,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 138.43) (xy 43.18 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5912f7c-4172-4d8a-bcd0-cce11d19d02f")
-	)
-	(wire
-		(pts
-			(xy 83.82 133.35) (xy 83.82 134.62)
+			(xy 91.44 133.985) (xy 91.44 136.525)
 		)
 		(stroke
 			(width 0)
@@ -2814,7 +2959,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 116.84) (xy 83.82 118.11)
+			(xy 91.44 117.475) (xy 91.44 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2874,6 +3019,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.735 138.43) (xy 38.735 146.685)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddf38691-a994-43af-813b-6601b450e0ad")
+	)
+	(wire
+		(pts
 			(xy 68.58 85.09) (xy 80.01 85.09)
 		)
 		(stroke
@@ -2924,7 +3079,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 139.7) (xy 74.93 143.51)
+			(xy 74.93 139.7) (xy 74.93 142.875)
 		)
 		(stroke
 			(width 0)
@@ -2934,13 +3089,13 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 153.67) (xy 43.18 153.67)
+			(xy 91.44 151.765) (xy 91.44 153.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e92d1759-1e53-4c09-8995-eb0fb5a7f252")
+		(uuid "e82e60f4-5493-4a74-a253-042f59b73559")
 	)
 	(wire
 		(pts
@@ -2974,6 +3129,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 127) (xy 91.44 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6f09e0f-6067-40d5-a3c6-96cf2536f577")
+	)
+	(wire
+		(pts
 			(xy 142.24 88.9) (xy 161.29 88.9)
 		)
 		(stroke
@@ -2994,7 +3159,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 139.7) (xy 78.74 139.7)
+			(xy 74.93 139.7) (xy 80.645 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3046,7 +3211,7 @@
 	)
 	(hierarchical_label "LED1"
 		(shape input)
-		(at 36.83 138.43 180)
+		(at 33.655 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3551,7 +3716,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 50.8 154.94 0)
+		(at 48.26 155.575 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3559,7 +3724,7 @@
 		(dnp no)
 		(uuid "101adec5-bdec-42c1-b989-8966fcfbc288")
 		(property "Reference" "#PWR0608"
-			(at 50.8 161.29 0)
+			(at 48.26 161.925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3568,7 +3733,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 55.118 156.972 0)
+			(at 52.578 157.607 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3576,7 +3741,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 154.94 0)
+			(at 48.26 155.575 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3585,7 +3750,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 154.94 0)
+			(at 48.26 155.575 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3594,7 +3759,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 154.94 0)
+			(at 48.26 155.575 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3609,166 +3774,6 @@
 			(project ""
 				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/b862f738-82ae-4db3-84bb-4f557953a3c9"
 					(reference "#PWR0608")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MMS-9013:MMS9013-L-TP")
-		(at 48.26 153.67 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1cbfbdde-ca06-4ab1-8d00-75bc58282b4b")
-		(property "Reference" "IC601"
-			(at 49.784 136.652 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "MMS9013-L-TP"
-			(at 54.864 138.938 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "MMS-9013:SOT95P237X125-3N"
-			(at 143.18 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mccsemi.com/pdf/Products/MMS9013(SOT-23).pdf"
-			(at 243.18 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Small Signal Bipolar Transistors"
-			(at 48.26 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at 443.18 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "833-MMS9013L-TP"
-			(at 543.18 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Micro-Commercial-Components-MCC/MMS9013-L-TP?qs=P1JMDcb91o6OmgJiBYj6kQ%3D%3D"
-			(at 643.18 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "MCC"
-			(at 743.18 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "MMS9013-L-TP"
-			(at 843.18 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "AVAILABILITY" ""
-			(at 48.26 153.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ECCN_EU" ""
-			(at 48.26 153.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ECCN_US" ""
-			(at 48.26 153.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PRICE" ""
-			(at 48.26 153.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "62ff61a8-7c61-4dd5-96bd-9580801bd540")
-		)
-		(pin "3"
-			(uuid "81250d61-bf6f-4dc2-9edf-da1160bb7835")
-		)
-		(pin "2"
-			(uuid "5aebcefe-9eed-4b29-8bc3-0a7742d3ee7a")
-		)
-		(instances
-			(project ""
-				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/b862f738-82ae-4db3-84bb-4f557953a3c9"
-					(reference "IC601")
 					(unit 1)
 				)
 			)
@@ -4442,7 +4447,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 39.37 147.32 180)
+		(at 34.29 146.05 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4450,7 +4455,7 @@
 		(dnp no)
 		(uuid "43ffa8ca-1b6d-4ba9-9cb0-263e4e5308dc")
 		(property "Reference" "R602"
-			(at 36.322 143.256 0)
+			(at 31.242 141.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4458,7 +4463,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 36.322 151.384 0)
+			(at 31.242 150.114 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4466,7 +4471,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 41.148 147.32 90)
+			(at 36.068 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4475,7 +4480,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 147.32 0)
+			(at 34.29 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4484,7 +4489,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 39.37 147.32 0)
+			(at 34.29 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4492,7 +4497,7 @@
 			)
 		)
 		(property "Mouser Part Number" "660-RK73B2ATTE104J"
-			(at 39.37 147.32 0)
+			(at 34.29 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4501,7 +4506,7 @@
 			)
 		)
 		(property "AVAILABILITY" ""
-			(at 39.37 147.32 0)
+			(at 34.29 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4510,7 +4515,7 @@
 			)
 		)
 		(property "ECCN_EU" ""
-			(at 39.37 147.32 0)
+			(at 34.29 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4519,7 +4524,7 @@
 			)
 		)
 		(property "ECCN_US" ""
-			(at 39.37 147.32 0)
+			(at 34.29 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4528,7 +4533,7 @@
 			)
 		)
 		(property "PRICE" ""
-			(at 39.37 147.32 0)
+			(at 34.29 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4546,6 +4551,165 @@
 			(project "µC_Agri-PV"
 				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/b862f738-82ae-4db3-84bb-4f557953a3c9"
 					(reference "R602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MOSFET_Nchannel_DMG1012T-13:DMG1012T-13")
+		(at 40.64 146.685 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4d1ed604-8659-4ced-bbc0-2f628298a8d5")
+		(property "Reference" "Q601"
+			(at 52.07 150.495 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMG1012T-13"
+			(at 54.61 150.495 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DMG1012T:SOT50P160X90-3N"
+			(at 52.07 245.415 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds31783.pdf"
+			(at 52.07 345.415 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 40.64 146.685 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "0.9"
+			(at 52.07 545.415 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "621-DMG1012T-13"
+			(at 52.07 645.415 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMG1012T-13?qs=w%2Fv1CP2dgqpw%252ByWBJOGGBA%3D%3D"
+			(at 52.07 745.415 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Diodes Incorporated"
+			(at 52.07 845.415 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "DMG1012T-13"
+			(at 52.07 945.415 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 40.64 146.685 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ECCN_EU" ""
+			(at 40.64 146.685 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ECCN_US" ""
+			(at 40.64 146.685 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" ""
+			(at 40.64 146.685 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "9b888663-02fb-410b-b523-ca99078d21dd")
+		)
+		(pin "1"
+			(uuid "e8a874fe-c35d-4788-8f5f-e60d26b0f742")
+		)
+		(pin "2"
+			(uuid "cfa8a321-b8f0-43c7-a956-ac53dfb5c7e7")
+		)
+		(instances
+			(project "uC_Agri-PV"
+				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/b862f738-82ae-4db3-84bb-4f557953a3c9"
+					(reference "Q601")
 					(unit 1)
 				)
 			)
@@ -4683,70 +4847,112 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 83.82 129.54 90)
+		(lib_id "MOSFET_Nchannel_DMG1012T-13:DMG1012T-13")
+		(at 83.82 146.685 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "59ea295a-0fe4-4e64-94bb-14d91365a61a")
-		(property "Reference" "LED_2"
-			(at 86.868 128.524 90)
+		(uuid "55f4be51-633a-457a-a2f1-bb24c9d143b1")
+		(property "Reference" "Q602"
+			(at 95.25 150.495 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "LED"
-			(at 86.36 131.064 90)
+		(property "Value" "DMG1012T-13"
+			(at 97.79 150.495 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 83.82 129.54 0)
+		(property "Footprint" "DMG1012T:SOT50P160X90-3N"
+			(at 95.25 245.415 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 83.82 129.54 0)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds31783.pdf"
+			(at 95.25 345.415 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
-			(at 83.82 129.54 0)
+		(property "Description" ""
+			(at 83.82 146.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Height" "0.9"
+			(at 95.25 545.415 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 83.82 129.54 0)
+		(property "Mouser Part Number" "621-DMG1012T-13"
+			(at 95.25 645.415 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMG1012T-13?qs=w%2Fv1CP2dgqpw%252ByWBJOGGBA%3D%3D"
+			(at 95.25 745.415 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Diodes Incorporated"
+			(at 95.25 845.415 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "DMG1012T-13"
+			(at 95.25 945.415 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "AVAILABILITY" ""
-			(at 83.82 129.54 90)
+			(at 83.82 146.685 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4755,7 +4961,7 @@
 			)
 		)
 		(property "ECCN_EU" ""
-			(at 83.82 129.54 90)
+			(at 83.82 146.685 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4764,7 +4970,7 @@
 			)
 		)
 		(property "ECCN_US" ""
-			(at 83.82 129.54 90)
+			(at 83.82 146.685 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4773,7 +4979,124 @@
 			)
 		)
 		(property "PRICE" ""
-			(at 83.82 129.54 90)
+			(at 83.82 146.685 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "4a3de5d9-7361-47de-b1ea-5075993178af")
+		)
+		(pin "1"
+			(uuid "07aa1e4f-1b46-45f9-bc41-36f1633e97e4")
+		)
+		(pin "2"
+			(uuid "7adbd8a2-03fb-4700-b20d-936d4bcbbbe1")
+		)
+		(instances
+			(project "uC_Agri-PV"
+				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/b862f738-82ae-4db3-84bb-4f557953a3c9"
+					(reference "Q602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 91.44 130.175 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "59ea295a-0fe4-4e64-94bb-14d91365a61a")
+		(property "Reference" "LED_2"
+			(at 94.488 129.159 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 93.98 131.699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 91.44 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 91.44 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 91.44 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 91.44 130.175 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ECCN_EU" ""
+			(at 91.44 130.175 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ECCN_US" ""
+			(at 91.44 130.175 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PRICE" ""
+			(at 91.44 130.175 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4782,7 +5105,7 @@
 			)
 		)
 		(property "Mouser Part Number" "630-HSME-C170 "
-			(at 83.82 129.54 90)
+			(at 91.44 130.175 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5142,7 +5465,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 86.36 156.21 0)
+		(at 91.44 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5150,7 +5473,7 @@
 		(dnp no)
 		(uuid "65b2365f-2ab1-4776-88a9-dabdaed95d05")
 		(property "Reference" "#PWR0612"
-			(at 86.36 162.56 0)
+			(at 91.44 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5159,7 +5482,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 90.678 157.988 0)
+			(at 95.758 157.988 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5167,7 +5490,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 156.21 0)
+			(at 91.44 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5176,7 +5499,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 156.21 0)
+			(at 91.44 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5185,7 +5508,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 86.36 156.21 0)
+			(at 91.44 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5981,7 +6304,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 83.82 121.92 0)
+		(at 91.44 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5989,7 +6312,7 @@
 		(dnp no)
 		(uuid "7efb7e02-e95d-4693-b465-74efc6b32a9d")
 		(property "Reference" "R608"
-			(at 88.138 123.444 0)
+			(at 95.758 124.714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5997,7 +6320,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 87.884 121.158 0)
+			(at 95.504 122.428 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6005,7 +6328,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 82.042 121.92 90)
+			(at 89.662 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6014,7 +6337,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 83.82 121.92 0)
+			(at 91.44 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6023,7 +6346,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 83.82 121.92 0)
+			(at 91.44 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6031,7 +6354,7 @@
 			)
 		)
 		(property "Mouser Part Number" "667-ERJ-6ENF1001V"
-			(at 83.82 121.92 0)
+			(at 91.44 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6040,7 +6363,7 @@
 			)
 		)
 		(property "AVAILABILITY" ""
-			(at 83.82 121.92 0)
+			(at 91.44 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6049,7 +6372,7 @@
 			)
 		)
 		(property "ECCN_EU" ""
-			(at 83.82 121.92 0)
+			(at 91.44 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6058,7 +6381,7 @@
 			)
 		)
 		(property "ECCN_US" ""
-			(at 83.82 121.92 0)
+			(at 91.44 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6067,7 +6390,7 @@
 			)
 		)
 		(property "PRICE" ""
-			(at 83.82 121.92 0)
+			(at 91.44 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6772,168 +7095,8 @@
 		)
 	)
 	(symbol
-		(lib_id "MMS-9013:MMS9013-L-TP")
-		(at 83.82 154.94 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9fa135e9-de75-417c-874c-01bdf1c90085")
-		(property "Reference" "IC602"
-			(at 85.598 137.668 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "MMS9013-L-TP"
-			(at 90.678 140.208 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "MMS-9013:SOT95P237X125-3N"
-			(at 178.74 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mccsemi.com/pdf/Products/MMS9013(SOT-23).pdf"
-			(at 278.74 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Small Signal Bipolar Transistors"
-			(at 83.82 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at 478.74 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "833-MMS9013L-TP"
-			(at 578.74 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Micro-Commercial-Components-MCC/MMS9013-L-TP?qs=P1JMDcb91o6OmgJiBYj6kQ%3D%3D"
-			(at 678.74 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "MCC"
-			(at 778.74 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "MMS9013-L-TP"
-			(at 878.74 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "AVAILABILITY" ""
-			(at 83.82 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ECCN_EU" ""
-			(at 83.82 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ECCN_US" ""
-			(at 83.82 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PRICE" ""
-			(at 83.82 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d1d0d4f8-54fb-453a-ac6e-2b87cda1a4bc")
-		)
-		(pin "3"
-			(uuid "e7764f24-a7e6-46ff-b6b5-b5a42117fa98")
-		)
-		(pin "1"
-			(uuid "a059f445-5726-4367-aba0-c9ac3c77b6bb")
-		)
-		(instances
-			(project ""
-				(path "/69abffa1-550c-4cd8-ae80-a1755923d6dc/b862f738-82ae-4db3-84bb-4f557953a3c9"
-					(reference "IC602")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
-		(at 83.82 116.84 0)
+		(at 91.44 117.475 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6942,7 +7105,7 @@
 		(fields_autoplaced yes)
 		(uuid "ac0d74a6-0b7d-414e-9588-cfc81e119878")
 		(property "Reference" "#PWR0611"
-			(at 83.82 120.65 0)
+			(at 91.44 121.285 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6951,7 +7114,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 86.36 115.5699 0)
+			(at 93.98 116.2049 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6960,7 +7123,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 116.84 0)
+			(at 91.44 117.475 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6969,7 +7132,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 116.84 0)
+			(at 91.44 117.475 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6978,7 +7141,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 83.82 116.84 0)
+			(at 91.44 117.475 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7501,7 +7664,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 74.93 147.32 180)
+		(at 74.93 146.685 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7509,7 +7672,7 @@
 		(dnp no)
 		(uuid "c416ff5f-7a5f-4f4b-a943-d936eea54f7e")
 		(property "Reference" "R607"
-			(at 72.136 143.51 0)
+			(at 72.136 142.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7517,7 +7680,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 71.882 151.13 0)
+			(at 71.882 150.495 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7525,7 +7688,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 76.708 147.32 90)
+			(at 76.708 146.685 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7534,7 +7697,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 147.32 0)
+			(at 74.93 146.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7543,7 +7706,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 74.93 147.32 0)
+			(at 74.93 146.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7551,7 +7714,7 @@
 			)
 		)
 		(property "Mouser Part Number" "660-RK73B2ATTE104J"
-			(at 74.93 147.32 0)
+			(at 74.93 146.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7560,7 +7723,7 @@
 			)
 		)
 		(property "AVAILABILITY" ""
-			(at 74.93 147.32 0)
+			(at 74.93 146.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7569,7 +7732,7 @@
 			)
 		)
 		(property "ECCN_EU" ""
-			(at 74.93 147.32 0)
+			(at 74.93 146.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7578,7 +7741,7 @@
 			)
 		)
 		(property "ECCN_US" ""
-			(at 74.93 147.32 0)
+			(at 74.93 146.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7587,7 +7750,7 @@
 			)
 		)
 		(property "PRICE" ""
-			(at 74.93 147.32 0)
+			(at 74.93 146.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)

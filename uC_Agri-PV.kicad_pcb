@@ -9,8 +9,8 @@
 	(paper "A5" portrait)
 	(title_block
 		(title "AgriPV-Messstation")
-		(date "2025-04-17")
-		(rev "1.2")
+		(date "2026-01-17")
+		(rev "2.1")
 		(company "Hochschule Karlsruhe")
 	)
 	(layers

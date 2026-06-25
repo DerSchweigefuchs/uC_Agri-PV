@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP 870585375004
+D WCAP-HTAH Al. Hybrid Polymer Capacitors HTKF100471M016DSPA9D000; THT Radial; 470 F +/-20%; 16 V(DC); 4000 h; -55C / +125C; size DxL 10.0 x 10.0; pitch 5.0; Pin  0.6; Max. Iripple 2620 mA @100 kHz; LC 75.2 A; DF 16 %
+K
+F https://www.we-online.com/catalog/datasheet/870585375004.pdf
+$ENDCMP
+#
+#End Doc Library
